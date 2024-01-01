@@ -1,12 +1,16 @@
 import React from 'react'
-// import { skills, experiences} from '../constants'
-// import timelince vertical copy/paste
+import { skills, experiences} from '../constants'
+import SchoolTimeline from '../components/SchoolTimeline'
+import CTA from '../components/CTA';
+
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
 
 const About = () => {
   return (
     <section className="max-container">
       <h1 className="head-text">
-        Hello, I'm <span className='blue-gradient_text font-semibold drop-shadow'> Terence</span>
+        Hello, I'm <span className='blue-gradient_text font-semibold drop-shadow'> Terence</span> {/* <span className='green-gradient_text drop-shadow'>SARAMANDIF</span>*/}
       </h1>
       <div className='mt-5 flex flex-col gap-3 text-slate-500'>
         <p>
@@ -23,45 +27,56 @@ const About = () => {
 
       
 
-      {/* <div className="mt-16 flex flex-wrap gap-12">
+      <div className="mt-16 flex flex-wrap gap-12">
         {skills.map((skill) => (
           <div className='block-container w-20 h-20'>
             <div className='btn-back rounded-xl'/>
-          <div className='btn-front rounded-xl flex justify-center items-center'>
-            <p> {skill.name} and {skill.type}</p>
-           {/* <img 
+          <div className='btn-front rounded-xl flex flex-col justify-center items-center'>
+            <p> {skill.name}</p>
+            <p>{skill.type}</p>
+            {/* <img 
              src={skill.imageUrl} 
              alt={skill.name} 
              className='w-1/2 h-1/2 object-contain'
-             /> 
+             />  */}
           </div>
          </div>
-
         ))}
-        </div> */}
+        </div>
       </div>
-
 
       <div className="py-10 flex flex-col">
         <h3 className="subhead-text">
           Work Experience
         </h3>      
+
+        <SchoolTimeline/>
+
+
+
         <div className='mt-5 flex flex-col gap-3 text-slate-500'>
           <p>
             Donec blandit aliquam eros sed varius. Etiam blandit tellus ut turpis tempor ultricies. Ut consequat leo aliquet erat elementum ullamcorper.
           </p>
         </div>  
-        {/* <div className="mt-12 flex">
+        <div className="mt-12 flex">
           <VerticalTimeline>
             {experiences.map((experience)=> (
               <VerticalTimelineElement
                 key={experience.company_name}
                 date={experience.date}
-                icon={<div>
-                  <img src={experience.icon} 
-                  alt={experience.company_name}
-                  className='w-[60%] h-[60%] object-contain' />
-                </div>}
+                // icon={<div className='flex justify-center items-center w-full h-full'>
+                //   <img src={experience.icon} 
+                //   alt={experience.company_name}
+                //   className='w-[60%] h-[60%] object-contain' />
+                // </div>}
+                // iconStyle={{ backgroung: experience.iconBg }}
+                contentStyle={{
+                  borderBottom: '8px',
+                  borderStyle: 'solide',
+                  // borderBottomColor: experience.iconBg,
+                  boxShadow: 'none',
+                }}
               >
                 <div>
                   <h3 className='text-black tect-xl font-poppins font-semibold'>
@@ -84,9 +99,13 @@ const About = () => {
               </VerticalTimelineElement>
             ))}
           </VerticalTimeline>
-        </div> */}
+        </div>
 
       </div>
+
+      <hr className='border-slate-100'/>
+
+      <CTA/>
     </section>
   )
 }
