@@ -1,52 +1,56 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
 import useAlert from '../hooks/useAlert';
 import Alert from '../components/Alert';
 
 const Contact = () => {
-const formRef = useRef(null);
-const [form, setform] = useState({name:'', email:'', message:''});
-const [isLoading, setisLoading] = useState(false);
+  const formRef = useRef(null);
+  const [form, setform] = useState({name:'', email:'', message:''});
+  const [isLoading, setisLoading] = useState(false);
 
-const {alert, showAlert, hideAlert} = useAlert();
+  const {alert, showAlert, hideAlert} = useAlert();
 
-const handleChange = (e) => {
-  setform({...form, [e.target.name]: e.target.value});
-};
+  const handleChange = (e) => {
+    setform({...form, [e.target.name]: e.target.value});
+  };
 
-const handleFocus = () => {};
+  const handleFocus = () => {};
 
-const handleBlur = () => {};
+  const handleBlur = () => {};
 
-const handleSubmit =(e) => {
-  e.preventDefault();
-  setisLoading(true);
-  emailjs.send(
-    import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-    import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-    {
-      from_name: form.name,
-      to_name: "Terence",
-      from_email: form.email,
-      to_email: 'terence@saramandif.com',
-      message: form.message
-    },
-    import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-  ).then(() => {
-    setisLoading(false);
-    showAlert({show: true, text: 'Message sent successfully!', type:'success'})
-    setTimeout(() => {
-      hideAlert()
-      setform({name:'', email:'', message:''});
-    }, [3000])
-   
+  const handleSubmit =(e) => {
+    e.preventDefault();
+    setisLoading(true);
+    emailjs.send(
+      import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+      {
+        from_name: form.name,
+        to_name: "Terence",
+        from_email: form.email,
+        to_email: 'terence@saramandif.com',
+        message: form.message
+      },
+      import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+    ).then(() => {
+      setisLoading(false);
+      showAlert({show: true, text: 'Message sent successfully!', type:'success'})
+      setTimeout(() => {
+        hideAlert()
+        setform({name:'', email:'', message:''});
+      }, [3000])
+    
 
-  }).catch((error) => {
-    setisLoading(false);
-    console.log(error);
-    showAlert({show: true, text: 'I didn\'t receive your message!', type:'danger'})
-  })
-};
+    }).catch((error) => {
+      setisLoading(false);
+      console.log(error);
+      showAlert({show: true, text: 'I didn\'t receive your message!', type:'danger'})
+    })
+  };
+
+  useEffect(() => {
+    document.title = 'Contact'
+  },[]);
 
   return (
     <section className='relative flex lg:flex-row flex-col max-container h-[100vh]'>

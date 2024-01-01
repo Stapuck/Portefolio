@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { skills, experiences} from '../constants'
 import SchoolTimeline from '../components/SchoolTimeline'
 import CTA from '../components/CTA';
@@ -7,6 +7,12 @@ import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timel
 import 'react-vertical-timeline-component/style.min.css';
 
 const About = () => {
+  useEffect(() => {
+    document.title = 'About me'
+  },[]);
+
+
+
   return (
     <section className="max-container">
       <h1 className="head-text">

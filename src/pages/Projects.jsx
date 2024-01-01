@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {projects} from '../constants/index'
 import { Link } from 'react-router-dom'
 import CTA from '../components/CTA'
 
 const Projects = () => {
+
+  useEffect(() => {
+    document.title = 'Projects'
+  },[]);
+
+
   return (
     <section className="max-container">
       <h1 className="head-text">
