@@ -6,3 +6,18 @@ Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+
+j'ai ajouter le module d'emailjs 
+
+de time line vertical 
+
+de compatibilité avec des icons 
+
+
+prochaine étape :
+changement de langue
+
+
+et apres 
+choix des couleurs et continuer le developpement du site via la creation de nouvelles pages et la modification des pages existantes.
