@@ -181,3 +181,18 @@ export const projects = [
         link: 'https://github.com/adrianhajdin/project_ai_summarizer',
     }
 ];
+
+export const theme_options = [
+    {
+      icon:"sunny", 
+      text:'light'
+    },
+    {
+      icon:"moon", 
+      text:'dark'
+    },
+    // {
+    //   icon:"desktop-outline", 
+    //   text:'system'
+    // }
+  ];
