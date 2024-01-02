@@ -1,0 +1,10 @@
+{
+    "welcome_to_react" : "Bienvenue ça fonctionne",
+    "test" : "J'essaye juste", 
+    "test_value" : "ça fait {{number_of_days}} jours que j'ai commencé à faire ce site. ",
+    "project" : {
+        "t" : "My Projects fr",
+        "e" : "test fr"
+
+    }
+}

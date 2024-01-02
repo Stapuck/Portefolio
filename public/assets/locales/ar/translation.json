@@ -1,0 +1,10 @@
+{
+    "welcome_to_react" : "test ar",
+    "test" : "J'essaye juste ar", 
+    "test_value" : "ça fait {{number_of_days}} jours que j'ai commencé à faire ce site. ar",
+    "project" : {
+        "t" : "My Projects arr",
+        "e" : "test ar"
+
+    }
+}

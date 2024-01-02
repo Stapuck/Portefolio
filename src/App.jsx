@@ -1,24 +1,23 @@
-import {Route, BrowserRouter as Router, Routes} from 'react-router-dom';
-import { Home, About, Projects, Extras, Contact} from './pages';
+import {Route, BrowserRouter as Router, Routes} from 'react-router-dom'
+import { Home, About, Projects, Extras, Contact} from './pages'
+import { useTranslation } from "react-i18next"
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ThemeMode from './components/ThemeMode';
 
 const App = () => { 
+  const { t } = useTranslation()
   return (
     <main className='bg-slate-200/50 dark:bg-black-500 h-full duration-1000'> 
-      <ThemeMode/>  
-
+      <ThemeMode/> 
       <Router>
         <Navbar/>
 
-
-
-
-
-        
+      
         <Routes>
+
+
          <Route path='/' element={<Home/>}/>
          <Route path='/about' element={<About/>}/>
          <Route path='/projects' element={<Projects/>}/>
@@ -27,8 +26,11 @@ const App = () => {
         </Routes>
       </Router>
 
+        
+        
+        
 
-      {/* <Footer/> */}
+      <Footer/>
     </main>
   
   )
