@@ -2,6 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
+
   return (
     <header className='header'>
         <NavLink to='/' className="w-10 h-10 rounded-lg bg-white items-center justify-center flex font-bold shadow-md" >
@@ -21,6 +22,15 @@ const Navbar = () => {
             <NavLink to='/contact' className={({isActive})=> isActive ? 'text-blue-500' : 'text-black'}>
                 Contact
             </NavLink>
+
+            {/* <select name="lg" id="lg"
+                onChange={change}
+            >
+                <option value="en">en</option>
+                <option value="fr">fr</option>
+            </select> */}
+
+
         </nav>
     </header>
   )

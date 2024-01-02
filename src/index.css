@@ -9,6 +9,10 @@
   --green-rgb: 125 161 35;
 }
 
+* {
+  @apply transition-colors duration-200;
+}
+
 body {
   font-family: "Work Sans", sans-serif;
 }
