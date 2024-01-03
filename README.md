@@ -40,7 +40,7 @@ choix des couleurs et continuer le developpement du site via la creation de nouv
     </thead>
     <tbody>
       <tr>
-        <th>0.2</th>
+        <td>0.2</td>
         <td>Création du projet & Setup react / vite et dépendences</td>
         <td></td>
       </tr>
@@ -48,7 +48,7 @@ choix des couleurs et continuer le developpement du site via la creation de nouv
         <th>Ligne 2</th>
         <td>Donnée 2-1</td>
         <td>Donnée 2-2</td>
-        <td>Donnée 2-3</td>
+        
         <!-- Ajoutez d'autres cellules de données pour la deuxième ligne au besoin -->
       </tr>
       <!-- Ajoutez d'autres lignes au besoin -->
