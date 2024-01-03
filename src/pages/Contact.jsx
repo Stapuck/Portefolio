@@ -3,7 +3,14 @@ import emailjs from '@emailjs/browser'
 import useAlert from '../hooks/useAlert';
 import Alert from '../components/Alert';
 
+import { useTranslation } from "react-i18next"
+
+  
+
 const Contact = () => {
+
+  const { t } = useTranslation()
+
   const formRef = useRef(null);
   const [form, setform] = useState({name:'', email:'', message:''});
   const [isLoading, setisLoading] = useState(false);
@@ -13,10 +20,6 @@ const Contact = () => {
   const handleChange = (e) => {
     setform({...form, [e.target.name]: e.target.value});
   };
-
-  const handleFocus = () => {};
-
-  const handleBlur = () => {};
 
   const handleSubmit =(e) => {
     e.preventDefault();
@@ -48,26 +51,33 @@ const Contact = () => {
     })
   };
 
+
+
   useEffect(() => {
     document.title = 'Contact'
   },[]);
 
   return (
+    // TODO: ici pour la gestion des elements sur la page 
     <section className='relative flex lg:flex-row flex-col max-container h-[100vh]'>
+
       {alert.show && <Alert {...alert}/>}
-      {/* <Alert {...alert}/> */}
+     
+
       <div className='fex-1 min-w-[50%] flex flex-col'>
-        <h1 className='head-text'>
-          Get in Touch
+        <h1 className='head-text dark:text-slate-200'>
+          {t('Contact.in_touch')}
         </h1>
+        <p>sponsor ou professionnel vous pouvez me contacter si dessous </p>
+
       </div>
 
       <form 
       className="w-full flex flex-col gap-7 mt-14"
       onSubmit={handleSubmit}
       >
-        <label className="text-black-500 font-semibold">
-          Name
+        <label className="text-black-500 font-semibold dark:text-slate-200">
+        {t('Contact.name')}
           <input 
             type="text"
             name='name' 
@@ -76,13 +86,11 @@ const Contact = () => {
             required
             value={form.name}
             onChange={handleChange}
-            onFocus={handleFocus}
-            onBlur={handleBlur}
             />
         </label>
 
-        <label className="text-black-500 font-semibold">
-          Email
+        <label className="text-black-500 font-semibold dark:text-slate-200">
+        {t('Contact.email')}
           <input 
             type="email"
             name='email' 
@@ -91,13 +99,11 @@ const Contact = () => {
             required
             value={form.email}
             onChange={handleChange}
-            onFocus={handleFocus}
-            onBlur={handleBlur}
             />
         </label>
 
-        <label className="text-black-500 font-semibold">
-          Your Message
+        <label className="text-black-500 font-semibold dark:text-slate-200">
+        {t('Contact.message')}
           <textarea 
             name='message' 
             rows={4}
@@ -106,17 +112,13 @@ const Contact = () => {
             required
             value={form.message}
             onChange={handleChange}
-            onFocus={handleFocus}
-            onBlur={handleBlur}
             />
         </label>
 
         <button 
           type='submit'
-          className='btn'
+          className='btn dark:text-black'
           disabled ={isLoading}
-          onFocus={handleFocus}
-          onBlur={handleBlur}
         >
           {isLoading ? 'Sending...' : 'Send Message'}
         </button>

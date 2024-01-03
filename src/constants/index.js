@@ -190,15 +190,11 @@ export const theme_options = [
     {
       icon:"moon", 
       text:'dark'
-    },
-    // {
-    //   icon:"desktop-outline", 
-    //   text:'system'
-    // }
-  ];
+    }
+];
 
 
-  export const sport = [
+export const sport = [
     {
         title: "Test 1",
         company_name: "Starbucks",
@@ -251,4 +247,25 @@ export const theme_options = [
             "Participating in code reviews and providing constructive feedback to other developers.",
         ],
     },
+];
+
+export const languages = [
+    {
+      code: 'fr',
+      name: 'Français',
+      country_code: 'fr',
+      dir: 'ltr'
+    },
+    {
+      code: 'en',
+      name: 'English',
+      country_code: 'gb',
+      dir: 'ltr'
+    },
+    {
+      code: 'ar',
+      name: 'Arabic',
+      country_code: 'sa',
+      dir: 'rtl'
+    }
 ];

@@ -1,10 +1,43 @@
 {
     "welcome_to_react" : "Bienvenue ça fonctionne",
     "test" : "J'essaye juste", 
-    "test_value" : "ça fait {{number_of_days}} jours que j'ai commencé à faire ce site. ",
+    "test_value" : "ça fait {{number_of_days_building}} jours que j'ai commencé à faire ce site. ",
+    "test_value2" : " {{number_of_days_release}} jours avant la mise en ligne.",
     "project" : {
         "t" : "My Projects fr",
         "e" : "test fr"
+
+    },
+    "Navlink" : {
+        "about" : "A Propos",
+        "contact" : "Contact",
+        "project" : "Projets",
+        "extra" : "Bonus"
+    },
+    "Home" : {
+
+    },
+    "About" : {
+        
+    },
+    "Sport" : {
+        
+    },
+    "School" : {
+        
+    },
+    "Project" : {
+        
+    },
+    "Contact" : {
+        "in_touch" : "Entrez en contact",
+        "name" : "Nom",
+        "email" : "Email",
+        "message" : "Votre Message"
+    },
+    "CTA" : {
+        "CTA1" : "Un projet en tête ?  ",
+        "CTA2" : "Allons construire quelquechose ensemble"
 
     }
 }

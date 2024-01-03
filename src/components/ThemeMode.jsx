@@ -19,7 +19,8 @@ const ThemeMode = () => {
 
   return (
     <section>
-      <div className='fixed z-50 top-20 right-20 rounded-2xl dark:bg-slate-700 bg-slate-300 duration-1000'> 
+      <div > 
+      {/* <div className='fixed z-50 top-20 right-20 rounded-2xl dark:bg-slate-700 bg-slate-300 '>  */}
         { theme_options?.map((th_opt) => (
           <button 
             key = {th_opt.text}

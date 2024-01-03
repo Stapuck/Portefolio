@@ -2,7 +2,7 @@ import React from 'react'
 
 const Extras = () => {
   return (
-    <div>Extras</div>
+    <div className='relative flex lg:flex-row flex-col max-container h-[100vh]'>Extras</div>
   )
 }
 

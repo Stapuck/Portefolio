@@ -1,11 +1,43 @@
 {
     "welcome_to_react" : "Hello it works",
     "test" : "I am just trying", 
-    "test_value" : "it's been {{number_of_days}} days since  I started this website  ",
+    "test_value" : "it's been {{number_of_days_building}} days since I began this website. ",
+    "test_value2" : " {{number_of_days_release}} days before going online ",
     "project" : {
         "t" : "My Projects en",
         "e" : "test en"
+    },
+    "Navlink" : {
+        "about" : "About",
+        "contact" : "Contact",
+        "project" : "Projects",
+        "extra" : "Extras"
+    },
+    "Home" : {
 
+    },
+    "About" : {
+        
+    },
+    "Sport" : {
+        
+    },
+    "School" : {
+        
+    },
+    "Project" : {
+        
+    },
+    "Contact" : {
+        "in_touch" : "Get in Touch",
+        "name" : "Name",
+        "email" : "Email",
+        "message" : "Your Message"
+    },
+    "CTA" : {
+        "CTA1" : "Have a project in mind ? ",
+        "CTA2" : "Let's build something together !"
     }
+
 
 }
