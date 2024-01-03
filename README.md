@@ -21,3 +21,37 @@ changement de langue
 
 et apres 
 choix des couleurs et continuer le developpement du site via la creation de nouvelles pages et la modification des pages existantes.
+
+<h1>Version du projet</h1>
+
+<!-- <h2></h2> -->
+
+<p>personnellement engagé dans une politique de non regression durant l'entiereté du projet</p>
+
+
+
+<table>
+    <thead>
+      <tr>
+        <th>Numéro de version</th>
+        <th>Description</th>
+        <th>état actuelle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>0.2</th>
+        <td>Création du projet & Setup react / vite et dépendences</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>Ligne 2</th>
+        <td>Donnée 2-1</td>
+        <td>Donnée 2-2</td>
+        <td>Donnée 2-3</td>
+        <!-- Ajoutez d'autres cellules de données pour la deuxième ligne au besoin -->
+      </tr>
+      <!-- Ajoutez d'autres lignes au besoin -->
+    </tbody>
+  </table>
+
