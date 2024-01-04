@@ -5,6 +5,7 @@ import { Home, About, Projects, Extras, Contact, Sport, School} from './pages'
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ThemeMode from './components/ThemeMode';
+import NotFound from './components/NotFound';
 // import LanguagesBtn from './components/LanguagesBtn';
 
 
@@ -38,6 +39,8 @@ const App = () => {
          <Route path='/projects' element={<Projects/>}/> {/* util ?  */}
          <Route path='/extras' element={<Extras/>}/> {/* pas besoin  */}
          <Route path='/contact' element={<Contact/>}/>
+         <Route path='/*' element={<NotFound/>}/>
+
         </Routes>
       </Router>
 

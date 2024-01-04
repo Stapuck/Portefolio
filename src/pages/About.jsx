@@ -13,6 +13,15 @@ const About = () => {
 
   return (
     <section className="max-container">
+
+      <h1 className='head-text justify-center'>Un double project</h1>
+
+      <div>
+        <h2>Sportif</h2>
+        <h2>Professionnel </h2>
+      </div>
+
+
       
 
       

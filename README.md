@@ -40,18 +40,45 @@ choix des couleurs et continuer le developpement du site via la creation de nouv
     </thead>
     <tbody>
       <tr>
-        <td>0.2</td>
+        <td>1.0</td>
         <td>Création du projet & Setup react / vite et dépendences</td>
         <td></td>
       </tr>
       <tr>
-        <th>Ligne 2</th>
-        <td>Donnée 2-1</td>
-        <td>Donnée 2-2</td>
-        
-        <!-- Ajoutez d'autres cellules de données pour la deuxième ligne au besoin -->
+        <th>1.1</th>
+        <td>Création du form contact et ajout du service mail (emailjs)</td>
+        <td></td>
       </tr>
-      <!-- Ajoutez d'autres lignes au besoin -->
+      <tr>
+        <th>1.2</th>
+        <td>Ajout d'un composant changement du theme des pages (Darkmode/Lightmode)</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>1.3</th>
+        <td>Création d'un composant pour le service de traduction (i18next) </td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>1.4</th>
+        <td>Ajout d'un composant timeline pour les timelines lié au expérience pro et expérience sportive</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>1.5</th>
+        <td>gestion page not found / btnbacktoTop et optimisation code</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>1.6</th>
+        <td>implémentation d'icone et image (still in progress), gestion de la timelines</td>
+        <td>version actuelle</td>
+      </tr>
+      <tr>
+        <th>1.7</th>
+        <td>faire l'autre timeline (ou timeline argument), revoir backtotop, integration de video et gestion telechargement pdf</td>
+        <td>Prochaine étape</td>
+      </tr>
     </tbody>
   </table>
 

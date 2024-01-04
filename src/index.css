@@ -25,8 +25,10 @@ body:has(.card[data-color="green"]:hover) {
   background-color: rgb(var(--green-rgb) / 25%);
 }
 
+
 @layer utilities {
   .max-container {
+    /* TODO: revoir max-w actuel 64 -> 96 */
     @apply max-w-5xl mx-auto sm:p-16 pb-12 !pt-[126px] px-8 min-h-[calc(100vh-80px)];
   }
 

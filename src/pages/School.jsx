@@ -4,12 +4,12 @@ import SchoolTimeline from '../components/SchoolTimeline';
 import CTA from '../components/CTA';
 
 import { skills } from '../constants';
+import BacktoTopBtn from '../components/BacktoTopBtn';
 
 const School = () => {
   return (
     <section className="max-container">
-      <div>School</div>
-
+  
       <div className="py-10 flex flex-col">
         <h3 className="subhead-text">
           Work Experience
@@ -20,7 +20,9 @@ const School = () => {
           </p>
         </div>  
 
+        <div className="mt-12 flex">
         <SchoolTimeline/>
+        </div>
 
 
         <div className="py-10 flex flex-col">
@@ -33,23 +35,26 @@ const School = () => {
           <div className='block-container w-20 h-20'>
             <div className='btn-back rounded-xl'/>
           <div className='btn-front rounded-xl flex flex-col justify-center items-center'>
-            <p> {skill.name}</p>
-            <p>{skill.type}</p>
-            {/* <img 
+            {/* <p> {skill.name}</p> */}
+            {/* <p>{skill.type}</p> */}
+            <img 
              src={skill.imageUrl} 
              alt={skill.name} 
              className='w-1/2 h-1/2 object-contain'
-             />  */}
+             /> 
           </div>
          </div>
         ))}
         </div>
       </div>
 
+      <div>
+        <BacktoTopBtn/>
+      </div>
+
       
 
       <hr className='dark:border-slate-100 border-slate-700 mt-5'/>
-
       <CTA/>
 
       </div>
