@@ -30,10 +30,10 @@ const Projects = () => {
             <div className='block-container w-12 h-12'>
               <div className={`btn-back rounded-xl ${project.theme}`}/>
               <div className='btn-front rounded-xl flex justify-center items-center'>
-                {/* <img src={project.iconUrl} 
+                <img src={project.iconUrl} 
                 alt="Projet Icon" 
                 className='w-1/2 h-1/2 object-contain'
-                />*/}
+                />
               </div> 
             </div>
 
@@ -45,14 +45,11 @@ const Projects = () => {
                 to={project.link}
                 target='_blank'
                 rel='noopener noreferrer'
-                className='font-semibold text-blue-600'
+                className='font-semibold text-blue-600 flex flex-row'
                 >
                   Live Link
+                  <div className='ml-2 text-xl' ><ion-icon name="arrow-forward-outline"></ion-icon></div>
                 </Link>
-                {/* <img src="{arrow}" 
-                alt="arrow"
-                className='w-4 h-4 object-contain' 
-                /> */}
               </div>
 
             </div>

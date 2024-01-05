@@ -19,6 +19,7 @@ const Footer = () => {
   const num_version =import.meta.env.VITE_APP_VERSION;
   const date_version =import.meta.env.VITE_APP_VERSION_DATE;
   const owner = import.meta.env.VITE_APP_OWNER;
+  // version dans le package.json
 
 
   return (

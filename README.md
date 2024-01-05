@@ -8,25 +8,18 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 
-j'ai ajouter le module d'emailjs 
+<hr>
+tout au dessus degage 
 
-de time line vertical 
+que anglais ici
 
-de compatibilité avec des icons 
-
-
-prochaine étape :
-changement de langue
-
-
-et apres 
-choix des couleurs et continuer le developpement du site via la creation de nouvelles pages et la modification des pages existantes.
 
 <h1>Version du projet</h1>
 
 <!-- <h2></h2> -->
 
 <p>personnellement engagé dans une politique de non regression durant l'entiereté du projet</p>
+<p> si conseil ou idée d'optinisation pour etre dans les bonnes pratique je suis preneur merci </p>
 
 
 
@@ -72,13 +65,30 @@ choix des couleurs et continuer le developpement du site via la creation de nouv
       <tr>
         <th>1.6</th>
         <td>implémentation d'icone et image (still in progress), gestion de la timelines</td>
-        <td>version actuelle</td>
+        <td></td>
       </tr>
       <tr>
         <th>1.7</th>
-        <td>faire l'autre timeline (ou timeline argument), revoir backtotop, integration de video et gestion telechargement pdf</td>
+        <td>faire l'autre timeline (ou timeline argument), revoir backtotop,  et gestion telechargement pdf</td>
+        <td>version actuelle</td>
+      </tr>
+      <tr>
+        <th>1.8</th>
+        <td>integration de video, faire un carroussel ou au moins positionnée des images, tentative animation with scroll </td>
         <td>Prochaine étape</td>
       </tr>
     </tbody>
   </table>
+
+
+<h1> depence installé lors du projet </h1>
+
+<p>(emailjs, tailwinds,react-vertical-timeline-component, i18next, react-router-dom)</p>
+
+
+  <ul>
+  <li>test1</li>
+  <li>test2</li>
+  <li>test3</li>
+  </ul>
 

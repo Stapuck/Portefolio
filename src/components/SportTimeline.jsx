@@ -12,20 +12,25 @@ const SportTimeline = () => {
     <VerticalTimeline>
       {sport.map((sp)=> (
         <VerticalTimelineElement
-          key={sp.company_name}
-          date={sp.date}
-          // icon={<div className='flex justify-center items-center w-full h-full'>
-          //   <img src={sp.icon} 
-          //   alt={sp.company_name}
-          //   className='w-[60%] h-[60%] object-contain' />
-          // </div>}
-          // iconStyle={{ backgroung: sp.iconBg }}
-          contentStyle={{
-            borderBottom: '8px',
-            borderStyle: 'solide',
-            // borderBottomColor: sp.iconBg,
-            boxShadow: 'none',
-          }}
+        key={sp.company_name}
+        date={sp.date}
+        icon=
+        {
+          <div className='flex justify-center items-center w-full h-full '>
+            <img 
+            src={sp.icon} 
+            alt={sp.company_name} 
+            className='w-[60%] h-[60%] object-contain'
+            />
+          </div>
+        } 
+        iconStyle={{ background: sp.iconBg}}
+        contentStyle={{
+          borderBottom: '8px',
+          borderStyle: 'solid',
+          borderBottomColor: sp.iconBg,
+          boxShadow: 'none'
+        }}
         >
           <div>
             <h3 className='text-black tect-xl font-poppins font-semibold'>

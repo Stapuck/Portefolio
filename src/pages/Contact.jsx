@@ -69,6 +69,7 @@ const Contact = () => {
           {t('Contact.in_touch')}
         </h1>
         <p>sponsor ou professionnel vous pouvez me contacter si dessous </p>
+        <p>non serieux s'abstenir</p>
 
       </div>
 

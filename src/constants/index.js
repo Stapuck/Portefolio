@@ -30,6 +30,16 @@ import {
     tripguide,
 } from "../assets";
 
+import {
+    test1,
+    test2,
+    test3,
+    imgtest1,
+    imgtest2,
+    imgtest3,
+
+} from '../assets'
+
 
 
 export const skills = [
@@ -235,11 +245,17 @@ export const theme_options = [
 
 
 export const sport = [
+
+    // TODO : 
+    // mettre logo du pays ou à eu lieu la course 
+    // rajouter propriété lieu
+    // poids des image à revoir
+
     {
         title: "Test 1",
         company_name: "Starbucks",
-        // icon: starbucks,
-//         iconBg: "#accbe1",
+        icon: starbucks,
+        iconBg: "#accbe1",
         date: "March 2020 - April 2021",
         points: [
             "Developing and maintaining web applications using React.js and other related technologies.",
@@ -251,8 +267,8 @@ export const sport = [
     {
         title: "test 2 ",
         company_name: "Tesla",
-        // icon: tesla,
-        // iconBg: "#fbc3bc",
+        icon: tesla,
+        iconBg: "#fbc3bc",
         date: "Jan 2021 - Feb 2022",
         points: [
             "Developing and maintaining web applications using React.js and other related technologies.",
@@ -264,8 +280,8 @@ export const sport = [
     {
         title: "Web Developer",
         company_name: "Shopify",
-        // icon: shopify,
-        // iconBg: "#b7e4c7",
+        icon: shopify,
+        iconBg: "#b7e4c7",
         date: "Jan 2022 - Jan 2023",
         points: [
             "Developing and maintaining web applications using React.js and other related technologies.",
@@ -277,8 +293,8 @@ export const sport = [
     {
         title: "Full stack Developer",
         company_name: "Meta",
-        // icon: meta,
-        // iconBg: "#a2d2ff",
+        icon: meta,
+        iconBg: "#a2d2ff",
         date: "Jan 2023 - Present",
         points: [
             "Developing and maintaining web applications using React.js and other related technologies.",
@@ -288,6 +304,29 @@ export const sport = [
         ],
     },
 ];
+
+export const competition = [
+    {
+        id: 0,
+        title: "Test 1",
+        type: "world champ",
+        date: "March 2020 - April 2020",
+        place: "fra",
+        done: true, // if done true afficher  result if done = false afficher "in coming "
+        result: 12
+
+    },
+    {
+        id: 1,
+        title: "Test 2",
+        type: "World cup",
+        date: "March 2021 - April 2021",
+        place: "fra",
+        done: false, // if done true afficher  result if done = false afficher "in coming "
+        result: "12"
+
+    }
+]
 
 export const languages = [
     {
@@ -309,3 +348,42 @@ export const languages = [
       dir: 'rtl'
     }
 ];
+
+export const quickview = [
+    {
+        id: 1,
+        title: "test1",
+        pdf: test1,
+        // image: imgtest1, 
+        image: meta, 
+        color: "green-400"
+
+    },
+    {
+        id: 2,
+        title: "test2",
+        pdf: test2,
+        image: starbucks, 
+        // image: imgtest2, 
+        color: "blue-400"
+
+    },
+    {
+        id: 3,
+        title: "test3",
+        pdf: test3,
+        // image: imgtest3, 
+        image: shopify, 
+        color: "orange-400"
+
+    },
+    // {
+    //     id: 4,
+    //     title: "test4",
+    //     pdf: test3,
+    //     // image: imgtest3, 
+    //     image: tesla, 
+    //     color: ""
+
+    // },
+]

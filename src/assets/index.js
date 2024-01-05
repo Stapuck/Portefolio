@@ -31,6 +31,13 @@ import carrent from "./others/carrent.png";
 import jobit from "./others/jobit.png";
 import tripguide from "./others/tripguide.png";
 
+import test1 from "./PDF/test.pdf"
+import test2 from "./PDF/test2.pdf"
+import test3 from "./PDF/test3.pdf"
+import imgtest1 from "./others/test1.png"
+import imgtest2 from "./others/test2.png"
+import imgtest3 from "./others/test3.png"
+
 export {
   meta, 
   shopify,
@@ -63,4 +70,13 @@ export {
   carrent,
   jobit,
   tripguide,
+
+  test1,
+  test2,
+  test3,
+  imgtest1,
+  imgtest2,
+  imgtest3,
+
+
 };

@@ -29,14 +29,12 @@ const BacktoTopBtn = () => {
 
 
   return (
-        <div className='fixed bottom-24 right-28 '>
+        <div className='fixed bottom-24 right-28 text-7xl dark:text-white'>
             {BacktoTopBtn && (
             <button 
             onClick={scrollUp}
-            className=''
             >
-                ^
-                {/* mettre une icone */}
+                <ion-icon className="text-xl" name="arrow-up-circle-outline"></ion-icon>
             </button>)}
         </div>
   )

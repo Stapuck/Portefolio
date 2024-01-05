@@ -1,26 +1,39 @@
 import React from 'react'
+import test1 from '../assets/PDF/test.pdf'
+
+import { quickview } from '../constants'
 
 const QuickView = () => {
+
+  
+ 
+  // peut être que 2 docs et non 3 
   return (
-    <section className='border-2 border-black p-3 m-4 rounded-xl bg-pink-400/50'>
+    <section className='border-2 border-black p-3 m-4 rounded-xl bg-red-400/80'>
         <h1 className='text-2xl flex justify-center items-center m-2 '>Quick View </h1>
         <div className='grid md:grid-cols-3 gap-4'>
-          <div className='border-2 border-black bg-green-400 rounded-xl flex flex-col items-center'>
-            <div>
-              PressBook 
+          {quickview.map((qv) => (
+            <div key={qv.title} className={`bg-${qv.color} border-2 border-black  rounded-xl flex flex-col items-center`}>
+              <div className='flex justify-center items-center w-full h-full '>
+                <img 
+                src= {qv.image} 
+                alt={qv.title}
+                className='h-[60%] w-[60%] object-contain' />
+              </div>
+              <a 
+                href={qv.pdf} 
+                download={qv.title}
+                className=' text-xl flex flex-row mb-2'>
+                  {qv.title}
+                  <div 
+                    className='ml-2 text-2xl'
+                  >
+                    <ion-icon name="download-outline"></ion-icon>
+                  </div>
+              </a>
+              
             </div>
-             <div className='w-full border-t-2 border-black flex justify-center'>btn</div>
-          </div>
-          <div className='border-2 border-black bg-blue-400 rounded-xl flex flex-col items-center'>
-            <div>
-              CV
-            </div>
-            <div className='w-full border-t-2 border-black flex justify-center'>btn</div>
-          </div>
-          <div className='border-2 border-black bg-orange-400 rounded-xl flex flex-col items-center'>
-            <div> ?? </div>
-            <div className='w-full border-t-2 border-black flex justify-center'>btn</div>
-          </div>
+          ))}
         </div>
       </section>
   )
