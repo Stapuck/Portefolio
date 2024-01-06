@@ -1,10 +1,131 @@
 import React from 'react'
-import { competition } from '../constants'
+import { competitions } from '../constants'
+import { Card, Typography } from "@material-tailwind/react";
+ 
+const TABLE_HEAD = [ "title", "type", "startdate", "enddate", "place",  "result"];
+// "done",
 
 const Competition = () => {
   return (
     <section>
-        <div className='flex justify-center mb-4 underline font-semibold text-xl'>Competition :</div>
+
+        <div className='flex justify-center'>Compétition</div>
+        <Card className="h-full w-full overflow-scroll">
+            <table className="w-full min-w-max table-auto text-left">
+                <thead>
+                <tr>
+                    {TABLE_HEAD.map((head) => (
+                    <th
+                        key={head}
+                        className="border-b border-blue-gray-100 bg-blue-gray-50 p-4"
+                    >
+                        <Typography
+                        variant="small"
+                        color="blue-gray"
+                        className="font-normal leading-none opacity-70 "
+                        >
+                        {head}
+                        </Typography>
+                    </th>
+                    ))}
+                </tr>
+                </thead>
+                <tbody>
+                {competitions.map(({ id, title, startdate, enddate, result, type, place, done }, index) => {
+                    const isLast = index === competitions.length - 1;
+                    const classes = isLast ? "p-4" : "p-4 border-b border-blue-gray-50 ";
+                    const rowClasses = index % 2 === 0 ? "bg-blue-200" : "bg-green-200";
+        
+                    return (
+                    <tr key={id}  className={rowClasses}>
+                        <td className={classes}>
+                        <Typography
+                            variant="small"
+                            color="blue-gray"
+                            className="font-normal"
+                        >
+                            {title}
+                        </Typography>
+                        </td>
+                        <td className={classes}>
+                        <Typography
+                            variant="small"
+                            color="blue-gray"
+                            className="font-normal"
+                        >
+                            {type}
+                        </Typography>
+                        </td>
+                        <td className={classes}>
+                        <Typography
+                            variant="small"
+                            color="blue-gray"
+                            className="font-normal"
+                        >
+                            {startdate}
+                        </Typography>
+                        </td>
+                        <td className={classes}>
+                        <Typography
+                            variant="small"
+                            color="blue-gray"
+                            className="font-normal"
+                        >
+                            {enddate}
+                        </Typography>
+                        </td>
+                        <td className={classes}>
+                        <Typography
+                            variant="small"
+                            color="blue-gray"
+                            className="font-normal"
+                        >
+                            {place}
+                        </Typography>
+                        </td>
+                        {/* <td className={classes}>
+                        <Typography
+                            variant="small"
+                            color="blue-gray"
+                            className="font-normal"
+                        >
+                            {done === true ? "yes" : "not yet"}
+                        </Typography>
+                        </td> */}
+                        {done === true ?  <td className={classes}>
+                        <Typography
+                            variant="small"
+                            color="blue-gray"
+                            className="font-normal"
+                        >
+                            {result}
+                        </Typography>
+                        </td>  :  <td>Coming soon</td> }
+                        
+                    </tr>
+                    );
+                })}
+                </tbody>
+            </table>
+            </Card>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        {/* <div className='flex justify-center mb-4 underline font-semibold text-xl'>Competition :</div>
 
 
         <div className='flex justify-center'>
@@ -30,7 +151,7 @@ const Competition = () => {
         ))}
             </tbody>
         </table>
-        </div>
+        </div> */}
         
 
     
@@ -39,3 +160,10 @@ const Competition = () => {
 }
 
 export default Competition
+
+
+
+
+ 
+
+ 

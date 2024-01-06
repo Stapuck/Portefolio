@@ -13,7 +13,7 @@ import NotFound from './components/NotFound';
 
 const App = () => { 
   return (
-    <main className='bg-slate-300 dark:bg-black-500 h-full duration-1000'> 
+    <main className='bg-slate-300 dark:bg-black-500 h-full'> 
       
        {/*TODO: decider si acces sur tous le site ou juste sur home  */}
        {/*TODO: savoir pourquoi le changement de sens que sur home  */}
@@ -44,6 +44,11 @@ const App = () => {
         </Routes>
       </Router>
 
+
+      {/* <noscript>
+        revoir ce que je met dedans !!!
+        <a href="https://www.mozilla.org/">Lien externe</a>
+      </noscript> */}
       <Footer/>
     </main>
   

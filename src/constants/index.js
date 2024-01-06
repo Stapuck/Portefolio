@@ -305,14 +305,15 @@ export const sport = [
     },
 ];
 
-export const competition = [
+export const competitions = [
     {
         id: 0,
         title: "Test 1",
         type: "world champ",
-        date: "March 2020 - April 2020",
+        startdate: "March 2020",
+        enddate: "April 2020",
         place: "fra",
-        done: true, // if done true afficher  result if done = false afficher "in coming "
+        done: true, 
         result: 12
 
     },
@@ -320,12 +321,13 @@ export const competition = [
         id: 1,
         title: "Test 2",
         type: "World cup",
-        date: "March 2021 - April 2021",
+        startdate: "March 2021",
+        enddate: "April 2021",
         place: "fra",
-        done: false, // if done true afficher  result if done = false afficher "in coming "
+        done: false, 
         result: "12"
 
-    }
+    },
 ]
 
 export const languages = [
