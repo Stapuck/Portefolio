@@ -48,9 +48,7 @@ const School = () => {
         </div>
       </div>
 
-      <div>
-        <BacktoTopBtn/>
-      </div>
+   
 
       
 

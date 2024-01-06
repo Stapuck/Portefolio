@@ -23,7 +23,6 @@ const BacktoTopBtn = () => {
             top : 0, 
             behavior: 'smooth'
         })
-        console.log(window.scrollY.valueOf())
 
     }
 

@@ -1,11 +1,12 @@
 import {Route, BrowserRouter as Router, Routes} from 'react-router-dom'
-import { Home, About, Projects, Extras, Contact, Sport, School} from './pages'
+import { Home, About, Projects, Extras, Contact, Sport, School,VideoTest} from './pages'
 
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ThemeMode from './components/ThemeMode';
 import NotFound from './components/NotFound';
+import BacktoTopBtn from './components/BacktoTopBtn';
 // import LanguagesBtn from './components/LanguagesBtn';
 
 
@@ -27,10 +28,8 @@ const App = () => {
      
     
 
-      <Router>
-        
+      <Router>        
         <Navbar/>
-      
         <Routes>
          <Route path='/' element={<Home/>}/>
          <Route path='/about' element={<About/>}/>  {/*  transformer en school   */}
@@ -39,19 +38,20 @@ const App = () => {
          <Route path='/projects' element={<Projects/>}/> {/* util ?  */}
          <Route path='/extras' element={<Extras/>}/> {/* pas besoin  */}
          <Route path='/contact' element={<Contact/>}/>
+         <Route path='/video' element={<VideoTest/>}/>
          <Route path='/*' element={<NotFound/>}/>
-
         </Routes>
       </Router>
+
+      <BacktoTopBtn/>
 
 
       {/* <noscript>
         revoir ce que je met dedans !!!
         <a href="https://www.mozilla.org/">Lien externe</a>
       </noscript> */}
-      <Footer/>
+      {/* <Footer/> */}
     </main>
-  
   )
 }
 

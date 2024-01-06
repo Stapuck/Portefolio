@@ -22,13 +22,14 @@ const About = () => {
       </div>
 
 
+
       
 
       
 
       <hr className='dark:border-slate-100 border-slate-700 mt-5'/>
 
-      <CTA/>
+       <CTA/>
     </section>
   )
 }

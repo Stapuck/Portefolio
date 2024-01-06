@@ -2,93 +2,99 @@
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Project Description :
 
-
-<hr>
-tout au dessus degage 
-
-que anglais ici
+This project has 2 purposes, first learning React and then having a Portefolio for my professional (and athlete) career.
 
 
-<h1>Version du projet</h1>
 
-<!-- <h2></h2> -->
 
-<p>personnellement engagé dans une politique de non regression durant l'entiereté du projet</p>
-<p> si conseil ou idée d'optinisation pour etre dans les bonnes pratique je suis preneur merci </p>
+
+# Project Version :
+
+you will find in here, the differente version of the project and what does it mean, what specifics changes have been done between two versions. 
+
+I am personally committed to a policy of non-regression throughout the entire project. So if a module disappear, it's because it wasn't usefull.
+
+N.B : if you have any Tips/Advices to integrate better practice or to improve my code, let me know !!!
 
 
 
 <table>
     <thead>
       <tr>
-        <th>Numéro de version</th>
+        <th>Version number</th>
         <th>Description</th>
-        <th>état actuelle</th>
+        <th>State</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td>1.0</td>
-        <td>Création du projet & Setup react / vite et dépendences</td>
+        <td>Création of the project & Setup React/Vite and dependencies</td>
         <td></td>
       </tr>
       <tr>
         <th>1.1</th>
-        <td>Création du form contact et ajout du service mail (emailjs)</td>
+        <td>Création of the first pages : Contact-form with emailjs</td>
         <td></td>
       </tr>
       <tr>
         <th>1.2</th>
-        <td>Ajout d'un composant changement du theme des pages (Darkmode/Lightmode)</td>
+        <td>Add ThemeMode, a component to switch between the theme of the screen (Darkmode/Lightmode) (not integrated on the whole website yet)</td>
         <td></td>
       </tr>
       <tr>
         <th>1.3</th>
-        <td>Création d'un composant pour le service de traduction (i18next) </td>
+        <td>Add LanguagesBtn, a component to switch between the Locales to translate the website, with i18next (not integrated on the whole website yet). Only French and English will be used for now  </td>
         <td></td>
       </tr>
       <tr>
         <th>1.4</th>
-        <td>Ajout d'un composant timeline pour les timelines lié au expérience pro et expérience sportive</td>
+        <td>Add 2 timeline as component for professional and sportiv part of the website</td>
         <td></td>
       </tr>
       <tr>
         <th>1.5</th>
-        <td>gestion page not found / btnbacktoTop et optimisation code</td>
+        <td> Page NotFound and error management,  optimisation of code</td>
         <td></td>
       </tr>
       <tr>
         <th>1.6</th>
-        <td>implémentation d'icone et image (still in progress), gestion de la timelines</td>
+        <td>Management of icons and some images</td>
         <td></td>
       </tr>
       <tr>
         <th>1.7</th>
-        <td>faire l'autre timeline (ou timeline argument), revoir backtotop,  et gestion telechargement pdf</td>
-        <td>version actuelle</td>
+        <td>Button backtotop to scroll back to the top of the window, download button</td>
+        <td></td>
       </tr>
       <tr>
         <th>1.8</th>
-        <td>integration de video, faire un carroussel ou au moins positionnée des images, tentative animation with scroll </td>
-        <td>Prochaine étape</td>
+        <td>Add video on the website, Carroussel with picture, Gallery and Header Video + management of button </td>
+        <td>Current Version</td>
+      </tr>
+       <tr>
+        <th>1.9</th>
+        <td> Animation with scroll,  </td>
+        <td>Next Step</td>
       </tr>
     </tbody>
   </table>
 
 
-<h1> depence installé lors du projet </h1>
+# details of the download dependencies 
 
-<p>(emailjs, tailwinds,react-vertical-timeline-component, i18next, react-router-dom)</p>
+i will continue later, but you can find everything in the file : package.js.
 
 
   <ul>
-  <li>test1</li>
-  <li>test2</li>
-  <li>test3</li>
+  <li>emailjs</li>
+  <li>tailwinds</li>
+  <li>i18next</li>
+  <li>react-icons</li>
+  <li>react-router-dom</li>
+  <li>react-vertical-timeline-component</li>
   </ul>
 

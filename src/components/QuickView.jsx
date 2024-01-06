@@ -13,7 +13,7 @@ const QuickView = () => {
         <h1 className='text-2xl flex justify-center items-center m-2 '>Quick View </h1>
         <div className='grid md:grid-cols-3 gap-4'>
           {quickview.map((qv) => (
-            <div key={qv.title} className={`bg-${qv.color} border-2 border-black  rounded-xl flex flex-col items-center`}>
+            <div key={qv.title} className={`${qv.bgcolor} border-2 border-black  rounded-xl flex flex-col items-center`}>
               <div className='flex justify-center items-center w-full h-full '>
                 <img 
                 src= {qv.image} 

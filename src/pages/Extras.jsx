@@ -3,6 +3,7 @@ import Slider from '../components/Slider'
 import Gallery from '../components/Gallery'
 import Video from '../components/Video'
 import Gallery2 from '../components/Gallery2'
+import Gallery3 from '../components/Gallery3'
 
 const Extras = () => {
   return (
@@ -24,6 +25,10 @@ const Extras = () => {
 
     <div className='p-5'>
       <Gallery2/>    
+    </div>
+    <hr className='border-2 border-black'/>
+    <div className='p-5'>
+      <Gallery3/>    
     </div>
     
 

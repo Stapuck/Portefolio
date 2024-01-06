@@ -358,7 +358,7 @@ export const quickview = [
         pdf: test1,
         // image: imgtest1, 
         image: meta, 
-        color: "green-400"
+        bgcolor: "bg-green-400",
 
     },
     {
@@ -367,7 +367,7 @@ export const quickview = [
         pdf: test2,
         image: starbucks, 
         // image: imgtest2, 
-        color: "blue-400"
+        bgcolor: "bg-blue-400",
 
     },
     {
@@ -376,7 +376,7 @@ export const quickview = [
         pdf: test3,
         // image: imgtest3, 
         image: shopify, 
-        color: "orange-400"
+        bgcolor: "bg-orange-400",
 
     },
     // {
@@ -385,7 +385,7 @@ export const quickview = [
     //     pdf: test3,
     //     // image: imgtest3, 
     //     image: tesla, 
-    //     color: ""
+    //     bgcolor: "",
 
     // },
 ]
