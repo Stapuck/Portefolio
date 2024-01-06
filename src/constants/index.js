@@ -85,7 +85,7 @@ export const skills = [
     },
     {
         imageUrl: backend , //mui
-        name: "Material-UI",
+        name: "UX/UI",
         type: "Frontend",
     },
     {
@@ -310,8 +310,8 @@ export const competitions = [
         id: 0,
         title: "Test 1",
         type: "world champ",
-        startdate: "March 2020",
-        enddate: "April 2020",
+        // startdate: "March 2020",
+        date: "07-01-2024",
         place: "fra",
         done: true, 
         result: 12
@@ -321,8 +321,8 @@ export const competitions = [
         id: 1,
         title: "Test 2",
         type: "World cup",
-        startdate: "March 2021",
-        enddate: "April 2021",
+        // startdate: "March 2021",
+        date: "06-01-2024",
         place: "fra",
         done: false, 
         result: "12"

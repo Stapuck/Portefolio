@@ -1,9 +1,14 @@
 import React from 'react'
-import SportTimeline from '../components/SportTimeline'
 import Competition from '../components/Competition'
 import Timeline from '../components/Timeline'
 
+
+
 const Sport = () => {
+
+
+
+
   return (
     <section className="max-container">
       <div>Sport</div>

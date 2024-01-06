@@ -1,8 +1,8 @@
 import React from 'react'
 import videoBg from '../assets/video/demo.mp4'
 import { useEffect, useState } from "react"
-import SportTimeline from '../components/SportTimeline';
 import BacktoTopBtn from '../components/BacktoTopBtn';
+import Timeline from '../components/Timeline';
 
 const VideoTest = () => {
     const [btnscroll, setbtnscroll] = useState(true);
@@ -56,7 +56,7 @@ const VideoTest = () => {
                 <h1 className='text-5xl font-bold '>test</h1> 
                 <p className='text-xl font-semibold'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dolor dolor, convallis sit amet elit ut, lobortis pharetra nisl. Aliquam commodo, eros eu convallis placerat, neque diam varius nunc, at luctus lorem libero vitae nibh. Donec blandit aliquam eros sed varius. Etiam blandit tellus ut turpis tempor ultricies. Ut consequat leo aliquet erat elementum ullamcorper.</p>
 
-                <SportTimeline/>
+                <Timeline type="sport"/>
                
             </div>
             <div className='fixed bottom-16  right-[50%] text-7xl text-white'>

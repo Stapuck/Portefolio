@@ -1,6 +1,5 @@
 import React from 'react'
 
-import SchoolTimeline from '../components/SchoolTimeline';
 import CTA from '../components/CTA';
 
 import { skills } from '../constants';
@@ -34,19 +33,20 @@ const School = () => {
         </h3>
       
       <div className="mt-16 flex flex-wrap gap-12 mb-5">
-        {skills.map((skill) => (
-          <div className='block-container w-20 h-20'>
+        {skills.map((skill, index) => (
+          <div key={index} className=' group block-container w-20 h-20 relative flex justify-center'>
             <div className='btn-back rounded-xl'/>
-          <div className='btn-front rounded-xl flex flex-col justify-center items-center'>
-            {/* <p> {skill.name}</p> */}
-            {/* <p>{skill.type}</p> */}
-            <img 
-             src={skill.imageUrl} 
-             alt={skill.name} 
-             className='w-1/2 h-1/2 object-contain'
-             /> 
+              <div className='btn-front rounded-xl flex flex-col justify-center items-center'>
+              <img 
+              src={skill.imageUrl} 
+              alt={skill.name} 
+              className='w-1/2 h-1/2 object-contain'
+              /> 
+            </div>
+            <div className=' hidden text-black font-semibold text-sm absolute mt-24 bg-slate-600 px-3 rounded-2xl group-hover:block'>
+              {skill.name}
+            </div>
           </div>
-         </div>
         ))}
         </div>
       </div>
@@ -59,10 +59,16 @@ const School = () => {
       </div>
 
 
-      <div className='bg-gray-200 rounded-xl py-1 my-6'>
-        <AccordionSchool title='test 1' answer='ça fonctionne correctement ? '/>
-        <AccordionSchool title='test 2' answer='ça marche ? '/>
-        <AccordionSchool title='test 3' answer='j ai pas tout pété ? '/>
+      <div className='py-1 my-6'>
+        <div className="my-2">
+        <AccordionSchool title='test 1' answer='ça fonctionne correctement ?'/>
+        </div>
+        <div className="my-2">
+        <AccordionSchool title='test 2' answer='ça marche ?'/>
+        </div>
+        <div className="my-2">
+        <AccordionSchool title='test 3' answer='j ai pas tout pété ?'/>
+        </div>
       </div>
 
    

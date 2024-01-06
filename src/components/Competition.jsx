@@ -2,12 +2,40 @@ import React from 'react'
 import { competitions } from '../constants'
 import { Card, Typography } from "@material-tailwind/react";
  
-const TABLE_HEAD = [ "title", "type", "startdate", "enddate", "place",  "result"];
+// const TABLE_HEAD = [ "title", "type", "startdate", "enddate", "place",  "result"];
+const TABLE_HEAD = [ "title", "type", "date", "place",  "result"];
 // "done",
 
 const Competition = () => {
+
+
+  let newDate = new Date()
+  let date = newDate.getDate();
+  let month = newDate.getMonth() + 1;
+  let year = newDate.getFullYear();
+ 
+  console.log(newDate);
+  console.log("div");
+  console.log(date, month, year);
+
+  const test1 = new Date().toLocaleString();
+  console.log(test1);
+
+  
+
+//    const  date_create = moment().format("DD-MM-YYYY");
+//   console.log(date_create);
+
+
+
+
+
+
   return (
     <section>
+
+
+        {/* mettre 10 lignes max  */}
 
         <div className='flex justify-center'>Compétition</div>
         <Card className="h-full w-full overflow-scroll">
@@ -31,7 +59,8 @@ const Competition = () => {
                 </tr>
                 </thead>
                 <tbody>
-                {competitions.map(({ id, title, startdate, enddate, result, type, place, done }, index) => {
+                {/* {competitions.map(({ id, title, startdate, enddate, result, type, place, done }, index) => { */}
+                {competitions.map(({ id, title, date,  result, type, place, done }, index) => {
                     const isLast = index === competitions.length - 1;
                     const classes = isLast ? "p-4" : "p-4 border-b border-blue-gray-50 ";
                     const rowClasses = index % 2 === 0 ? "bg-blue-200" : "bg-green-200";
@@ -56,7 +85,7 @@ const Competition = () => {
                             {type}
                         </Typography>
                         </td>
-                        <td className={classes}>
+                        {/* <td className={classes}>
                         <Typography
                             variant="small"
                             color="blue-gray"
@@ -64,14 +93,14 @@ const Competition = () => {
                         >
                             {startdate}
                         </Typography>
-                        </td>
+                        </td> */}
                         <td className={classes}>
                         <Typography
                             variant="small"
                             color="blue-gray"
                             className="font-normal"
                         >
-                            {enddate}
+                            {date}
                         </Typography>
                         </td>
                         <td className={classes}>
@@ -108,6 +137,19 @@ const Competition = () => {
                 </tbody>
             </table>
             </Card>
+
+
+            {/* <div>
+            <ul>
+            {competitions.map(({ id, title, date,  result, type, place, done }, index) => {
+
+               <div key={index}> 
+                    {date}
+               </div>
+                
+            })}
+            </ul>
+            </div> */}
 
 
 

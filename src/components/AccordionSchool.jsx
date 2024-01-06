@@ -7,19 +7,9 @@ import {
 
 const AccordionSchool = ({title, answer}) => {
     const [accordionOpen, setaccordionOpen] = useState(false)
-
-    // const Accordion = () => {
-
-    // }
-
-    // const [open, setOpen] = React.useState(1);
- 
-    //   const handleOpen = (value) => setOpen(open === value ? 0 : value);
-
     
-
   return (
-    <div className='py-2 '>
+    <div className='bg-gray-400 rounded-xl p-4'>
         <button onClick={() =>setaccordionOpen(!accordionOpen)} className='flex justify-between w-full '>
             <span>{title}</span>
             {/* {accordionOpen ? <span>-</span> : <span>+</span>} */}
@@ -50,7 +40,7 @@ const AccordionSchool = ({title, answer}) => {
             </svg>
             
         </button>
-        <div className={`grid overflow-hidden transition-all ease-in-out text-slate-600 ${
+        <div className={`grid overflow-hidden transition-all ease-in-out text-slate-800/75 ${
             accordionOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0] opacity-0' 
         }`}>
             <div className='overflow-hidden'>

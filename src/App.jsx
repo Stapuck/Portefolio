@@ -50,7 +50,7 @@ const App = () => {
         revoir ce que je met dedans !!!
         <a href="https://www.mozilla.org/">Lien externe</a>
       </noscript> */}
-      {/* <Footer/> */}
+      <Footer/>
     </main>
   )
 }
