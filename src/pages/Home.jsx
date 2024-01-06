@@ -49,6 +49,12 @@ const Home = () => {
 
       <QuickView/>
 
+
+
+      <div>
+        test
+      </div>
+
     
 
 

@@ -5,6 +5,9 @@ import CTA from '../components/CTA';
 
 import { skills } from '../constants';
 import BacktoTopBtn from '../components/BacktoTopBtn';
+import { Accordion } from '@material-tailwind/react';
+import AccordionSchool from '../components/AccordionSchool';
+import Timeline from '../components/Timeline';
 
 const School = () => {
   return (
@@ -21,7 +24,7 @@ const School = () => {
         </div>  
 
         <div className="mt-12 flex">
-        <SchoolTimeline/>
+        <Timeline type="experiences"/>
         </div>
 
 
@@ -46,6 +49,20 @@ const School = () => {
          </div>
         ))}
         </div>
+      </div>
+
+
+      <div>
+
+        mettre certification 
+
+      </div>
+
+
+      <div className='bg-gray-200 rounded-xl py-1 my-6'>
+        <AccordionSchool title='test 1' answer='ça fonctionne correctement ? '/>
+        <AccordionSchool title='test 2' answer='ça marche ? '/>
+        <AccordionSchool title='test 3' answer='j ai pas tout pété ? '/>
       </div>
 
    

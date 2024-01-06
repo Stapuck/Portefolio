@@ -8,6 +8,21 @@ This template provides a minimal setup to get React working in Vite with HMR and
 This project has 2 purposes, first learning React and then having a Portefolio for my professional (and athlete) career.
 
 
+# find a good name 
+
+this project will contain some features : 
+
+- download of document, 
+- timeline,
+- carroussel and gallery,
+- video,
+- contact form,
+- ,
+- ,
+- ,
+
+
+
 
 
 
@@ -72,7 +87,7 @@ N.B : if you have any Tips/Advices to integrate better practice or to improve my
       </tr>
       <tr>
         <th>1.8</th>
-        <td>Add video on the website, Carroussel with picture, Gallery and Header Video + management of button </td>
+        <td>Add video on the website, Carroussel with picture, Gallery and Header Video + management of button, Timeline component dynamique for sport and school</td>
         <td>Current Version</td>
       </tr>
        <tr>

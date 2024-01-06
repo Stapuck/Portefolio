@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { skills} from '../constants'
 import CTA from '../components/CTA';
+import Timeline from '../components/Timeline';
 
 
 
@@ -20,6 +21,8 @@ const About = () => {
         <h2>Sportif</h2>
         <h2>Professionnel </h2>
       </div>
+
+
 
 
 

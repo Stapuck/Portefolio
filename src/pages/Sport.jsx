@@ -1,6 +1,7 @@
 import React from 'react'
 import SportTimeline from '../components/SportTimeline'
 import Competition from '../components/Competition'
+import Timeline from '../components/Timeline'
 
 const Sport = () => {
   return (
@@ -11,7 +12,7 @@ const Sport = () => {
 
       {/* <hr className='dark:border-slate-100 border-slate-700 mt-5'/>
 
-      <SportTimeline /> */}
+              <Timeline type="sport"/> */}
 
     </section>
   
