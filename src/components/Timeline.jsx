@@ -18,8 +18,6 @@ const Timeline = ({type}) => {
   return (
 
   <div className="mt-12 flex">
-
-  <div>{type}</div>
     <VerticalTimeline>
       {data.map((sp)=> (
         <VerticalTimelineElement

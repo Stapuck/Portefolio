@@ -15,9 +15,9 @@ const Sport = () => {
 
       <Competition />
 
-      {/* <hr className='dark:border-slate-100 border-slate-700 mt-5'/>
+      <hr className='dark:border-slate-100 border-slate-700 mt-5'/>
 
-              <Timeline type="sport"/> */}
+              <Timeline type="sport"/>
 
     </section>
   

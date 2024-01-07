@@ -87,12 +87,12 @@ N.B : if you have any Tips/Advices to integrate better practice or to improve my
       </tr>
       <tr>
         <th>1.8</th>
-        <td>Add video on the website, Carroussel with picture, Gallery and Header Video + management of button, Timeline component dynamique for sport and school, modification of code,  </td>
+        <td>Add video on the website, Carroussel with picture, Gallery and Header Video + management of button, Timeline component dynamique for sport and school, modification of code, manage the tab competition dynamicaly with date.</td>
         <td>Current Version</td>
       </tr>
        <tr>
         <th>1.9</th>
-        <td> Animation with scroll, navbar wider and responsive, manage the tab competition dynamicaly with date, constant/index.js real data in coming </td>
+        <td> Animation with scroll, navbar wider and responsive, constant/index.js real data/ real content in coming  </td>
         <td>Next Step</td>
       </tr>
     </tbody>

@@ -1,4 +1,4 @@
-import { meta, shopify, starbucks, tesla } from "../assets";
+import {  meta, shopify, starbucks, tesla } from "../assets";
 
 import { css,
     docker,
@@ -30,13 +30,14 @@ import {
     tripguide,
 } from "../assets";
 
+// PDF 
 import {
-    test1,
-    test2,
-    test3,
-    imgtest1,
-    imgtest2,
-    imgtest3,
+    CV_EN,
+    CV_FR,
+    PressBook,
+    cvfr_pict,
+    cven_pict,
+    pressbook_pict,
 
 } from '../assets'
 
@@ -126,59 +127,120 @@ export const skills = [
     }
 ];
 
+//fr
 export const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
-        iconBg: "#accbe1", //#accbe1
-        date: "March 2020 - April 2021",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "React Native Developer",
-        company_name: "Tesla",
+        title: "Alternance IHM",
+        company_name: "Safran",
         icon: tesla,
         iconBg: "#fbc3bc",
-        date: "Jan 2021 - Feb 2022",
+        date: "Octobre 2023 - Aujourd'hui",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "developpeur web sur application interne.",
+            "gestion outillage et calculateur.",
+            "reprendre les intitulés.",
+            // "Developing and maintaining web applications using React.js and other related technologies.",
+            // "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+            // "Implementing responsive design and ensuring cross-browser compatibility.",
+            // "Participating in code reviews and providing constructive feedback to other developers.",
         ],
     },
     {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
-        iconBg: "#b7e4c7",
-        date: "Jan 2022 - Jan 2023",
+        title: "Stage de 2e année",
+        company_name: "Octopeek part of Mazars",
+        icon: tesla,
+        iconBg: "#fbc3bc",
+        date: "Avril 2023 - Julliet 2023",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "data analyse sur l'explicabilité de la performance sportive",
+            "recuperation et traitement de donnée",
+            // "Developing and maintaining web applications using React.js and other related technologies.",
+            // "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+            // "Implementing responsive design and ensuring cross-browser compatibility.",
+            // "Participating in code reviews and providing constructive feedback to other developers.",
         ],
     },
     {
-        title: "Full stack Developer",
-        company_name: "Meta",
+        title: "Prestation de service",
+        company_name: "Hermès",
+        icon: tesla,
+        iconBg: "#fbc3bc",
+        date: "Avril 2023 - Julliet 2023",
+        points: [
+            "developpeur web sur application interne",
+            "migration d'une app d'un serveur ????   vers PHPsymfony",
+            // "Developing and maintaining web applications using React.js and other related technologies.",
+            // "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+            // "Implementing responsive design and ensuring cross-browser compatibility.",
+            // "Participating in code reviews and providing constructive feedback to other developers.",
+        ],
+    },
+    {
+    // pas sur de le mettre
+        title: "Coaching Canoe-kayak",
+        company_name: "",
+        icon: starbucks,
+        iconBg: "#accbe1", //#accbe1
+        date: "Mars 2023 - Avril 2023",
+        points: [
+            "Coach pour 1 mois de l'équipe national jeune du canada",
+            "tester de nouvelle chose / nouvelle expérience, developper ses capacité d'analyse",
+            "être dans le partage de savoir et evolution constante",
+            // "Developing and maintaining web applications using React.js and other related technologies.",
+            // "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+            // "Implementing responsive design and ensuring cross-browser compatibility.",
+            // "Participating in code reviews and providing constructive feedback to other developers.",
+        ],
+    },
+
+    {
+        title: "Création d'une micro entreprise / Status Auto-entrepreneur",
+        company_name: "Kazzle",
+        icon: tesla,
+        iconBg: "#fbc3bc",
+        date: "Février 2023",
+        points: [
+            "pour les projets perso",
+            "pour pouvoir travailler et engranger des connaissances via des projets inovants.",
+            "?? ",
+            // "Developing and maintaining web applications using React.js and other related technologies.",
+            // "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+            // "Implementing responsive design and ensuring cross-browser compatibility.",
+            // "Participating in code reviews and providing constructive feedback to other developers.",
+        ],
+    },
+    // {
+    //     title: "Creation et direction d'une Association",
+    //     company_name: "DODO Mauritius Team",
+    //     icon: shopify,
+    //     iconBg: "#b7e4c7",
+    //     date: "2019",
+    //     points: [
+    //         "Association dont le but est le developpement du canoë-kayak en afrique.",
+    //         "Ralenti par le covid et activité parallèle à mes occupation",
+    //         // "Developing and maintaining web applications using React.js and other related technologies.",
+    //         // "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+    //         // "Implementing responsive design and ensuring cross-browser compatibility.",
+    //         // "Participating in code reviews and providing constructive feedback to other developers.",
+    //     ],
+    // },
+    {
+        title: "Stage de 3e",
+        company_name: "Scaleway",
         icon: meta,
         iconBg: "#a2d2ff",
-        date: "Jan 2023 - Present",
+        date: "Novembre 2016 - Décembre 2016",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Stage d'observation sur Paris, premiers pas dans le monde de l'entreprise dans un secteur qui me passione, l'informatique.",
+            "J'ai eu la chance de toucher à tout, du developpeur au siege social au technicien de baies en datacenter.",
+            "J'ai donc pu y apprendre les premiers connaissances sur le fonctionnement de certains points informatique.",
+            // "Developing and maintaining web applications using React.js and other related technologies.",
+            // "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+            // "Implementing responsive design and ensuring cross-browser compatibility.",
+            // "Participating in code reviews and providing constructive feedback to other developers.",
         ],
-    },
+    }
+// last one 
 ];
 
 export const projects = [
@@ -250,52 +312,118 @@ export const sport = [
     // mettre logo du pays ou à eu lieu la course 
     // rajouter propriété lieu
     // poids des image à revoir
+    // voir pour l'extension react des flags !!
 
-    {
-        title: "Test 1",
-        company_name: "Starbucks",
+     // today
+     {
+        title: "championnat du monde // olympique qualification",
+        company_name: "Londres",
         icon: starbucks,
         iconBg: "#accbe1",
-        date: "March 2020 - April 2021",
+        date: "Septembre 2023",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+            "pas qualifié",
+            "prochaine étape la réunion ",
             // "Implementing responsive design and ensuring cross-browser compatibility.",
             // "Participating in code reviews and providing constructive feedback to other developers.",
         ],
     },
     {
-        title: "test 2 ",
-        company_name: "Tesla",
+        title: "Championnat du monde U23 ",
+        company_name: "Ivrea",
+        icon: starbucks,
+        iconBg: "#accbe1",
+        date: "Juillet 2022",
+        points: [
+            "15 place ( à revoir ) demi final  ",
+            "",
+            // "Implementing responsive design and ensuring cross-browser compatibility.",
+            // "Participating in code reviews and providing constructive feedback to other developers.",
+        ],
+    },
+    {
+        title: "Championnat du monde U23 ",
+        company_name: "Tacen",
+        icon: starbucks,
+        iconBg: "#accbe1",
+        date: "Juillet 2021",
+        points: [
+            "14 place ( à revoir ) demi final  ",
+            "",
+            // "Implementing responsive design and ensuring cross-browser compatibility.",
+            // "Participating in code reviews and providing constructive feedback to other developers.",
+        ],
+    },
+    // covid
+    {
+        title: "Olympique test event ",
+        company_name: "Tokyo",
+        icon: starbucks,
+        iconBg: "#accbe1",
+        date: "Novembre 2019",
+        points: [
+            "pas qualifié pour les jeux mais occasion en or pour faire cette repetition générale  ",
+            "",
+            // "Implementing responsive design and ensuring cross-browser compatibility.",
+            // "Participating in code reviews and providing constructive feedback to other developers.",
+        ],
+    },
+    {
+        title: "Olympique qualification ",
+        company_name: "Seu d'urgel",
+        icon: starbucks,
+        iconBg: "#accbe1",
+        date: "Septembre - Octobre 2019",
+        points: [
+            "pas qualifié ",
+            "",
+            // "Implementing responsive design and ensuring cross-browser compatibility.",
+            // "Participating in code reviews and providing constructive feedback to other developers.",
+        ],
+    },
+    {
+        title: "Jeux Olympique de la jeunesse",
+        company_name: "Buenos Aires ",
+        icon: starbucks,
+        iconBg: "#accbe1",
+        date: "Septembre - Octobre 2018",
+        points: [
+            "medail d'or en Slalom",
+            "victoire avec 5 sec d'avance ",
+            // "Implementing responsive design and ensuring cross-browser compatibility.",
+            // "Participating in code reviews and providing constructive feedback to other developers.",
+        ],
+    },
+    {
+        title: "Championnat d'Afrique u18 ",
+        company_name: "Alger",
         icon: tesla,
         iconBg: "#fbc3bc",
-        date: "Jan 2021 - Feb 2022",
+        date: "Juillet 2018",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
+            "double medail or en slalom et bronze en course en ligne ",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
             "Implementing responsive design and ensuring cross-browser compatibility.",
             "Participating in code reviews and providing constructive feedback to other developers.",
         ],
     },
     {
-        title: "Web Developer",
-        company_name: "Shopify",
+        title: "1er Compétition international ",
+        company_name: "Championnat du monde Junior Bratislava",
         icon: shopify,
         iconBg: "#b7e4c7",
-        date: "Jan 2022 - Jan 2023",
+        date: "Juillet 2017",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "sur classé de 2 ans  15 et j'étais contre des 17 ans",
+           
         ],
     },
     {
-        title: "Full stack Developer",
-        company_name: "Meta",
+        title: "Début dans le kayak ",
+        company_name: "Val d'indre Canoe-Kayak, Veigné ",
         icon: meta,
         iconBg: "#a2d2ff",
-        date: "Jan 2023 - Present",
+        date: "Mars 2009",
         points: [
             "Developing and maintaining web applications using React.js and other related technologies.",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -307,25 +435,33 @@ export const sport = [
 
 export const competitions = [
     {
-        id: 0,
         title: "Test 1",
         type: "world champ",
         // startdate: "March 2020",
-        date: "07-01-2024",
-        place: "fra",
+        date: "05-01-2024",
+        place: "FRA",
         done: true, 
-        result: 12
+        result: "3"
 
     },
     {
-        id: 1,
         title: "Test 2",
         type: "World cup",
         // startdate: "March 2021",
-        date: "06-01-2024",
-        place: "fra",
-        done: false, 
+        date: "07-01-2024",
+        place: "FRA",
+        done: true, 
         result: "12"
+
+    },
+    {
+        title: "Test 2",
+        type: "World cup",
+        // startdate: "March 2021",
+        date: "16-01-2024",
+        place: "FRA",
+        done: false, 
+        result: ""
 
     },
 ]
@@ -352,40 +488,32 @@ export const languages = [
 ];
 
 export const quickview = [
+// lg to show the doc depending of the language
+// 1 is fr, 2 is en and 3 is both
+
     {
-        id: 1,
-        title: "test1",
-        pdf: test1,
-        // image: imgtest1, 
-        image: meta, 
+        title: "Curriculum vitae ",
+        pdf: CV_EN,
+        image: cven_pict, 
         bgcolor: "bg-green-400",
+        lg: "en",
 
     },
     {
-        id: 2,
-        title: "test2",
-        pdf: test2,
-        image: starbucks, 
-        // image: imgtest2, 
+        title: "Curriculum vitae ",
+        pdf: CV_FR,
+        image: cvfr_pict, 
         bgcolor: "bg-blue-400",
+        lg: "fr",
 
     },
     {
-        id: 3,
-        title: "test3",
-        pdf: test3,
-        // image: imgtest3, 
-        image: shopify, 
+        title: "PressBook",
+        pdf: PressBook,
+        image: pressbook_pict, 
         bgcolor: "bg-orange-400",
+        lg: "all",
 
     },
-    // {
-    //     id: 4,
-    //     title: "test4",
-    //     pdf: test3,
-    //     // image: imgtest3, 
-    //     image: tesla, 
-    //     bgcolor: "",
-
-    // },
+    
 ]

@@ -4,29 +4,26 @@ import ThemeMode from '../components/ThemeMode';
 import LanguagesBtn from '../components/LanguagesBtn';
 
 
-import cookies from 'js-cookie'
-
-import { languages } from '../constants'
-
-import { useTranslation } from "react-i18next"
+import cookies from 'js-cookie';
+import { languages } from '../constants';
+import { useTranslation } from "react-i18next";
 import QuickView from '../components/QuickView';
 
 
 
 
 const Home = () => {
- //TODO: gestion du stokage en cookie pour que si on rafraichi ça reste sur la derniere langue utiliser 
+//TODO: gestion du stokage en cookie pour que si on rafraichi ça reste sur la derniere langue utiliser 
+// dans tous les fichiers
+  const { t } = useTranslation();
 
-  // dans tous les fichiers
-    const { t } = useTranslation()
+  const currentLanguageCode = cookies.get('i18next') || 'en'
+  const currentLanguage = languages.find(l => l.code === currentLanguageCode)
+  useEffect(() => {
+    document.title = 'TS | Home'
 
-    const currentLanguageCode = cookies.get('i18next') || 'en'
-    const currentLanguage = languages.find(l => l.code === currentLanguageCode)
-    useEffect(() => {
-      document.title = 'TS | Home'
-
-      document.body.dir = currentLanguage.dir || 'ltr'
-    },[currentLanguage]); //currentLanguage
+    document.body.dir = currentLanguage.dir || 'ltr'
+  },[currentLanguage]); //currentLanguage
 
   // fin de tous les fichier ( sauf le document title qui n'est pas à prendre ) revoir 
 
@@ -48,12 +45,6 @@ const Home = () => {
 
 
       <QuickView/>
-
-
-
-      <div>
-        test
-      </div>
 
     
 
