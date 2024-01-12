@@ -3,18 +3,21 @@ import React from 'react'
 import CTA from '../components/CTA';
 
 import { skills } from '../constants';
-import BacktoTopBtn from '../components/BacktoTopBtn';
-import { Accordion } from '@material-tailwind/react';
 import AccordionSchool from '../components/AccordionSchool';
 import Timeline from '../components/Timeline';
+import { useTranslation } from "react-i18next";
 
 const School = () => {
+
+const { t } = useTranslation();
+
+
   return (
     <section className="max-container">
   
       <div className="py-10 flex flex-col">
         <h3 className="subhead-text">
-          Work Experience
+         {t('School.title')}
         </h3>      
         <div className='mt-5 flex flex-col gap-3 text-slate-500'>
           <p>

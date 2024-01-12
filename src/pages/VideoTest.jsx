@@ -61,7 +61,7 @@ const VideoTest = () => {
                 <Timeline type="sport"/>
                
             </div>
-            <div className='fixed bottom-16  right-[50%] text-7xl text-white'>
+            <div className='fixed bottom-16  right-[50%] text-7xl text-slate-500/75  hover:bg-transparent/35 rounded-full flex items-center align-middle'>
                 {btnscroll && 
                     <div
                         onClick={scrolldown}

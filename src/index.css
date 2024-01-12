@@ -60,8 +60,9 @@ body:has(.card[data-color="green"]:hover) {
   }
 
   .header {
-    @apply flex justify-between items-center sm:px-16 px-8 py-4 max-w-5xl mx-auto absolute top-0 bg-transparent z-10 right-0 left-0 ;
-    /* @apply flex justify-between items-center sm:px-16 px-8 py-4 max-w-5xl mx-auto  top-0 bg-slate-400 z-10 right-0 left-0 fixed shadow-sm; */
+    @apply fixed flex justify-around items-center sm:px-16 px-8 py-4 max-w-none mx-auto  top-0 bg-slate-400 z-10 right-0 left-0 shadow-md dark:bg-slate-700; 
+    /* @apply fixed flex justify-around items-center sm:px-16 px-8 py-4 max-w-none mx-auto  top-0 bg-slate-400 z-10 right-0 left-0 shadow-md; w-full and fixed  */
+    /* @apply flex justify-between items-center sm:px-16 px-8 py-4 max-w-5xl mx-auto absolute top-0 bg-transparent z-10 right-0 left-0 ;  classic  */
   }
 
   .footer {

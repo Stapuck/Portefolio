@@ -92,7 +92,7 @@ N.B : if you have any Tips/Advices to integrate better practice or to improve my
       </tr>
        <tr>
         <th>1.9</th>
-        <td> Animation with scroll, navbar wider and responsive, constant/index.js real data/ real content in coming  </td>
+        <td> Animation with scroll, navbar wider and responsive, constant/index.js real data/ real content in coming, managing the translation also in the file (in progress) </td>
         <td>Next Step</td>
       </tr>
     </tbody>

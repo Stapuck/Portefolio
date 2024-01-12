@@ -33,30 +33,30 @@ const Navbar = () => {
   return (
 //     // fixed shadow-md
 //     // bg = #1d2235 
-    <header className=' header '>
+    <header className='fixed header '>
         <NavLink to='/' className="w-10 h-10 rounded-lg bg-white items-center justify-center flex font-bold shadow-md transform hover:scale-110 transition-transform" >
              <p className="blue-gradient_text">TS</p>
         </NavLink>
         <nav className="flex text-lg gap-7 font-medium ">
-            <NavLink to='/about' className={({isActive}) => isActive ? 'text-blue-500' : 'text-black border-b-2 border-transparent hover:border-black transition-all ease-in'}>
+            <NavLink to='/about' className={({isActive}) => isActive ? 'text-blue-500 dark:text-blue-400' : 'text-black border-b-2 border-transparent hover:border-black transition-all ease-in dark:text-slate-200 dark:hover:border-slate-200'}>
                 {t('Navlink.about')}
             </NavLink> 
-            <NavLink  to='/school' className={({isActive})=> isActive ? 'text-blue-500' : 'text-black border-b-2 border-transparent hover:border-black transition-all ease-in'}>
+            <NavLink  to='/school' className={({isActive})=> isActive ? 'text-blue-500 dark:text-blue-400' : 'text-black border-b-2 border-transparent hover:border-black transition-all ease-in dark:text-slate-200 dark:hover:border-slate-200'}>
                 School
             </NavLink>
-            <NavLink to='/sport' className={({isActive})=> isActive ? 'text-blue-500' : 'text-black border-b-2 border-transparent hover:border-black transition-all ease-in'}>
+            <NavLink to='/sport' className={({isActive})=> isActive ? 'text-blue-500 dark:text-blue-400' : 'text-black border-b-2 border-transparent hover:border-black transition-all ease-in dark:text-slate-200 dark:hover:border-slate-200'}>
                 Sport
             </NavLink>
-            <NavLink to='/projects' className={({isActive})=> isActive ? 'text-blue-500' : 'text-black border-b-2 border-transparent hover:border-black transition-all ease-in'}>
+            <NavLink to='/projects' className={({isActive})=> isActive ? 'text-blue-500 dark:text-blue-400' : 'text-black border-b-2 border-transparent hover:border-black transition-all ease-in dark:text-slate-200 dark:hover:border-slate-200'}>
                 {t('Navlink.project')}
             </NavLink>
-            <NavLink to='/extras' className={({isActive})=> isActive ? 'text-blue-500' : 'text-black border-b-2 border-transparent hover:border-black transition-all ease-in'}>
+            <NavLink to='/extras' className={({isActive})=> isActive ? 'text-blue-500 dark:text-blue-400' : 'text-black border-b-2 border-transparent hover:border-black transition-all ease-in dark:text-slate-200 dark:hover:border-slate-200'}>
                 {t('Navlink.extra')}
             </NavLink>
-            <NavLink to='/contact' className={({isActive})=> isActive ? 'text-blue-500' : 'text-black border-b-2 border-transparent hover:border-black transition-all ease-in'}>
+            <NavLink to='/contact' className={({isActive})=> isActive ? 'text-blue-500 dark:text-blue-400' : 'text-black border-b-2 border-transparent hover:border-black transition-all ease-in dark:text-slate-200 dark:hover:border-slate-200'}>
                 {t('Navlink.contact')}
             </NavLink>
-            <NavLink  to='/video' className={({isActive})=> isActive ? 'text-blue-500' : 'text-black border-b-2 border-transparent hover:border-black transition-all ease-in'}>
+            <NavLink  to='/video' className={({isActive})=> isActive ? 'text-blue-500 dark:text-blue-400' : 'text-black border-b-2 border-transparent hover:border-black transition-all ease-in dark:text-slate-200 dark:hover:border-slate-200'}>
                 video test
             </NavLink>
 

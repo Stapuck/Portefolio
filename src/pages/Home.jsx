@@ -7,6 +7,7 @@ import LanguagesBtn from '../components/LanguagesBtn';
 import cookies from 'js-cookie';
 import { languages } from '../constants';
 import { useTranslation } from "react-i18next";
+
 import QuickView from '../components/QuickView';
 
 

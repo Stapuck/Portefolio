@@ -1,5 +1,10 @@
 import React from 'react'
+
+
+
 import {sport, experiences} from '../constants'
+import {sporten, experiencesen} from '../constants/index copy'
+
 
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
@@ -7,13 +12,29 @@ import 'react-vertical-timeline-component/style.min.css';
 const Timeline = ({type}) => {
 
 
+  const lgSite = document.documentElement.lang;
+  // const lg = lgSite === "fr" ? TABLE_HEAD_FR : TABLE_HAED_EN;
+
   // Vérifiez si type est bien défini et correspond à une valeur attendue
   if (type !== "sport" && type !== "experiences") {
     return <div>Invalid type</div>;
   }
 
 
-  const data = type === "sport" ? sport : experiences;
+  // const data = type === "sport" ? sport : experiences;
+
+  let data;
+  if (type === 'sport' && lgSite === 'en') {
+    data = sporten;
+  } else if (type === 'experiences' && lgSite === 'en') {
+    data = experiencesen;
+  } else if (type === 'sport' && lgSite === 'fr') {
+    data = sport;
+  } else {
+    // Par défaut, utilisez le fichier en français pour les expériences
+    data = experiences;
+  }
+
 
   return (
 

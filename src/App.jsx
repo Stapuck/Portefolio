@@ -4,7 +4,7 @@ import { Home, About, Projects, Extras, Contact, Sport, School,VideoTest} from '
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import ThemeMode from './components/ThemeMode';
+// import ThemeMode from './components/ThemeMode';
 import NotFound from './components/NotFound';
 import BacktoTopBtn from './components/BacktoTopBtn';
 // import LanguagesBtn from './components/LanguagesBtn';

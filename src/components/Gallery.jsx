@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {
     Tabs,
     TabsHeader,
@@ -8,10 +8,12 @@ import {
   } from "@material-tailwind/react";
 
 const Gallery = () => {
-    const data = [
+
+
+  const data = [
         {
-          label: "HTML",
-          value: "html",
+          label: "Buenos Aires 2018",
+          value: "Race1",
           images: [
             {
               imageLink:
@@ -40,8 +42,8 @@ const Gallery = () => {
           ],
         },
         {
-          label: "React",
-          value: "react",
+          label: "Ivrea 2022",
+          value: "Race2",
           images: [
             {
               imageLink:
@@ -70,8 +72,8 @@ const Gallery = () => {
           ],
         },
         {
-          label: "Vue",
-          value: "vue",
+          label: "Autre",
+          value: "Race3",
           images: [
             {
               imageLink:
@@ -100,8 +102,8 @@ const Gallery = () => {
           ],
         },
         {
-          label: "Angular",
-          value: "angular",
+          label: "Race4",
+          value: "Race4",
           images: [
             {
               imageLink:
@@ -130,8 +132,8 @@ const Gallery = () => {
           ],
         },
         {
-          label: "Svelte",
-          value: "svelte",
+          label: "Race5",
+          value: "Race5",
           images: [
             {
               imageLink:
@@ -161,16 +163,29 @@ const Gallery = () => {
         },
       ];
 
+    const [activeTab, setActiveTab] = useState("Race1");
+    const [click, setClick] = useState("Race1");
 
+    const handleClick = (value) => {
+      if (activeTab !== value) {
+        setActiveTab(value);
+        setClick(value);
+      }
+    };
 
   return (
 
     <section>
 
-        <Tabs value="html">
+        <Tabs value={activeTab}>
                 <TabsHeader>
                 {data.map(({ label, value }) => (
-                    <Tab key={value} value={value}>
+                    <Tab 
+                      key={value} 
+                      value={value}
+                      className={`rounded-xl bg-slate-200 active:bg-slate-900 hover:bg-slate-400 dark:hover:bg-slate-300 dark:text-black mx-2 ${ click === value ? "bg-blue-300 dark:bg-blue-400 dark:text-white":"bg-red-300 dark:bg-red-400"}`}
+                      onClick={() =>handleClick(value)}
+                      >
                     {label}
                     </Tab>
                 ))}
