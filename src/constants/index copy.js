@@ -433,7 +433,7 @@ export const sporten = [
     },
 ];
 
-export const competitions = [
+export const competitionsen = [
     {
         title: "Test 1",
         type: "world champ",

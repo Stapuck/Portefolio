@@ -4,6 +4,7 @@ import useAlert from '../hooks/useAlert';
 import Alert from '../components/Alert';
 
 import { useTranslation } from "react-i18next"
+import SocialMContact from '../components/SocialMContact';
 
   
 
@@ -11,7 +12,7 @@ const Contact = () => {
 
   const { t } = useTranslation()
 
-  const formRef = useRef(null);
+  // const formRef = useRef(null);
   const [form, setform] = useState({name:'', email:'', message:''});
   const [isLoading, setisLoading] = useState(false);
 
@@ -59,7 +60,8 @@ const Contact = () => {
 
   return (
     // TODO: ici pour la gestion des elements sur la page 
-    <section className='relative flex lg:flex-row flex-col max-container h-[100vh]'>
+    <section className='relative flex lg:flex-row  max-container h-[100vh]'>
+    {/* <section className='relative flex flex-col  max-container h-[100vh]'> */}
 
       {alert.show && <Alert {...alert}/>}
      
@@ -124,6 +126,9 @@ const Contact = () => {
           {isLoading ? 'Sending...' : 'Send Message'}
         </button>
       </form>
+
+
+      <SocialMContact/>
 
       
     </section>

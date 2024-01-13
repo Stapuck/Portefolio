@@ -1,5 +1,6 @@
 import React from 'react'
-import { competitions } from '../constants'
+import { competitions } from '../constants/index'
+import { competitionsen } from '../constants/index copy'
 import { Card, Typography } from "@material-tailwind/react";
  
 const TABLE_HEAD_EN = [ "Title", "Type", "Date", "Place",  "Result"];
@@ -8,6 +9,8 @@ const TABLE_HEAD_FR = [ "Titre", "Type", "Date", "Lieu",  "Resultat"];
 const Competition = () => {
     const lgSite = document.documentElement.lang;
     const data = lgSite === "fr" ? TABLE_HEAD_FR : TABLE_HEAD_EN;
+
+    // TODO: faire pareil que dans timeline pour compétition et gestion de traduction des info dans le tableau 
 
     const date = new Date();
     const output = String(date.getDate()).padStart(2, '0') + '-' +
@@ -105,7 +108,7 @@ const Competition = () => {
                         </Typography>
                         </td> */}
                         {/* {done === true ?   */}
-                        {date <= output ?  
+                        {/* {date <= output ?   */}
                         
                         <td className={classes}>
                         <Typography
@@ -113,14 +116,11 @@ const Competition = () => {
                             color="blue-gray"
                             className="font-normal"
                         >
-                        {console.log( "true", output, date )}
-
                             {result}
-                            
                         </Typography>
-                        </td>  :  <td>Coming soon 
-                        {console.log( "false", output, date )}
-                        </td> }
+                        {/* </td>  :  <td>Coming soon  */}
+                        </td> 
+                        {/* } */}
                         
                     </tr>
                     );
@@ -128,6 +128,9 @@ const Competition = () => {
                 </tbody>
             </table>
             </Card>
+
+            {/* utiliser le fonctionnement de en fonction de la date pour autre chose car la inutile au final, voir pour changement de couleur 
+            en fonction de si fait ou non,  */}
 
 
             {/* <div>

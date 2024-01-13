@@ -9,6 +9,7 @@ import { languages } from '../constants';
 import { useTranslation } from "react-i18next";
 
 import QuickView from '../components/QuickView';
+import SocialMContact from '../components/SocialMContact';
 
 
 
@@ -48,6 +49,8 @@ const Home = () => {
       <QuickView/>
 
     
+
+
 
 
       

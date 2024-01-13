@@ -28,7 +28,7 @@ const BacktoTopBtn = () => {
 
 
   return (
-        <div className='fixed bottom-24 right-28 text-7xl dark:text-white'>
+        <div className='fixed bottom-12 right-14 text-4xl dark:text-white lg:bottom-24 lg:right-28 lg:text-7xl'>
             {BacktoTopBtn && (
             <button 
             onClick={scrollUp}

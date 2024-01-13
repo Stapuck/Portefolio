@@ -436,7 +436,7 @@ export const sport = [
 export const competitions = [
     {
         title: "Test 1",
-        type: "world champ",
+        type: "championnat du monde",
         // startdate: "March 2020",
         date: "05-01-2024",
         place: "FRA",
@@ -446,7 +446,7 @@ export const competitions = [
     },
     {
         title: "Test 2",
-        type: "World cup",
+        type: "coupe du monde",
         // startdate: "March 2021",
         date: "07-01-2024",
         place: "FRA",
@@ -456,12 +456,12 @@ export const competitions = [
     },
     {
         title: "Test 2",
-        type: "World cup",
+        type: "coupe du monde",
         // startdate: "March 2021",
         date: "16-01-2024",
         place: "FRA",
         done: false, 
-        result: ""
+        result: "Prochainnement"
 
     },
 ]

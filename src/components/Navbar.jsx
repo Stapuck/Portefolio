@@ -44,7 +44,7 @@ const Navbar = () => {
             <NavLink  to='/school' className={({isActive})=> isActive ? 'text-blue-500 dark:text-blue-400' : 'text-black border-b-2 border-transparent hover:border-black transition-all ease-in dark:text-slate-200 dark:hover:border-slate-200'}>
                 School
             </NavLink>
-            <NavLink to='/sport' className={({isActive})=> isActive ? 'text-blue-500 dark:text-blue-400' : 'text-black border-b-2 border-transparent hover:border-black transition-all ease-in dark:text-slate-200 dark:hover:border-slate-200'}>
+            <NavLink to='/sport'  className={({isActive})=> isActive ? 'text-blue-500 dark:text-blue-400' : 'text-black border-b-2 border-transparent hover:border-black transition-all ease-in dark:text-slate-200 dark:hover:border-slate-200'}>
                 Sport
             </NavLink>
             <NavLink to='/projects' className={({isActive})=> isActive ? 'text-blue-500 dark:text-blue-400' : 'text-black border-b-2 border-transparent hover:border-black transition-all ease-in dark:text-slate-200 dark:hover:border-slate-200'}>
