@@ -31,7 +31,7 @@ const Home = () => {
 
   return (
     // <section className='w-full h-screen relative'>
-    <section className='max-container h-screen w-full relative '>
+    <section className='max-container h-full w-full relative '>
       <h1 className="head-text  ">
         Bonjour, je suis <span className='blue-gradient_text font-semibold drop-shadow '> Terence</span> 
       </h1>

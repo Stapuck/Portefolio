@@ -15,6 +15,7 @@ const Contact = () => {
   // const formRef = useRef(null);
   const [form, setform] = useState({name:'', email:'', message:''});
   const [isLoading, setisLoading] = useState(false);
+  const [type, setType] = useState('sponsor')
 
   const {alert, showAlert, hideAlert} = useAlert();
 
@@ -52,6 +53,10 @@ const Contact = () => {
     })
   };
 
+  const handleType = (e) => {
+    setType(e.target.value)
+  }
+
 
 
   useEffect(() => {
@@ -60,12 +65,29 @@ const Contact = () => {
 
   return (
     // TODO: ici pour la gestion des elements sur la page 
-    <section className='relative flex lg:flex-row  max-container h-[100vh]'>
+    // <section className='relative flex lg:flex-row  max-container h-[100vh]'>
+    <section className='relative flex flex-col  max-container h-full'>
     {/* <section className='relative flex flex-col  max-container h-[100vh]'> */}
 
       {alert.show && <Alert {...alert}/>}
+
+
+      <div>
+        <label htmlFor="Sponsor">Sponsor</label>
+        <input  className="w-6 h-6" type="radio"  name= "sponsor" value= "sponsor" onChange={handleType} checked={type === 'sponsor'}/>
+
+        <label htmlFor="Entreprise">Entreprise</label>
+        <input  className="w-6 h-6" type="radio"  name= "entreprise" value= "entreprise" onChange={handleType} checked={type === 'entreprise'}/>
+      
+        {type === 'sponsor'? <div> je suis un sponsor</div > : <div> je suis une entreprise</div >} 
+      </div>
+      
      
 
+      <SocialMContact/>
+
+
+      {/* <div className='fex-1 min-w-[50%] flex flex-col'> */}
       <div className='fex-1 min-w-[50%] flex flex-col'>
         <h1 className='head-text dark:text-slate-200'>
           {t('Contact.in_touch')}
@@ -126,9 +148,6 @@ const Contact = () => {
           {isLoading ? 'Sending...' : 'Send Message'}
         </button>
       </form>
-
-
-      <SocialMContact/>
 
       
     </section>
