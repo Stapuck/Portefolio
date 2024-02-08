@@ -72,6 +72,7 @@ const Contact = () => {
       {alert.show && <Alert {...alert}/>}
 
 
+{/* mettre dans un componnent pour ne pas surcharger la page en plus du form  */}
       <div>
         <label htmlFor="Sponsor">Sponsor</label>
         <input  className="w-6 h-6" type="radio"  name= "sponsor" value= "sponsor" onChange={handleType} checked={type === 'sponsor'}/>

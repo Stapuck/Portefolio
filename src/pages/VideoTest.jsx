@@ -1,11 +1,12 @@
 import React from 'react'
 import videoBg from '../assets/video/demo.mp4'
 import { useEffect, useState } from "react"
-import BacktoTopBtn from '../components/BacktoTopBtn';
+
 import Timeline from '../components/Timeline';
 
 const VideoTest = () => {
     const [btnscroll, setbtnscroll] = useState(true);
+    const [soundstate, setsoundstate] = useState(true);
     
 
     useEffect(() => {
@@ -40,6 +41,13 @@ const VideoTest = () => {
         
     }
 
+    const ChangeSoundState = () => {
+        setsoundstate(!soundstate); 
+        // var video = document.querySelector('video');
+        //  video.muted = !video.muted;
+        //TODO
+    }
+
 
   return (
     <section >
@@ -47,10 +55,17 @@ const VideoTest = () => {
             <div className='overlay'></div>
             <video src={videoBg} autoPlay loop muted/>
             <div className="content "> {/*flex justify-center sm:flex-row flex-col */}
-                {/* <h1 className='text-6xl font-bold'>Welcome</h1>
-                <p className='text-2xl font-semibold'>to my site</p> */}
                 <h1 className='text-7xl font-bold'><span className='blue-gradient_text font-semibold drop-shadow '> Terence</span> SARAMANDIF</h1>
                 <p className='text-3xl font-semibold'>Athlete | Engineer </p>
+            </div>
+
+            <div className='fixed bottom-16  right-[50%] text-7xl text-slate-500/75  hover:bg-transparent/35 rounded-full flex items-center align-middle'>
+                {btnscroll && 
+                    <div
+                        onClick={scrolldown}
+                    >
+                        <ion-icon name="chevron-down-outline"></ion-icon>                    
+                    </div>}
             </div>
         </div>
         <div className='max-container'>
@@ -61,17 +76,30 @@ const VideoTest = () => {
                 <Timeline type="sport"/>
                
             </div>
-            <div className='fixed bottom-16  right-[50%] text-7xl text-slate-500/75  hover:bg-transparent/35 rounded-full flex items-center align-middle'>
-                {btnscroll && 
-                    <div
-                        onClick={scrolldown}
-                    >
-                        <ion-icon name="chevron-down-outline"></ion-icon>                    
-                    </div>}
-            </div>
+           
 
         </div>
-        
+
+        {btnscroll && 
+            <div  className='text-4xl fixed bottom-16  left-[95%] text-slate-500' >
+                <ion-icon id='information' name="information-circle-outline"></ion-icon>
+            </div>
+        } 
+
+        {btnscroll && !soundstate  && 
+            <div  className='text-4xl fixed bottom-16  right-[95%] text-slate-500'>
+                <button id='soundon' onClick={ChangeSoundState}>
+                    <ion-icon  name="volume-high-outline"></ion-icon>
+                </button>
+            </div>
+        } 
+        {btnscroll &&  soundstate && 
+            <div  className='text-4xl fixed bottom-16  right-[95%] text-slate-500'>
+                <button id='soundoff' onClick={ChangeSoundState}>
+                    <ion-icon  name="volume-mute-outline"></ion-icon>
+                </button>
+            </div>
+        } 
     </section>
   )
 }
