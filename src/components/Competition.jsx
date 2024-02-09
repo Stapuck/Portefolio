@@ -20,7 +20,7 @@ const Competition = () => {
     <section>
 
 
-        {/* mettre 10 lignes max  */}
+        {/* todo mettre 10 lignes max  */}
 
         <div className='flex justify-center'>Compétition</div>
         <Card className="h-full w-full overflow-scroll">

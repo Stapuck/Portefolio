@@ -33,10 +33,10 @@ const SocialMContact = () => {
             {social.map((so, index) => (
                 <div>
                 {/* revoir l'affichage mais au pire pas obligé  */}
-                    <div className=' hidden text-black font-semibold text-sm absolute mt-24 bg-slate-600 px-3 rounded-2xl group-hover:block'>
+                    <div key={index} className=' hidden text-black font-semibold text-sm absolute mt-24 bg-slate-600 px-3 rounded-2xl group-hover:block'>
                         {so.name}
                     </div>
-                    <div key={index} className="hover:scale-150 group">
+                    <div  className="hover:scale-150 group">
                         <a  href={so.href} target='_blank' >
                             < ion-icon name={so.icone}></ion-icon>
                         </a>

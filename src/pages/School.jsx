@@ -46,7 +46,7 @@ const { t } = useTranslation();
               className='w-1/2 h-1/2 object-contain'
               /> 
             </div>
-            <div className=' hidden text-black font-semibold text-sm absolute mt-24 bg-slate-600 px-3 rounded-2xl group-hover:block'>
+            <div className='hidden text-black font-semibold text-sm absolute mt-24 bg-slate-600 px-3 rounded-2xl group-hover:block'>
               {skill.name}
             </div>
           </div>

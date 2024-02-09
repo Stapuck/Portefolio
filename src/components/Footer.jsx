@@ -28,7 +28,7 @@ const Footer = () => {
        
        <hr className='bg-white'/>
         <section className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
-          <div>Made by <span> {owner} </span></div>
+          <div>Made by  {owner}  </div>
           <div>version numéro {num_version}, {date_version}</div>
           <div>{ t('test_value', {number_of_days_building})}</div>
           <div>{ t('test_value2', {number_of_days_release})}</div>          

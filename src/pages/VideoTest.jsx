@@ -1,5 +1,6 @@
 import React from 'react'
 import videoBg from '../assets/video/demo.mp4'
+
 import { useEffect, useState } from "react"
 
 import Timeline from '../components/Timeline';
@@ -7,6 +8,7 @@ import Timeline from '../components/Timeline';
 const VideoTest = () => {
     const [btnscroll, setbtnscroll] = useState(true);
     const [soundstate, setsoundstate] = useState(true);
+    // const [toggle, settoggle] = useState(false);
     
 
     useEffect(() => {
@@ -59,12 +61,12 @@ const VideoTest = () => {
                 <p className='text-3xl font-semibold'>Athlete | Engineer </p>
             </div>
 
-            <div className='fixed bottom-16  right-[50%] text-7xl text-slate-500/75  hover:bg-transparent/35 rounded-full flex items-center align-middle'>
+            <div className='fixed bottom-16 right-[50%] text-6xl text-slate-500/75  hover:bg-transparent/35 rounded-full flex items-center align-middle'>
                 {btnscroll && 
                     <div
                         onClick={scrolldown}
                     >
-                        <ion-icon name="chevron-down-outline"></ion-icon>                    
+                        <ion-icon className="mx-4" name="chevron-down-outline"></ion-icon>                    
                     </div>}
             </div>
         </div>
@@ -81,25 +83,33 @@ const VideoTest = () => {
         </div>
 
         {btnscroll && 
-            <div  className='text-4xl fixed bottom-16  left-[95%] text-slate-500' >
-                <ion-icon id='information' name="information-circle-outline"></ion-icon>
+            <div  className='group fixed bottom-16  left-[93%] text-slate-500 hover:text-slate-800' >
+                <button className='text-4xl'>
+                    <ion-icon name="information-circle-outline"></ion-icon>
+                </button>
+                <div className='hidden fixed bottom-12 left-[89%] text-slate-500 group-hover:block'>
+                     <span>by </span> <a href="https://www.instagram.com/romain.bruneau/"> Romain Bruneau </a>
+                </div>
             </div>
         } 
+       
 
         {btnscroll && !soundstate  && 
-            <div  className='text-4xl fixed bottom-16  right-[95%] text-slate-500'>
-                <button id='soundon' onClick={ChangeSoundState}>
-                    <ion-icon  name="volume-high-outline"></ion-icon>
+            <div  className='text-4xl fixed bottom-16  right-[95%] text-slate-500 hover:text-slate-800'>
+                <button  onClick={ChangeSoundState}>
+                    <ion-icon name="volume-high-outline"></ion-icon>
                 </button>
             </div>
         } 
         {btnscroll &&  soundstate && 
-            <div  className='text-4xl fixed bottom-16  right-[95%] text-slate-500'>
-                <button id='soundoff' onClick={ChangeSoundState}>
-                    <ion-icon  name="volume-mute-outline"></ion-icon>
+            <div  className='text-4xl fixed bottom-16  right-[95%] text-slate-500 hover:text-slate-800'>
+                <button  onClick={ChangeSoundState}>
+                    <ion-icon name="volume-mute-outline"></ion-icon>
                 </button>
             </div>
         } 
+
+       
     </section>
   )
 }
