@@ -8,6 +8,8 @@ import i18next from 'i18next'
 
 const LanguagesBtn = () => {
   // TODO: faire un beau bouton ou on ne vois que la langue selectionné
+  // ou juste modifier la langue selectionné pour voir le changement 
+  
   // const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -19,8 +21,9 @@ const LanguagesBtn = () => {
           className='dark:text-white'
           key={country_code} 
           onClick={()=> i18next.changeLanguage(code)} 
-          // disabled={code === currentLanguageCode}
-        //   hidden={code !== currentLanguageCode}  // === ou  !== bete d'idée à revoir 
+        // disabled={code === currentLanguageCode}
+        // disabled={code === name}
+        // hidden={code !== currentLanguageCode}  // === ou  !== bete d'idée à revoir 
         >  
           {name}
         </button>

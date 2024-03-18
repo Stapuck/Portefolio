@@ -492,7 +492,7 @@ export const quickview = [
 // 1 is fr, 2 is en and 3 is both
 
     {
-        title: "Curriculum vitae ",
+        title: "Curriculum vitae EN",
         pdf: CV_EN,
         image: cven_pict, 
         bgcolor: "bg-green-400",
@@ -500,7 +500,7 @@ export const quickview = [
 
     },
     {
-        title: "Curriculum vitae ",
+        title: "Curriculum vitae FR",
         pdf: CV_FR,
         image: cvfr_pict, 
         bgcolor: "bg-blue-400",

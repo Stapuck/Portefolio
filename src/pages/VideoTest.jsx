@@ -15,7 +15,7 @@ const VideoTest = () => {
     useEffect(() => {
 
         window.addEventListener("scroll", () => {
-            if(window.scrollY < 120) {
+            if(window.scrollY < 100) {
                 setbtnscroll(true)
             }else {
                 setbtnscroll(false)
@@ -44,11 +44,10 @@ const VideoTest = () => {
         
     }
 
-    const ChangeSoundState = () => {
-        setsoundstate(!soundstate); 
-        // var video = document.querySelector('video');
-        //  video.muted = !video.muted;
-        //TODO
+    const ChangeSoundState = () => { 
+        var video = document.getElementById('videoBG');
+        setsoundstate(!soundstate);
+        video.muted = !soundstate;
     }
 
 
@@ -57,7 +56,8 @@ const VideoTest = () => {
         <div className='videobg mb-28'> 
             <div className='overlay'></div>
             {/* <video src={videoBg} autoPlay loop muted/> */}
-            <video src={videoBg2} autoPlay loop muted/>
+            <video id="videoBG" src={videoBg2} autoPlay loop muted/>
+            {/* todo texte transparent  */}
             <div className="content "> {/*flex justify-center sm:flex-row flex-col */}
                 <h1 className='text-7xl font-bold'><span className='blue-gradient_text font-semibold drop-shadow '> Terence</span> SARAMANDIF</h1>
                 <p className='text-3xl font-semibold'>Athlete | Engineer </p>
@@ -78,7 +78,7 @@ const VideoTest = () => {
                 <h1 className='text-5xl font-bold '>test</h1> 
                 <p className='text-xl font-semibold'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dolor dolor, convallis sit amet elit ut, lobortis pharetra nisl. Aliquam commodo, eros eu convallis placerat, neque diam varius nunc, at luctus lorem libero vitae nibh. Donec blandit aliquam eros sed varius. Etiam blandit tellus ut turpis tempor ultricies. Ut consequat leo aliquet erat elementum ullamcorper.</p>
 
-                <Timeline type="sport"/>
+                {/* <Timeline type="sport"/> */}
                
             </div>
            
@@ -91,7 +91,7 @@ const VideoTest = () => {
                 <button className='text-4xl'>
                     <ion-icon name="information-circle-outline"></ion-icon>
                 </button>
-                <div className='hidden fixed bottom-12 left-[89%] text-slate-500 group-hover:block'>
+                <div className='hidden fixed bottom-12 left-[89%] text-slate-200 group-hover:block'>
                      <span>by </span> <a target='_blank' href="https://www.instagram.com/romain.bruneau/"> Romain Bruneau </a>
                 </div>
             </div>

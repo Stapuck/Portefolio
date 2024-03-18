@@ -16,6 +16,7 @@ const QuickView = () => {
         <h1 className='text-2xl flex justify-center items-center m-2 mb-6 underline '>Quick View</h1>
         <div className='grid  md:grid-cols-2 gap-4 pb-2'>
           {quickview.map((qv) => (
+          // <div key={qv.title} className={`${qv.lg === lgSite || qv.lg === "all" ?  "block" : "hidden" }`}>
           <div key={qv.title} className={`${qv.lg === lgSite || qv.lg === "all" ?  "block" : "hidden" }`}>
             <div  className={`${qv.bgcolor} border-2 border-black rounded-xl flex flex-col items-center hover:scale-105 `}>
               <div className='flex justify-center items-center w-full h-full'>
@@ -26,6 +27,8 @@ const QuickView = () => {
               </div>
               <a 
                 href={qv.pdf} 
+                // href={`${qv.lg === lgSite ?  "download.lg": "" }`}  //Todo revoir pour que le telechargement se fasse dans la bonne langue
+                // faut que ça marche aussi pour le standard qui est français anglais - all. 
                 download={qv.title}
                 className=' text-xl flex flex-row mb-2'>
                   {qv.title}
