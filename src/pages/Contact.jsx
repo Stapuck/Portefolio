@@ -5,7 +5,8 @@ import Alert from '../components/Alert';
 
 import { useTranslation } from "react-i18next"
 import SocialMContact from '../components/SocialMContact';
-
+import sport_Contact from '../components/sport_Contact';
+import entreprise_Contact from '../components/entreprise_Contact';
   
 
 const Contact = () => {
@@ -80,11 +81,12 @@ const Contact = () => {
         <label htmlFor="Entreprise">Entreprise</label>
         <input  className="w-6 h-6" type="radio"  name= "entreprise" value= "entreprise" onChange={handleType} checked={type === 'entreprise'}/>
       
-        {type === 'sponsor'? <div> je suis un sponsor</div > : <div> je suis une entreprise</div >} 
+        {/* {type === 'sponsor'? <sport_Contact/>  : <entreprise_Contact/>}  */}
+        {type === 'sponsor'? <div>sponsor</div>  : <div>entreprise</div>} 
       </div>
       
      
-
+{/* metter footer ?  */}
       <SocialMContact/>
 
 

@@ -479,12 +479,12 @@ export const languages = [
       country_code: 'gb',
       dir: 'ltr'
     },
-    {
-      code: 'ar',
-      name: 'Arabic',
-      country_code: 'sa',
-      dir: 'rtl'
-    }
+    // {
+    //   code: 'ar',
+    //   name: 'Arabic',
+    //   country_code: 'sa',
+    //   dir: 'rtl'
+    // }
 ];
 
 export const quickview = [
@@ -496,6 +496,7 @@ export const quickview = [
         pdf: CV_EN,
         image: cven_pict, 
         bgcolor: "bg-green-400",
+        darkbgcolor : "bg-green-200",
         lg: "en",
 
     },
@@ -504,6 +505,7 @@ export const quickview = [
         pdf: CV_FR,
         image: cvfr_pict, 
         bgcolor: "bg-blue-400",
+        darkbgcolor : "bg-blue-200",
         lg: "fr",
 
     },
@@ -512,8 +514,17 @@ export const quickview = [
         pdf: PressBook,
         image: pressbook_pict, 
         bgcolor: "bg-orange-400",
+        darkbgcolor : "bg-blue-200",
         lg: "all",
 
     },
+    // {
+    //     title: "PressBook",
+    //     pdf: PressBook,
+    //     image: pressbook_pict, 
+    //     bgcolor: "bg-pink-400",
+    //     lg: "fr",
+
+    // },
     
 ]

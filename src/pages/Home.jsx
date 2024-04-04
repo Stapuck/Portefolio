@@ -32,8 +32,8 @@ const Home = () => {
   return (
     // <section className='w-full h-screen relative'>
     <section className='max-container h-full w-full relative '>
-      <h1 className="head-text  ">
-        Bonjour, je suis <span className='blue-gradient_text font-semibold drop-shadow '> Terence</span> 
+      <h1 className="head-text ">
+        <span className='text-black dark:text-white'>Bonjour, je suis</span> <span className='blue-gradient_text font-semibold drop-shadow '> Terence</span> 
       </h1>
 
       <div className='mt-5 flex flex-col gap-3 text-slate-500'>
