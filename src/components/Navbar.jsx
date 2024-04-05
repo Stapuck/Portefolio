@@ -23,7 +23,6 @@ const Navbar = () => {
         <Link to='/projects'><li className='my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded-xl text-white' onClick={handleClick}>Projects</li></Link>
         <Link to='/extras'><li className='my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded-xl text-white' onClick={handleClick}>Bonus</li></Link>
         <Link to='/contact'><li className='my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded-xl text-white' onClick={handleClick}>Contact</li></Link>
-        <Link to='/video'><li className='my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded-xl text-white' onClick={handleClick}>Video</li></Link>
        </ul>
     </div>
     
@@ -56,9 +55,7 @@ const Navbar = () => {
             <NavLink to='/contact' className={({isActive})=> isActive ? 'text-blue-500 dark:text-blue-400' : 'text-black border-b-2 border-transparent hover:border-black transition-all ease-in dark:text-slate-200 dark:hover:border-slate-200'}>
                 {t('Navlink.contact')}
             </NavLink>
-            <NavLink  to='/video' className={({isActive})=> isActive ? 'text-blue-500 dark:text-blue-400' : 'text-black border-b-2 border-transparent hover:border-black transition-all ease-in dark:text-slate-200 dark:hover:border-slate-200'}>
-                video test
-            </NavLink>
+           
 
             <div>
                  {click && content}

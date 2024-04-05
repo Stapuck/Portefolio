@@ -3,11 +3,15 @@ import { theme_options,  } from '../constants'
 import { useEffect, useState } from 'react';
 
 
+
 // TODO:revoir l'emplacement du bouton et voir si plusieur page ou juste Home ? 
 
 
 const ThemeMode = () => {
-    const [theme, setTheme] = useState('dark');
+    const [theme, setTheme] = useState(() => {
+    const storedTheme = localStorage.getItem('theme');
+    return storedTheme ? storedTheme : 'dark';
+  });
   
     useEffect(() => {
         if (theme === "dark") {
@@ -15,7 +19,13 @@ const ThemeMode = () => {
         } else {
           document.documentElement.classList.remove("dark");
         }
+        localStorage.setItem('theme', theme);
       }, [theme])
+
+
+      const handleThemeChange = (newTheme) => {
+        setTheme(newTheme);
+      };
 
   return (
     <section>
@@ -24,7 +34,7 @@ const ThemeMode = () => {
         { theme_options?.map((th_opt) => (
           <button 
             key = {th_opt.text}
-            onClick={()=> setTheme(th_opt.text)}
+            onClick={()=> handleThemeChange(th_opt.text)}
             className={`w-8 h-8 leading-9 rounded-full text-xl m-1 
             ${theme === th_opt.text ?  'text-sky-600' : 'text-black-500 dark:text-white'}`}
            >

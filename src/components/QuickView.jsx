@@ -5,8 +5,8 @@ import { quickview } from '../constants'
 const QuickView = () => {
 
   const lgSite = document.documentElement.lang;
-
-  console.log(lgSite);
+  const theme = localStorage.getItem('theme');
+  console.log(theme);
 
   
  
@@ -17,7 +17,8 @@ const QuickView = () => {
         <div className='grid  md:grid-cols-2 gap-4 pb-2'>
           {quickview.map((qv) => (
           <div key={qv.title} className={`${qv.lg === lgSite || qv.lg === "all" ?  "block" : "hidden" }`}>
-            <div  className={`${qv.bgcolor} border-2 border-black rounded-xl flex flex-col items-center hover:scale-105 `}>
+            {/* <div  className={`${qv.bgcolor} border-2 border-black rounded-xl flex flex-col items-center hover:scale-105 `}> */}
+            <div  className={`${theme == "dark" ? qv.darkbgcolor : qv.bgcolor} border-2 border-black rounded-xl flex flex-col items-center hover:scale-105`}>
               <div className='flex justify-center items-center w-full h-full'>
                 <img 
                 src={qv.image} 

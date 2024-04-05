@@ -1,6 +1,6 @@
 import React from 'react'
 import { competitions } from '../constants/index'
-import { competitionsen } from '../constants/index copy'
+import { competitionsen } from '../constants/index-en.js'
 import { Card, Typography } from "@material-tailwind/react";
  
 const TABLE_HEAD_EN = [ "Title", "Type", "Date", "Place",  "Result"];
