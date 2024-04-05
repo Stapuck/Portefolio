@@ -225,6 +225,22 @@ export const experiences = [
     //     ],
     // },
     {
+        title: "Années Lycée ",
+        company_name: "Lycée Grandmont",
+        icon: meta,
+        iconBg: "#a2d2ff",
+        date: "Septembre 2017 - Juillet 2020",
+        points: [
+            "Bac S mention assez bien",
+            "revoir",
+            "revoir",
+            // "Developing and maintaining web applications using React.js and other related technologies.",
+            // "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+            // "Implementing responsive design and ensuring cross-browser compatibility.",
+            // "Participating in code reviews and providing constructive feedback to other developers.",
+        ],
+    },
+    {
         title: "Stage de 3e",
         company_name: "Scaleway",
         icon: meta,
@@ -291,7 +307,14 @@ export const projects = [
         name: 'AI Summarizer Application',
         description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
         link: 'https://github.com/adrianhajdin/project_ai_summarizer',
-    }
+    },
+    {
+        iconUrl: meta, //pricewise
+        theme: 'btn-back-red',
+        name: 'Personel portefolio',
+        description: 'Portefolio',
+        link: 'https://github.com/Stapuck/Portefolio',
+    },
 ];
 
 export const theme_options = [
@@ -495,8 +518,8 @@ export const quickview = [
         title: "Curriculum vitae EN",
         pdf: CV_EN,
         image: cven_pict, 
-        bgcolor: "bg-green-400",
-        darkbgcolor : "bg-green-200",
+        bgcolor: "bg-blue-100",
+        darkbgcolor : "bg-red-600",
         lg: "en",
 
     },
@@ -504,8 +527,8 @@ export const quickview = [
         title: "Curriculum vitae FR",
         pdf: CV_FR,
         image: cvfr_pict, 
-        bgcolor: "bg-blue-400",
-        darkbgcolor : "bg-blue-200",
+        bgcolor: "bg-blue-300/85",
+        darkbgcolor : "bg-blue-400/75",
         lg: "fr",
 
     },
@@ -514,17 +537,10 @@ export const quickview = [
         pdf: PressBook,
         image: pressbook_pict, 
         bgcolor: "bg-orange-400",
-        darkbgcolor : "bg-blue-200",
+        darkbgcolor : "bg-red-600",
         lg: "all",
 
     },
-    // {
-    //     title: "PressBook",
-    //     pdf: PressBook,
-    //     image: pressbook_pict, 
-    //     bgcolor: "bg-pink-400",
-    //     lg: "fr",
-
-    // },
+   
     
 ]

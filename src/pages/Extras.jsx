@@ -8,9 +8,7 @@ const Extras = () => {
     <section className=' max-container '> 
 
   
-    <div className='m-4'>
-      <Gallery/>    
-    </div>
+    
 
     <hr className='border-2 border-black'/>
 

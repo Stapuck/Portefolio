@@ -5,8 +5,9 @@ import Alert from '../components/Alert';
 
 import { useTranslation } from "react-i18next"
 import SocialMContact from '../components/SocialMContact';
-import sport_Contact from '../components/sport_Contact';
-import entreprise_Contact from '../components/entreprise_Contact';
+import ContactSport from '../components/ContactSport';
+import ContactPro from '../components/ContactPro';
+
   
 
 const Contact = () => {
@@ -81,13 +82,18 @@ const Contact = () => {
         <label htmlFor="Entreprise">Entreprise</label>
         <input  className="w-6 h-6" type="radio"  name= "entreprise" value= "entreprise" onChange={handleType} checked={type === 'entreprise'}/>
       
-        {/* {type === 'sponsor'? <sport_Contact/>  : <entreprise_Contact/>}  */}
-        {type === 'sponsor'? <div>sponsor</div>  : <div>entreprise</div>} 
+        {/* {type === 'sponsor'? <sportContact/>  : <entreprise_Contact/>}  */}
+        {type === 'sponsor'? <ContactSport/>  : <ContactPro/>} 
+        
+        
       </div>
+
+
       
+
      
 {/* metter footer ?  */}
-      <SocialMContact/>
+     
 
 
       {/* <div className='fex-1 min-w-[50%] flex flex-col'> */}
@@ -151,6 +157,10 @@ const Contact = () => {
           {isLoading ? 'Sending...' : 'Send Message'}
         </button>
       </form>
+
+      <div className=' mt-10'>
+        <SocialMContact/>
+      </div>
 
       
     </section>
