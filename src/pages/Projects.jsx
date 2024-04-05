@@ -1,13 +1,25 @@
 import React, { useEffect } from 'react'
 import {projects} from '../constants/index'
+import {projectsen} from '../constants/index-en'
 import { Link } from 'react-router-dom'
 import CTA from '../components/CTA'
 
 const Projects = () => {
 
+  const lgSite = document.documentElement.lang;
+
+
   useEffect(() => {
     document.title = 'Projects'
   },[]);
+
+  // ici ? 
+  let data;
+  if (lgSite === 'fr') {
+    data = projects;
+  } else {
+    data = projectsen;
+  }
 
 
   return (
@@ -25,7 +37,7 @@ const Projects = () => {
 
 
       <div className='flex flex-wrap my-20 gap-16'>
-        {projects.map((project)=> (
+        {data.map((project)=> (
           <div className='lg:w-[400px] w-full' key={project.name}>
             <div className='block-container w-12 h-12'>
               <div className={`btn-back rounded-xl ${project.theme}`}/>

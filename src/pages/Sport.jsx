@@ -74,6 +74,7 @@ const Sport = () => {
             <h1 className='text-5xl font-bold '>welcome in my domaine</h1> 
             <p className='text-xl font-semibold'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dolor dolor, convallis sit amet elit ut, lobortis pharetra nisl. Aliquam commodo, eros eu convallis placerat, neque diam varius nunc, at luctus lorem libero vitae nibh. Donec blandit aliquam eros sed varius. Etiam blandit tellus ut turpis tempor ultricies. Ut consequat leo aliquet erat elementum ullamcorper.</p>
             <Timeline type="sport"/>
+            {/* ici */}
           </div>
         </div>
         

@@ -11,16 +11,12 @@ import 'react-vertical-timeline-component/style.min.css';
 
 const Timeline = ({type}) => {
 
-
   const lgSite = document.documentElement.lang;
   
   // Vérifiez si type est bien défini et correspond à une valeur attendue
   if (type !== "sport" && type !== "experiences") {
     return <div>Invalid type</div>;
   }
-
-
-  // const data = type === "sport" ? sport : experiences;
 
   let data;
   if (type === 'sport' && lgSite === 'en') {
@@ -30,7 +26,6 @@ const Timeline = ({type}) => {
   } else if (type === 'sport' && lgSite === 'fr') {
     data = sport;
   } else {
-    // Par défaut, utilisez le fichier en français pour les expériences
     data = experiences;
   }
 

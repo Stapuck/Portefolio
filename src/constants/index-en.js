@@ -243,12 +243,12 @@ export const experiencesen = [
 // last one 
 ];
 
-export const projects = [
+export const projectsen = [
     // add project state : in progress, done, thinking or elaboration
     {
         iconUrl: tailwind, //pricewise
         theme: 'btn-back-red',
-        name: 'Amazon Price Tracker',
+        name: 'Amazon Price Tracker en',
         description: 'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
         link: 'https://github.com/adrianhajdin/pricewise',
     },
@@ -256,7 +256,7 @@ export const projects = [
         iconUrl: tailwind, //pricewise
         // iconUrl: threads,
         theme: 'btn-back-green',
-        name: 'Full Stack Threads Clone',
+        name: 'Full Stack Threads Clone en',
         description: 'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
         link: 'https://github.com/adrianhajdin/threads',
     },
@@ -316,7 +316,7 @@ export const sporten = [
 
      // today
      {
-        title: "championnat du monde // olympique qualification",
+        title: "championnat du monde // olympique qualification en",
         company_name: "Londres",
         icon: starbucks,
         iconBg: "#accbe1",
