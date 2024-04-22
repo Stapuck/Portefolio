@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
-import { skills} from '../constants'
 import CTA from '../components/CTA';
-import Timeline from '../components/Timeline';
+
+import AccordionSchool from '../components/AccordionSchool';
 
 
 
@@ -10,43 +10,36 @@ const About = () => {
     document.title = 'About me'
   },[]);
 
-
   return (
     <section className="max-container">
 
-      <h1 className='head-text justify-center'>Un double project</h1>
+      <h1 className='head-text justify-center underline'>Un Double project</h1>
 
-      <div>
-        <h2>Sportif</h2>
-        <h2>Professionnel </h2>
-      </div>
-
-
-      <div className="py-10 flex flex-col">
-        <h3 className="subhead-text">
-          My Skills
-        </h3>
-      
-      <div className="mt-16 flex flex-wrap gap-12 mb-5">
-        {skills.map((skill, index) => (
-          <div key={index} className=' group block-container w-20 h-20 relative flex justify-center'>
-            <div className='btn-back rounded-xl'/>
-              <div className='btn-front rounded-xl flex flex-col justify-center items-center'>
-              <img 
-              src={skill.imageUrl} 
-              alt={skill.name} 
-              className='w-1/2 h-1/2 object-contain'
-              /> 
-            </div>
-            <div className='hidden text-black font-semibold text-sm absolute mt-24 bg-slate-600 px-3 rounded-2xl group-hover:block'>
-              {skill.name}
-            </div>
-          </div>
-        ))}
+      <div className="flex mt-3 h-96">
+        <div className="w-1/2 border-r-4 border-black-500 flex justify-center">
+          <h2 className='underline'>Sportif</h2>
+        </div>
+        <div className="w-1/2 flex justify-center ">
+          <h2 className='underline'>Professionnel </h2>
         </div>
       </div>
 
 
+      
+
+      
+
+      <div className='py-1 my-6'>
+        <div className="my-2">
+        <AccordionSchool title='test 1' answer='ça fonctionne correctement ?'/>
+        </div>
+        <div className="my-2">
+        <AccordionSchool title='test 2' answer='ça marche ?'/>
+        </div>
+        <div className="my-2">
+        <AccordionSchool title='test 3' answer='j ai pas tout pété ?'/>
+        </div>
+      </div>
 
       
 

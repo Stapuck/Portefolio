@@ -12,7 +12,7 @@ const Gallery = () => {
 
   const data = [
         {
-          label: "Buenos Aires 2018",
+          label: "Buenos Aires",
           value: "Race1",
           images: [
             {

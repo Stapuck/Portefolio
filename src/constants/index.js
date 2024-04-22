@@ -127,7 +127,7 @@ export const skills = [
     }
 ];
 
-//fr
+
 export const experiences = [
     {
         title: "Alternance IHM",
@@ -543,4 +543,11 @@ export const quickview = [
     },
    
     
-]
+];
+
+export const next_date = [
+    { "lieu": "Paris", "date": "2024-05-10" },
+    { "lieu": "Londres", "date": "2024-06-15" },
+    { "lieu": "New York", "date": "2024-07-20" },
+    { "lieu": "Tokyo", "date": "2024-08-25" }
+];
