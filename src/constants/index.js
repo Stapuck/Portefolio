@@ -545,9 +545,27 @@ export const quickview = [
     
 ];
 
+
+
 export const next_date = [
-    { "lieu": "Paris", "date": "2024-05-10" },
-    { "lieu": "Londres", "date": "2024-06-15" },
-    { "lieu": "New York", "date": "2024-07-20" },
-    { "lieu": "Tokyo", "date": "2024-08-25" }
+    { 
+        "lieu": "Mikulas ", 
+        "date": "May 13, 2024 21:59", 
+        "event" : "WorldChampionship"
+     },
+    { 
+        "lieu": "Ivrea",
+        "date": "May 13, 2024 21:50",
+        "event" : "WC"
+    },
+    { 
+        "lieu": "Seu",
+        "date": "May 13, 2024 15:30" ,
+        "event" : "WC"
+    },
+    { 
+        "lieu": "Paris",
+        "date": "May 13, 2024 21:55",
+        "event" : "OG" 
+    }
 ];

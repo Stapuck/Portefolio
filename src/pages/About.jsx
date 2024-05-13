@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import CTA from '../components/CTA';
 
 import AccordionSchool from '../components/AccordionSchool';
+import Countdown from '../components/Countdown';
 
 
 
@@ -12,6 +13,13 @@ const About = () => {
 
   return (
     <section className="max-container">
+
+
+
+      <div className='mb-36'>
+        <h1>test countdown</h1>
+        <Countdown></Countdown>
+      </div>
 
       <h1 className='head-text justify-center underline'>Un Double project</h1>
 
