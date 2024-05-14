@@ -5,7 +5,7 @@ import {
     AccordionBody,
   } from "@material-tailwind/react";
 
-const AccordionSchool = ({title, answer}) => {
+const AccordionSchool = ({title, children}) => {
     const [accordionOpen, setaccordionOpen] = useState(false)
     
   return (
@@ -44,7 +44,7 @@ const AccordionSchool = ({title, answer}) => {
             accordionOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0] opacity-0' 
         }`}>
             <div className='overflow-hidden'>
-                {answer}
+                {children}
             </div>
         </div>
     </div>

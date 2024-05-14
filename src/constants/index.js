@@ -550,22 +550,38 @@ export const quickview = [
 export const next_date = [
     { 
         "lieu": "Mikulas ", 
-        "date": "May 13, 2024 21:59", 
-        "event" : "WorldChampionship"
+        "date": "May 14, 2024 21:51", 
+        "event" : "WorldChampionship",
+        "live_result" : "link",
+        "live_video" : "link",
+        "bibs" : "18",
+        "start" : "12h15"
      },
     { 
         "lieu": "Ivrea",
-        "date": "May 13, 2024 21:50",
-        "event" : "WC"
+        "date": "May 14, 2024 21:52",
+        "event" : "WC",
+        "live_result" : "link",
+        "live_video" : "link",
+        "bibs" : "18",
+        "start" : "12h15"
     },
     { 
         "lieu": "Seu",
-        "date": "May 13, 2024 15:30" ,
-        "event" : "WC"
+        "date": "May 14, 2024 21:54" ,
+        "event" : "WC",
+        "live_result" : "link",
+        "live_video" : "link",
+        "bibs" : "18",
+        "start" : "12h15"
     },
     { 
         "lieu": "Paris",
         "date": "May 13, 2024 21:55",
-        "event" : "OG" 
+        "event" : "OG" ,
+        "live_result" : "link",
+        "live_video" : "link",
+        "bibs" : "18",
+        "start" : "12h15"
     }
 ];
