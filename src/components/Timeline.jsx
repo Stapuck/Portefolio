@@ -2,8 +2,8 @@ import React from 'react'
 
 
 
-import {sport, experiences} from '../constants'
-import {sporten, experiencesen} from '../constants/index-en.js'
+import {sport, experiences} from '../constants' //, sporten
+import {sporten, experiencesen} from '../constants/index-en.js' //sporten,
 
 
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
@@ -32,12 +32,13 @@ const Timeline = ({type}) => {
 
   return (
 
-  <div className="mt-12 flex">
-    <VerticalTimeline>
+  <div className="mt-12 flex ">
+    <VerticalTimeline >
       {data.map((sp)=> (
         <VerticalTimelineElement
         key={sp.company_name}
         date={sp.date}
+        className='mx-2 dark: text-white '
         icon=
         {
           <div className='flex justify-center items-center w-full h-full '>
@@ -56,7 +57,7 @@ const Timeline = ({type}) => {
           boxShadow: 'none'
         }}
         >
-          <div>
+          <div >
             <h3 className='text-black tect-xl font-poppins font-semibold'>
               {sp.title}
             </h3>

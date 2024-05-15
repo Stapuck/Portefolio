@@ -16,17 +16,17 @@ const About = () => {
       <div className='mb-36'>
         <Countdown></Countdown>
       </div>
-      <h1 className='head-text flex justify-center underline mb-10'>Un Double project</h1>
+      <h1 className='head-text flex justify-center underline mb-10 dark:text-white'>Un Double project</h1>
       <div className="flex my-5 h-96">
-        <div className="w-1/2 border-r-4 border-black-500 flex justify-center">
-          <h2 className='underline'>Sportif</h2>
+        <div className="w-1/2 border-r-4 border-black-500 dark:border-slate-400 flex justify-center">
+          <h2 className='underline dark:text-slate-100/85'>Sportif</h2>
         </div>
         <div className="w-1/2 flex justify-center ">
-          <h2 className='underline'>Professionnel </h2>
+          <h2 className='underline dark:text-slate-100/85'>Professionnel </h2>
         </div>
       </div>
 
-      <p>le sport a fait et fait partie intégrante de mon éducation, m'a permit d'apprendre des valeurs et de comprendre le monde d'une façon différente</p>
+      <p className='dark:text-white'>le sport a fait et fait partie intégrante de mon éducation, m'a permit d'apprendre des valeurs et de comprendre le monde d'une façon différente</p>
       
       <div className='py-1 my-6'>
         <div className="my-2">

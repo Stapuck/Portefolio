@@ -26,8 +26,8 @@ const Footer = () => {
 
     <footer className='w-full footer'>
        
-       <hr className='bg-white'/>
-        <section className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
+       <hr className='dark:border-white border-black'/>
+        <section className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 dark:text-slate-400">
           <div>Made by  {owner}  </div>
           <div>version numéro {num_version}, {date_version}</div>
           <div>{ t('test_value', {number_of_days_building})}</div>

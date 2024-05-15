@@ -8,6 +8,10 @@ const Countdown = () => {
   const [countDate, setCountDate] = useState(null);
   const [isNow, setIsNow] = useState(false);
 
+
+
+  
+
   useEffect(() => {
     const now = new Date().getTime();
     let closestDate = null;
@@ -46,6 +50,12 @@ const Countdown = () => {
       const textMinute = Math.floor((gap % hour) / minute);
       const textSecond = Math.floor((gap % minute)/ second);
 
+      const dayLabel = textDay !== 0 ? "Days" : "Day";
+      const hourLabel = textHour !== 0  ? "Hours" : "Hour";
+      const minuteLabel = textMinute !== 0  ? "Minutes" : "Minute";
+      const secondLabel = textSecond !== 0  ? "Secondes" : "Seconde";
+
+
       const dayElement = document.getElementById("day");
       const hourElement = document.getElementById("hour");
       const minuteElement = document.getElementById("minute");
@@ -54,9 +64,24 @@ const Countdown = () => {
       dayElement.innerText = textDay.toString();
       hourElement.innerText = textHour.toString();
       minuteElement.innerText = textMinute.toString();
-      secondElement.innerText = textSecond.toString();   
+      secondElement.innerText = textSecond.toString();  
+
+
+      const dayLabelElement = document.getElementById("daylabel");
+      const hourLabelElement = document.getElementById("hourlabel");
+      const minuteLabelElement = document.getElementById("minutelabel");
+      const secondLabelElement = document.getElementById("secondlabel");
+
+      
+      dayLabelElement.innerText = dayLabel;
+      hourLabelElement.innerText = hourLabel;
+      minuteLabelElement.innerText = minuteLabel;
+      secondLabelElement.innerText = secondLabel;
+
     }
   }
+
+ 
 
   useEffect(() => {
     const interval = setInterval(fct_countdown, 1000);
@@ -75,22 +100,25 @@ const Countdown = () => {
   return (
     <section>
       <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Next Event</h1>
+        <h1 className="text-4xl font-bold mb-4 dark:text-white">Next Event</h1>
         {nextEvent ? (
           <div className="flex flex-col items-center">
             <div>
-              <span className="font-bold">Location: </span>
-              <span>{nextEvent.lieu}</span>
+              <span className="font-bold dark:text-white">Location: </span>
+              <span className='dark:text-slate-300'>{nextEvent.lieu}</span>
+              {/*todo rajouter l'addresse et le mettre en lien blank= */}
             </div>
             <div>
-              <span className="font-bold">Event: </span>
-              <span>{nextEvent.event}</span>
+              <span className="font-bold dark:text-white">Event: </span>
+              <span className='dark:text-slate-300'>{nextEvent.event}</span>
             </div>
             <div>
               {isNow ? (
                 <div>
+                  {/* revoir comment bien disposer les infos 
+                  dark:text-white */}
                   <p>C'est maintenant</p>
-                  <div>
+                  <div className='dark:text-white'>
                     retrouver moi 
                     {nextEvent.event}, {nextEvent.lieu}, {nextEvent.live_result}, {nextEvent.live_video},
                     {nextEvent.bibs} à {nextEvent.start}
@@ -101,27 +129,29 @@ const Countdown = () => {
               ) : (
                 <span className='flex flex-row'>
                   <div className="flex flex-col items-center mx-4">
-                    <span id="day" className="text-4xl font-bold"></span>
-                    <span className="text-sm">Days</span>
+                    <span id="day" className="text-4xl font-bold dark:text-white"></span>
+                    <span id='daylabel' className="text-sm dark:text-white"></span>
                   </div>
                   <div className="flex flex-col items-center mx-4">
-                    <span id="hour" className="text-4xl font-bold"></span>
-                    <span className="text-sm">Hours</span>
+                    <span id="hour" className="text-4xl font-bold dark:text-white"></span>
+                    <span id='hourlabel' className="text-sm dark:text-white"></span>
                   </div>
                   <div className="flex flex-col items-center mx-4">
-                    <span id="minute" className="text-4xl font-bold"></span>
-                    <span className="text-sm">Minutes</span>
+                    <span id="minute" className="text-4xl font-bold dark:text-white"></span>
+                    <span id='minutelabel' className="text-sm dark:text-white"></span>
                   </div>
                   <div className="flex flex-col items-center mx-4">
-                    <span id="second" className="text-4xl font-bold"></span>
-                    <span className="text-sm">Secondes</span>
+                    <span id="second" className="text-4xl font-bold dark:text-white"></span>
+                    <span id='secondlabel' className="text-sm dark:text-white"></span>
                   </div>
                 </span>
               )}
             </div>
           </div>
         ) : (
-          <div>Pas d'autre événement pour le moment, mais ça va vite revenir</div>
+          <div className='dark:text-white'>
+            <p>Pas d'autre événement pour le moment, mais ça va vite revenir</p>
+          </div>
         )}
       </div>
     </section>

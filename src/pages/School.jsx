@@ -15,10 +15,10 @@ const { t } = useTranslation();
     <section className="max-container">
   
       <div className="py-10 flex flex-col">
-        <h3 className="subhead-text">
+        <h3 className="subhead-text dark:text-slate-200">
          {t('School.title')}
         </h3>      
-        <div className='mt-5 flex flex-col gap-3 text-slate-500'>
+        <div className='mt-5 flex flex-col gap-3 text-slate-500 dark:text-slate-300'>
           <p>
             Donec blandit aliquam eros sed varius. Etiam blandit tellus ut turpis tempor ultricies. Ut consequat leo aliquet erat elementum ullamcorper.
           </p>
@@ -27,13 +27,17 @@ const { t } = useTranslation();
         <div className="mt-12 flex">
         <Timeline type="experiences"/>
         </div>
-      <div>
-        mettre certification 
+      <div className='subhead-text dark:text-slate-200'>
+        Certification 
       </div>
+
+      {/* <div>
+        <Timeline type="sport"/>
+      </div> */}
 
 
       <div className="py-10 flex flex-col">
-        <h3 className="subhead-text">
+        <h3 className="subhead-text dark:text-slate-300">
           My Skills
         </h3>
       
@@ -48,7 +52,7 @@ const { t } = useTranslation();
               className='w-1/2 h-1/2 object-contain'
               /> 
             </div>
-            <div className='hidden text-black font-semibold text-sm absolute mt-24 bg-slate-600 px-3 rounded-2xl group-hover:block'>
+            <div className='hidden text-black dark:text-slate-500 font-semibold text-sm absolute mt-24 bg-slate-400/85 px-3 rounded-2xl group-hover:block dark:bg-slate-300'>
               {skill.name}
             </div>
           </div>

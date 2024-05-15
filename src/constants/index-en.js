@@ -316,7 +316,7 @@ export const sporten = [
 
      // today
      {
-        title: "championnat du monde // olympique qualification en",
+        title: "WorldChampionship & Olympic qualification ",
         company_name: "Londres",
         icon: starbucks,
         iconBg: "#accbe1",

@@ -339,7 +339,135 @@ export const sport = [
 
      // today
      {
-        title: "championnat du monde // olympique qualification",
+        title: "Championnat du monde Sénior & Olympique qualification",
+        company_name: "Londres",
+        icon: starbucks, //drappeau
+        iconBg: "#accbe1",
+        date: "Septembre 2023",
+        points: [
+            "pas qualifié",
+            "prochaine étape la réunion ",
+            // "Implementing responsive design and ensuring cross-browser compatibility.",
+            // "Participating in code reviews and providing constructive feedback to other developers.",
+        ],
+    },
+    {
+        title: "Championnat du monde U23 ",
+        company_name: "Ivrea",
+        icon: starbucks,
+        iconBg: "#accbe1",
+        date: "Juillet 2022",
+        points: [
+            "15 place ( à revoir ) demi final  ",
+            "",
+            // "Implementing responsive design and ensuring cross-browser compatibility.",
+            // "Participating in code reviews and providing constructive feedback to other developers.",
+        ],
+    },
+    {
+        title: "Championnat du monde U23 ",
+        company_name: "Tacen",
+        icon: starbucks,
+        iconBg: "#accbe1",
+        date: "Juillet 2021",
+        points: [
+            "14 place ( à revoir ) demi final  ",
+            "",
+            // "Implementing responsive design and ensuring cross-browser compatibility.",
+            // "Participating in code reviews and providing constructive feedback to other developers.",
+        ],
+    },
+    // covid
+    {
+        title: "Olympique test event ",
+        company_name: "Tokyo",
+        icon: starbucks,
+        iconBg: "#accbe1",
+        date: "Novembre 2019",
+        points: [
+            "pas qualifié pour les jeux mais occasion en or pour faire cette repetition générale  ",
+            "",
+            // "Implementing responsive design and ensuring cross-browser compatibility.",
+            // "Participating in code reviews and providing constructive feedback to other developers.",
+        ],
+    },
+    {
+        title: "Olympique qualification ",
+        company_name: "Seu d'urgel",
+        icon: starbucks,
+        iconBg: "#accbe1",
+        date: "Septembre - Octobre 2019",
+        points: [
+            "pas qualifié ",
+            "",
+            // "Implementing responsive design and ensuring cross-browser compatibility.",
+            // "Participating in code reviews and providing constructive feedback to other developers.",
+        ],
+    },
+    {
+        title: "Jeux Olympique de la jeunesse",
+        company_name: "Buenos Aires ",
+        icon: starbucks,
+        iconBg: "#accbe1",
+        date: "Septembre - Octobre 2018",
+        points: [
+            "medail d'or en Slalom",
+            "victoire avec 5 sec d'avance ",
+            // "Implementing responsive design and ensuring cross-browser compatibility.",
+            // "Participating in code reviews and providing constructive feedback to other developers.",
+        ],
+    },
+    {
+        title: "Championnat d'Afrique u18 ",
+        company_name: "Alger",
+        icon: tesla,
+        iconBg: "#fbc3bc",
+        date: "Juillet 2018",
+        points: [
+            "double medail or en slalom et bronze en course en ligne ",
+            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+            "Implementing responsive design and ensuring cross-browser compatibility.",
+            "Participating in code reviews and providing constructive feedback to other developers.",
+        ],
+    },
+    {
+        title: "1er Compétition international ",
+        company_name: "Championnat du monde Junior Bratislava",
+        icon: shopify,
+        iconBg: "#b7e4c7",
+        date: "Juillet 2017",
+        points: [
+            "sur classé de 2 ans  15 et j'étais contre des 17 ans",
+           
+        ],
+    },
+    {
+        title: "Début dans le kayak ",
+        company_name: "Val d'indre Canoe-Kayak, Veigné ",
+        icon: meta,
+        iconBg: "#a2d2ff",
+        date: "Mars 2009",
+        points: [
+            "Developing and maintaining web applications using React.js and other related technologies.",
+            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+            "Implementing responsive design and ensuring cross-browser compatibility.",
+            "Participating in code reviews and providing constructive feedback to other developers.",
+        ],
+    },
+];
+
+//revoir si on l'enleve ( je pense que la vidéo empeche le chargement de la timeline sport )
+export const sporten = [
+
+    // TODO : 
+    // mettre logo du pays ou à eu lieu la course 
+    // rajouter propriété lieu
+    // poids des image à revoir
+    // voir pour l'extension react des flags !!
+
+     // today
+     {
+        title: "WorldChampionship & Olympic qualification ",
         company_name: "Londres",
         icon: starbucks,
         iconBg: "#accbe1",
@@ -455,7 +583,7 @@ export const sport = [
         ],
     },
 ];
-
+// sup compétition
 export const competitions = [
     {
         title: "Test 1",
@@ -550,7 +678,7 @@ export const quickview = [
 export const next_date = [
     { 
         "lieu": "Mikulas ", 
-        "date": "May 14, 2024 21:51", 
+        "date": "May 15, 2024 21:31", 
         "event" : "WorldChampionship",
         "live_result" : "link",
         "live_video" : "link",
