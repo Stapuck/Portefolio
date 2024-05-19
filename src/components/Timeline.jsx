@@ -25,12 +25,12 @@ const Timeline = ({type}) => {
 
   return (
   <div className="mt-12 flex ">
-    <VerticalTimeline >
+    <VerticalTimeline>
       {data.map((sp)=> (
         <VerticalTimelineElement
         key={sp.company_name}
         date={sp.date}
-        className='mx-2  text-slate-600 dark:text-slate-100 '
+        className='text-slate-600 dark:text-slate-100 '
         icon=
         {
           <div className='flex justify-center items-center w-full h-full '>
@@ -50,7 +50,7 @@ const Timeline = ({type}) => {
         }}
         >
           <div >
-            <h3 className='text-black tect-xl font-poppins font-semibold'>
+            <h3 className='text-black font-poppins font-semibold'>
               {sp.title}
             </h3>
             <p className='text-black-500 font-medium font-base' style={{margin:0}}>
@@ -60,7 +60,7 @@ const Timeline = ({type}) => {
 
           <ul className='my-5 list-disc ml-5 space-y-2'>
             {sp.points.map((point, index)=> (
-              <li key={`sp-point-${index}`} className='text-black-500/50 font-normal pl-1 text-sm'>
+              <li key={`sp-point-${index}`} className='text-slate-800  font-normal pl-1 text-sm'>
                 {point}
               </li>
 

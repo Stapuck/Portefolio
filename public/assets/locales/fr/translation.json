@@ -21,7 +21,34 @@
 
     },
     "About" : {
+        "double" : "Un Double Projet",
+        "accordion1q" : "test1",
+        "accordion2q" : "test2",
+        "accordion3q" : "test3",
+        "accordion1a" : "test1",
+        "accordion2a" : "test2",
+        "accordion3a" : "test3"
+    },
+    "Countdown" :{
+        "title" : "Prochaine Compétition : ",
+        "location" : "Lieu : ", 
+        "event" : "Évènement : ", 
+        "noevent" : "Pas d'autre événement pour le moment, revenez plus tard.", 
+        "now" : "La compétition est en cours !!", 
+        "?" : "retourvez moi : // todo : trouver bon texte. ", 
+
+
+        "days" : "Jours",
+        "day" : "Jour",
+        "hours" : "Heures",
+        "hour" : "Heure",
+        "minutes" : "Minutes",
+        "minute" : "Minute",
+        "seconds" : "Secondes",
+        "second" : "Seconde"
         
+
+
     },
     "Sport" : {
         "videotext" : "Athlète | Ingénieur",

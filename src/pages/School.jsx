@@ -5,11 +5,16 @@ import CTA from '../components/CTA';
 import Timeline from '../components/Timeline';
 import { useTranslation } from "react-i18next";
 import { skills} from '../constants'
+import { useEffect } from "react"
+
 
 const School = () => {
 
 const { t } = useTranslation();
 
+useEffect(() => {
+  document.title = 'School'
+},[]);
 
   return (
     <section className="max-container">

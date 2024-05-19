@@ -1,14 +1,22 @@
 import {
     meta,
-    shopify,
-    starbucks,
-    tesla, 
     safran, 
     octopeek, 
     hermes, 
     kazzle, 
     scaleway, 
-    grandmont
+    grandmont,
+    france,
+    anglais,
+    pologne,
+    allemagne,
+    slovenie,
+    italie,
+    espagne,
+    argentine,
+    algerie,
+    slovaquie,
+    japon
 } from "../assets";
 
 import { css,
@@ -57,101 +65,6 @@ import {
 
 
 // renommer le fichier index en index-fr.js et bien faire le changement partout. 
-
-// School 
-
-
-
-//Sport 
-
-
-
-
-
-export const skills = [
-    {
-        imageUrl: css,
-        name: "CSS",
-        type: "Frontend",
-    },
-    {
-        imageUrl: backend, //express
-        name: "Express",
-        type: "Backend",
-    },
-    {
-        imageUrl: git,
-        name: "Git",
-        type: "Version Control",
-    },
-    {
-        imageUrl: github,
-        name: "GitHub",
-        type: "Version Control",
-    },
-    {
-        imageUrl: html,
-        name: "HTML",
-        type: "Frontend",
-    },
-    {
-        imageUrl: javascript,
-        name: "JavaScript",
-        type: "Frontend",
-    },
-    {
-        imageUrl: mongodb,
-        name: "MongoDB",
-        type: "Database",
-    },
-    {
-        imageUrl: backend , //motion,
-        name: "Motion",
-        type: "Animation",
-    },
-    {
-        imageUrl: backend , //mui
-        name: "UX/UI",
-        type: "Frontend",
-    },
-    {
-        imageUrl: backend , //mui
-        // imageUrl: nextjs,
-        name: "Next.js",
-        type: "Frontend",
-    },
-    {
-        imageUrl: nodejs,
-        name: "Node.js",
-        type: "Backend",
-    },
-    {
-        imageUrl: reactjs,
-        name: "React",
-        type: "Frontend",
-    },
-    {
-        imageUrl: redux,
-        name: "Redux",
-        type: "State Management",
-    },
-    {
-        imageUrl: backend, //sass
-        name: "Sass",
-        type: "Frontend",
-    },
-    {
-        imageUrl: tailwind,
-        name: "Tailwind",
-        type: "Frontend",
-    },
-    {
-        imageUrl: typescript,
-        name: "TypeScript",
-        type: "Frontend",
-    }
-];
-
 
 export const experiences_fr = [
     {
@@ -244,6 +157,148 @@ export const experiences_fr = [
 // last one 
 ];
 
+export const sport_fr = [
+     // today
+     {
+        title: "Qualification Olympique Continental pourParis 2024. ",
+        company_name: "Saint-Suzanne, la Réunion",
+        icon: france, 
+        iconBg: "#accbe1",
+        date: "Février 2024",
+        points: [
+            "4e de la qualification.",
+            "mais classement final 13e pas de final donc pas qualifié.",
+            "ça reste une très belle expériences et également la premiere opportunité que j'ai eu pour m'entrainer au chaud durant le froid hivernal de la métropole. "
+        ],
+    },
+    {
+        title: "Championnat du monde Sénior &  Qualification Olympique pour Paris 2024. ",
+        company_name: "Londres, Angleterre",
+        icon: anglais, 
+        iconBg: "#accbe1",
+        date: "Septembre 2023",
+        points: [
+            "Dernière compétition de la saison 2023 pour moi et je finis sur une 50e place, mitigé sur ce résultat.",
+            "Je ne me qualifie donc pas pour les Jeux de Paris.",
+        ],
+    },
+    {
+        title: "Championnat du monde U23",
+        company_name: "Cracovie, Pologne",
+        icon: pologne,
+        iconBg: "#accbe1",
+        date: "Août 2023",
+        points: [
+            "pas de demi-finale cette année, une 36e place du à de grosses erreurs.",
+            "Je repars donc de ces championnats du monde avec des points à revoir pour la suite.",
+        ],
+    },
+    {
+        title: "Championnat du monde Sénior",
+        company_name: "Augsburg, Allemagne",
+        icon: allemagne,
+        iconBg: "#accbe1",
+        date: "Juillet 2022",
+        points: [
+            "résultat final : 40e sur 67.",
+            "Augsburg est un bassin particulièrement technique. "
+        ],
+    },
+    {
+        title: "Championnat du monde U23",
+        company_name: "Ivrea, Italie",
+        icon: italie,
+        iconBg: "#accbe1",
+        date: "Juillet 2022",
+        points: [
+            "resultat final : une 15e place en demi final.",
+            "une petit erreur qui m'éloigne de la final mais de bon progrès et du travail pour la suite.",
+        ],
+    },
+    {
+        title: "Championnat du monde U23 ",
+        company_name: "LJUBLJANA-TACEN, Slovénie",
+        icon: slovenie,
+        iconBg: "#accbe1",
+        date: "Juillet 2021",
+        points: [
+            "resultat final : une 19e place en demi final, sans coach et sans structure.",
+            "j'ai malheureusement pas eu de coach sur cette échéance mais un bon résultat malgré ça.",
+        ],
+    },
+    // covid
+    {
+        title: "Olympique Test Event ",
+        company_name: "Tokyo, Japon",
+        icon: japon,
+        iconBg: "#accbe1",
+        date: "Novembre 2019",
+        points: [
+            "Pas qualifié pour les Jeux Olympique mais une occasion en or pour faire cette répétition générale.",
+            "Participation à 2 courses avec le top mondial du canoe slalom.",
+        ],
+    },
+    {
+        title: "Championnat du monde Sénior et qualification Olympique pour Tokyo 2021",
+        company_name: "Seu d'Urgell, Espagne",
+        icon: espagne,
+        iconBg: "#accbe1",
+        date: "Septembre - Octobre 2019",
+        points: [
+            "Résultat final : 43e sur 56",
+            "Pas qualification pour les jeux de Tokyo.",
+            "Mais ce type d'échec, sert à mieux rebondir pour la suite."
+        ],
+    },
+    {
+        title: "Jeux Olympique de la jeunesse",
+        company_name: "Buenos Aires, Argentine",
+        icon: argentine,
+        iconBg: "#accbe1",
+        date: "Septembre - Octobre 2018",
+        points: [
+            "Médail d'or en Slalom.",
+            "Victoire avec 5 sec d'avance.",
+            "Titre de Champion Olympique de la jeunesse 2018."
+        ],
+    },
+    {
+        title: "Championnat d'Afrique u18 ",
+        company_name: "Alger, Algerie",
+        icon: algerie,
+        iconBg: "#fbc3bc",
+        date: "Juillet 2018",
+        points: [
+            "2 médaille, Or en slalom et Bronze en course en ligne.",
+            "premiere expérience et confrontation avec les pagaieurs du continent africain."
+        ],
+    },
+    {
+        title: "Championnat du monde Junior",
+        company_name: "Bratislava, Slovaquie",
+        icon: slovaquie,
+        iconBg: "#b7e4c7",
+        date: "Juillet 2017",
+        points: [
+            "1er compétition international.",
+            "Sur-classé de 2 ans car j'étais trop jeune (15ans) et je concourais contre des athlètes de 17 ans.",
+            "j'ai donc fini 33e sur64, à 3 place de la demie-final donc pas trop mal."
+        ],
+    },
+    {
+        title: "Début dans le kayak ",
+        company_name: "Val d'indre Canoe-Kayak, Veigné ",
+        icon: france,
+        iconBg: "#a2d2ff",
+        date: "Avril 2009",
+        points: [
+            "Après avoir essayer plein d'autre sport, cette date représente le début d'une aventure toujours en cours.",
+            "Et c'est sans le savoir que je me lance et intègre cette belle grande famille qu'est le slalom."
+        ],
+    },
+];
+
+// a faire 
 //projects_fr
 export const projects = [
     // add project state : in progress, done, thinking or elaboration
@@ -305,178 +360,12 @@ export const projects = [
 
 
 
-export const sport_fr = [
-
-    // TODO : 
-    // drapeau du pays en icon
-
-     // today
-     {
-        title: "Championnat du monde Sénior &  Qualification Olympique. ",
-        company_name: "Londres",
-        icon: starbucks, //drappeau
-        iconBg: "#accbe1",
-        date: "Septembre 2023",
-        points: [
-            "mettre le résultat avec le presbook.",
-            "pas qualifié",
-            "prochaine étape la réunion ",
-            // "Implementing responsive design and ensuring cross-browser compatibility.",
-            // "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Championnat du monde U23 ",
-        company_name: "Ivrea",
-        icon: starbucks,
-        iconBg: "#accbe1",
-        date: "Juillet 2022",
-        points: [
-            "15 place ( à revoir ) demi final  ",
-            "",
-            // "Implementing responsive design and ensuring cross-browser compatibility.",
-            // "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Championnat du monde U23 ",
-        company_name: "Tacen",
-        icon: starbucks,
-        iconBg: "#accbe1",
-        date: "Juillet 2021",
-        points: [
-            "14 place ( à revoir ) demi final  ",
-            "",
-            // "Implementing responsive design and ensuring cross-browser compatibility.",
-            // "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    // covid
-    {
-        title: "Olympique test event ",
-        company_name: "Tokyo",
-        icon: starbucks,
-        iconBg: "#accbe1",
-        date: "Novembre 2019",
-        points: [
-            "pas qualifié pour les jeux mais occasion en or pour faire cette repetition générale  ",
-            "",
-            // "Implementing responsive design and ensuring cross-browser compatibility.",
-            // "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Olympique qualification ",
-        company_name: "Seu d'urgel",
-        icon: starbucks,
-        iconBg: "#accbe1",
-        date: "Septembre - Octobre 2019",
-        points: [
-            "pas qualifié ",
-            "",
-            // "Implementing responsive design and ensuring cross-browser compatibility.",
-            // "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Jeux Olympique de la jeunesse",
-        company_name: "Buenos Aires ",
-        icon: starbucks,
-        iconBg: "#accbe1",
-        date: "Septembre - Octobre 2018",
-        points: [
-            "medail d'or en Slalom",
-            "victoire avec 5 sec d'avance ",
-            // "Implementing responsive design and ensuring cross-browser compatibility.",
-            // "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Championnat d'Afrique u18 ",
-        company_name: "Alger",
-        icon: tesla,
-        iconBg: "#fbc3bc",
-        date: "Juillet 2018",
-        points: [
-            "double medail or en slalom et bronze en course en ligne ",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "1er Compétition international ",
-        company_name: "Championnat du monde Junior Bratislava",
-        icon: shopify,
-        iconBg: "#b7e4c7",
-        date: "Juillet 2017",
-        points: [
-            "sur classé de 2 ans  15 et j'étais contre des 17 ans",
-           
-        ],
-    },
-    {
-        title: "Début dans le kayak ",
-        company_name: "Val d'indre Canoe-Kayak, Veigné ",
-        icon: meta,
-        iconBg: "#a2d2ff",
-        date: "Mars 2009",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-];
 
 
 
 
 
-
-export const next_date = [
-    { 
-        "lieu": "Mikulas ", 
-        "date": "May 15, 2024 21:31", 
-        "event" : "WorldChampionship",
-        "live_result" : "link",
-        "live_video" : "link",
-        "bibs" : "18",
-        "start" : "12h15"
-     },
-    { 
-        "lieu": "Ivrea",
-        "date": "May 14, 2024 21:52",
-        "event" : "WC",
-        "live_result" : "link",
-        "live_video" : "link",
-        "bibs" : "18",
-        "start" : "12h15"
-    },
-    { 
-        "lieu": "Seu",
-        "date": "May 14, 2024 21:54" ,
-        "event" : "WC",
-        "live_result" : "link",
-        "live_video" : "link",
-        "bibs" : "18",
-        "start" : "12h15"
-    },
-    { 
-        "lieu": "Paris",
-        "date": "May 13, 2024 21:55",
-        "event" : "OG" ,
-        "live_result" : "link",
-        "live_video" : "link",
-        "bibs" : "18",
-        "start" : "12h15"
-    }
-];
-
-
-
-// gestion du site
+// gestion du site à mettre dans le global : 
 export const languages = [
     {
       code: 'fr',
@@ -537,4 +426,138 @@ export const quickview = [
         lg: "all",
 
     },
+];
+
+export const next_date = [
+    { 
+        "lieu_fr": "Liptovsky Mikulas, Slovaquie", 
+        "lieu_en": "Liptovsky Mikulas, Slovakia", 
+        "date": "May 19, 2024 20:40", 
+        "event_en" : "WorldChampionship U23",
+        "event_fr" : "Championnat du monde U23",
+        "live_result" : "link",
+        "live_video" : "link",
+        "bibs" : "18",
+        "start" : "12h15"
+     },
+    { 
+        "lieu_fr": "Ivrea, Italie",
+        "lieu_en": "Ivrea, Italy",
+        "date": "May 31, 2024 21:52",
+        "event_en" : "WC",
+        "event_fr" : "Coupe du monde",
+        "live_result" : "link",
+        "live_video" : "link",
+        "bibs" : "18",
+        "start" : "12h15"
+    },
+    { 
+        "lieu_fr": "Seu d'Urgell, Espagne",
+        "lieu_en": "Seu d'Urgell, Spain",
+        "date": "May 21, 2024 21:54" ,
+        "event_en" : "WC",
+        "event_fr" : "Coupe du monde",
+        "live_result" : "link",
+        "live_video" : "link",
+        "bibs" : "18",
+        "start" : "12h15"
+    },
+    { 
+        "lieu_fr": "Paris, France",
+        "lieu_en": "Paris, France",
+        "date": "May 13, 2024 21:55",
+        "event_en" : "OG" ,
+        "event_fr" : "JO",
+        "live_result" : "link",
+        "live_video" : "link",
+        "bibs" : "18",
+        "start" : "12h15"
+    }
+];
+
+
+
+// a refaire 
+export const skills = [
+    {
+        imageUrl: css,
+        name: "CSS",
+        type: "Frontend",
+    },
+    {
+        imageUrl: backend, //express
+        name: "Express",
+        type: "Backend",
+    },
+    {
+        imageUrl: git,
+        name: "Git",
+        type: "Version Control",
+    },
+    {
+        imageUrl: github,
+        name: "GitHub",
+        type: "Version Control",
+    },
+    {
+        imageUrl: html,
+        name: "HTML",
+        type: "Frontend",
+    },
+    {
+        imageUrl: javascript,
+        name: "JavaScript",
+        type: "Frontend",
+    },
+    {
+        imageUrl: mongodb,
+        name: "MongoDB",
+        type: "Database",
+    },
+    {
+        imageUrl: backend , //motion,
+        name: "Motion",
+        type: "Animation",
+    },
+    {
+        imageUrl: backend , //mui
+        name: "UX/UI",
+        type: "Frontend",
+    },
+    {
+        imageUrl: backend , //mui
+        // imageUrl: nextjs,
+        name: "Next.js",
+        type: "Frontend",
+    },
+    {
+        imageUrl: nodejs,
+        name: "Node.js",
+        type: "Backend",
+    },
+    {
+        imageUrl: reactjs,
+        name: "React",
+        type: "Frontend",
+    },
+    {
+        imageUrl: redux,
+        name: "Redux",
+        type: "State Management",
+    },
+    {
+        imageUrl: backend, //sass
+        name: "Sass",
+        type: "Frontend",
+    },
+    {
+        imageUrl: tailwind,
+        name: "Tailwind",
+        type: "Frontend",
+    },
+    {
+        imageUrl: typescript,
+        name: "TypeScript",
+        type: "Frontend",
+    }
 ];

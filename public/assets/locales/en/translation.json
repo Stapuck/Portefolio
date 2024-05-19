@@ -20,7 +20,35 @@
 
     },
     "About" : {
+        "double" : "A Double Project",
+        "accordion1q" : "",
+        "accordion2q" : "",
+        "accordion3q" : "",
+        "accordion1a" : "",
+        "accordion2a" : "",
+        "accordion3a" : ""
         
+    },
+    "Countdown" :{
+        "title" : "Next Event : ",
+        "location" : "Location : ", 
+        "event" : "Event : ", 
+        "noevent" : "No event in coming, come back later to see the next events.", 
+        "now" : "Event in Progress !!", 
+        "?" : "follow me  : // todo : trouver bon texte. ", 
+
+
+        "days" : "Jours",
+        "day" : "Jour",
+        "hours" : "Heures",
+        "hour" : "Heure",
+        "minutes" : "Minutes",
+        "minute" : "Minute",
+        "seconds" : "Secondes",
+        "second" : "Seconde"
+        
+
+
     },
     "Sport" : {
         "videotext" : "Athlete | Engineer",

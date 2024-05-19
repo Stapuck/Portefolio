@@ -1,16 +1,27 @@
 import {
-    meta,
-    shopify,
-    starbucks,
-    tesla, 
     safran, 
     octopeek, 
     hermes, 
     kazzle, 
     scaleway, 
-    grandmont
+    grandmont,
+
+
+    france,
+    anglais,
+    algerie,
+    allemagne,
+    argentine,
+    espagne,
+    italie,
+    japon, 
+    pologne,
+    slovaquie,
+    slovenie
+
 } from "../assets";
 
+// pour les experiences
 import { css,
     docker,
     figma,
@@ -174,128 +185,143 @@ export const projectsen = [
 ];
 
 export const sport_en = [
-
-    // TODO : 
-    // mettre logo du pays ou à eu lieu la course 
-    // rajouter propriété lieu
-    // poids des image à revoir
-    // voir pour l'extension react des flags !!
-
-     // today
-     {
-        title: "WorldChampionship & Olympic qualification ",
-        company_name: "Londres",
-        icon: starbucks,
-        iconBg: "#accbe1",
-        date: "Septembre 2023",
-        points: [
-            "pas qualifié",
-            "prochaine étape la réunion ",
-            // "Implementing responsive design and ensuring cross-browser compatibility.",
-            // "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
+    // today
     {
-        title: "Championnat du monde U23 ",
-        company_name: "Ivrea",
-        icon: starbucks,
-        iconBg: "#accbe1",
-        date: "Juillet 2022",
-        points: [
-            "15 place ( à revoir ) demi final  ",
-            "",
-            // "Implementing responsive design and ensuring cross-browser compatibility.",
-            // "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Championnat du monde U23 ",
-        company_name: "Tacen",
-        icon: starbucks,
-        iconBg: "#accbe1",
-        date: "Juillet 2021",
-        points: [
-            "14 place ( à revoir ) demi final  ",
-            "",
-            // "Implementing responsive design and ensuring cross-browser compatibility.",
-            // "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    // covid
-    {
-        title: "Olympique test event ",
-        company_name: "Tokyo",
-        icon: starbucks,
-        iconBg: "#accbe1",
-        date: "Novembre 2019",
-        points: [
-            "pas qualifié pour les jeux mais occasion en or pour faire cette repetition générale  ",
-            "",
-            // "Implementing responsive design and ensuring cross-browser compatibility.",
-            // "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Olympique qualification ",
-        company_name: "Seu d'urgel",
-        icon: starbucks,
-        iconBg: "#accbe1",
-        date: "Septembre - Octobre 2019",
-        points: [
-            "pas qualifié ",
-            "",
-            // "Implementing responsive design and ensuring cross-browser compatibility.",
-            // "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Jeux Olympique de la jeunesse",
-        company_name: "Buenos Aires ",
-        icon: starbucks,
-        iconBg: "#accbe1",
-        date: "Septembre - Octobre 2018",
-        points: [
-            "medail d'or en Slalom",
-            "victoire avec 5 sec d'avance ",
-            // "Implementing responsive design and ensuring cross-browser compatibility.",
-            // "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Championnat d'Afrique u18 ",
-        company_name: "Alger",
-        icon: tesla,
-        iconBg: "#fbc3bc",
-        date: "Juillet 2018",
-        points: [
-            "double medail or en slalom et bronze en course en ligne ",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "1er Compétition international ",
-        company_name: "Championnat du monde Junior Bratislava",
-        icon: shopify,
-        iconBg: "#b7e4c7",
-        date: "Juillet 2017",
-        points: [
-            "sur classé de 2 ans  15 et j'étais contre des 17 ans",
-           
-        ],
-    },
-    {
-        title: "Début dans le kayak ",
-        company_name: "Val d'indre Canoe-Kayak, Veigné ",
-        icon: meta,
-        iconBg: "#a2d2ff",
-        date: "Mars 2009",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+       title: "Continental Olympic Qualification to Paris 2024. ",
+       company_name: "Saint-Suzanne, la Réunion",
+       icon: france, 
+       iconBg: "#accbe1",
+       date: "February 2024",
+       points: [
+           "4th in heat.",
+           "but final ranking is 13th,didn't go throught semi-final, no final so not qualified.",
+           "It was a great experience and the first opportunity I'd had to train in the warmth of a cold metropolitan winter."
+       ],
+   },
+   {
+       title: "Worldchampionship Senior & Olympic Qualification to Paris 2024. ",
+       company_name: "London, England",
+       icon: anglais, 
+       iconBg: "#accbe1",
+       date: "September 2023",
+       points: [
+           "Last competition of the 2023 season and I finished in 50th place, with mixed feelings about this result.",
+           "So I won't be qualifying for the Paris Games."
+       ],
+   },
+   {
+       title: "Worldchampionship U23",
+       company_name: "Krakow, Poland",
+       icon: pologne,
+       iconBg: "#accbe1",
+       date: "August 2023",
+       points: [
+           "No semi-final this year, 36th place due to some big mistakes.",
+           "So I'm leaving these world championships with a few points to revisit for the future."
+       ],
+   },
+   {
+       title: "Worldchampionship Senior",
+       company_name: "Augsburg, Germany",
+       icon: allemagne,
+       iconBg: "#accbe1",
+       date: "July 2022",
+       points: [
+           "Final result: 40th out of 67.",
+           "Augsburg is a particularly technical course."
+       ],
+   },
+   {
+       title: "Worldchampionship U23",
+       company_name: "Ivrea, Italy",
+       icon: italie,
+       iconBg: "#accbe1",
+       date: "July 2022",
+       points: [
+           "Final result: 15th place in the semi-finals.",
+           "A small error that took me away from the final but good progress and work for the future.",
+       ],
+   },
+   {
+       title: "Worldchampionship U23 ",
+       company_name: "Ljubljana-Tacen, Slovenia",
+       icon: slovenie,
+       iconBg: "#accbe1",
+       date: "July 2021",
+       points: [
+           "Final result: 19th place in the semi-finals.",
+           "Unfortunately I didn't have a coach for this event, but it was a good result despite that.",
+       ],
+   },
+   // covid
+   {
+       title: "Olympic Test Event ",
+       company_name: "Tokyo, Japan",
+       icon: japon,
+       iconBg: "#accbe1",
+       date: "November 2019",
+       points: [
+           "I didn't get the qualification for the Olympic Games but a golden opportunity to do this dress rehearsal.",
+           "Participation of 2 races with the world's top slalom paddler.",
+       ],
+   },
+   {
+       title: " Worldchampionship Senior and Olympic qualification for Tokyo 2021",
+       company_name: "Seu d'Urgell, Spain",
+       icon: espagne,
+       iconBg: "#accbe1",
+       date: "September - October 2019",
+       points: [
+           "Final result: 43rd out of 56.",
+           "No qualification for the Tokyo games.",
+           "But this type of failure is a good way of bouncing back for the future."
+       ],
+   },
+   {
+       title: "Young Olympic Games",
+       company_name: "Buenos Aires, Argentina",
+       icon: argentine,
+       iconBg: "#accbe1",
+       date: "September - October 2018",
+       points: [
+           "Gold medal in Slalom.",
+           "Victory by 5 seconds.",
+           "Title of Youth Olympic Champion 2018."
+       ],
+   },
+   {
+       title: "Africa Championship u18 ",
+       company_name: "Alger, Algeria",
+       icon: algerie,
+       iconBg: "#fbc3bc",
+       date: "July 2018",
+       points: [
+           "2 medals, Gold in  slalom and Bronze in sprint.",
+           "First experience and confrontation with paddlers from the African continent."
+       ],
+   },
+   {
+       title: "Worldchampionship Junior",
+       company_name: "Bratislava, Slovakia",
+       icon: slovaquie,
+       iconBg: "#b7e4c7",
+       date: "July 2017",
+       points: [
+           "1st international event.",
+           "I was over-classified by 2 years because I was too young (15) and I was competing against 17-year-old athletes.",
+           "So I finished 33rd out of 64, 3 places out of the semi-final, so not too bad."
+       ],
+   },
+   {
+       title: "First Step in a boat ",
+       company_name: "Val d'indre Canoe-Kayak, Veigné ",
+       icon: france,
+       iconBg: "#a2d2ff",
+       date: "April 2009",
+       points: [
+           "After having tried many other sports, this date represents the start of an ongoing adventure.",
+           "Without knowing it, I took the plunge and joined the great family of slalom."
         ],
     },
 ];
+

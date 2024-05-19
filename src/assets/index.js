@@ -22,10 +22,8 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import meta from "./company/meta.png"; // sup
+
 import safran from "./company/safran.png";
 import hermes from "./company/hermes.png";
 import octopeek from "./company/octopeek.png";
@@ -48,17 +46,40 @@ import cvfr_pict from "./others/CV_FR_pict.png"
 import pressbook_pict from "./others/pressbook_pict.png"
 
 
+import algerie from "./flag/algerie.png"
+import allemagne from "./flag/allemagne.png"
+import anglais from "./flag/anglais.png"
+import argentine from "./flag/argentine.png"
+import espagne from "./flag/espagne.png"
+import france from "./flag/france.png"
+import italie from "./flag/italie.png"
+import japon from "./flag/japon.png"
+import pologne from "./flag/pologne.png"
+import slovaquie from "./flag/slovaquie.png"
+import slovenie from "./flag/slovenie.png"
+
+
 export {
   meta, 
-  shopify,
-  starbucks,
-  tesla,
+  
   safran,
   octopeek,
   hermes,
   kazzle,
   scaleway,
   grandmont,
+
+  algerie,
+  allemagne,
+  anglais,
+  argentine,
+  espagne,
+  france,
+  italie,
+  japon,
+  pologne,
+  slovaquie,
+  slovenie, 
 
   css,
   docker,

@@ -1,16 +1,16 @@
 import React from 'react'
 import {useEffect, useState} from 'react'
 import { next_date } from '../constants/index';
+import { useTranslation } from "react-i18next";
+
 
 
 const Countdown = () => {
   const [nextEvent, setNextEvent] = useState(null);
   const [countDate, setCountDate] = useState(null);
   const [isNow, setIsNow] = useState(false);
-
-
-
-  
+  const { t } = useTranslation();
+  const lg = document.documentElement.lang;
 
   useEffect(() => {
     const now = new Date().getTime();
@@ -50,12 +50,36 @@ const Countdown = () => {
       const textMinute = Math.floor((gap % hour) / minute);
       const textSecond = Math.floor((gap % minute)/ second);
 
-      const dayLabel = textDay !== 0 ? "Days" : "Day";
-      const hourLabel = textHour !== 0  ? "Hours" : "Hour";
-      const minuteLabel = textMinute !== 0  ? "Minutes" : "Minute";
-      const secondLabel = textSecond !== 0  ? "Secondes" : "Seconde";
 
+      // let data;
+      // if (type === 'sport' && lgSite === 'en') {
+      //   data = sport_en;
+      // } else if (type === 'experiences' && lgSite === 'en') {
+      //   data = experiences_en;
+      // } else if (type === 'sport' && lgSite === 'fr') {
+      //   data = sport_fr;
+      // } else {
+      //   data = experiences_fr;
+      // }
 
+      //todo revoir pour une trad instantané
+      
+
+      let dayLabel, hourLabel, minuteLabel, secondLabel;
+
+      if ( lg === 'en'){
+        dayLabel = textDay !== 0 ? "Days" : "Day";
+        hourLabel = textHour !== 0  ? "Hours" : "Hour";
+        minuteLabel = textMinute !== 0  ? "Minutes" : "Minute";
+        secondLabel = textSecond !== 0  ? "Secondes" : "Seconde";
+    
+      } else {
+        dayLabel = textDay !== 0 ? "Jours" : "Jour";
+        hourLabel = textHour !== 0  ? "Heures" : "Heure";
+        minuteLabel = textMinute !== 0  ? "Minutes" : "Minute";
+        secondLabel = textSecond !== 0  ? "Secondes" : "Seconde";
+      }
+    
       const dayElement = document.getElementById("day");
       const hourElement = document.getElementById("hour");
       const minuteElement = document.getElementById("minute");
@@ -100,27 +124,27 @@ const Countdown = () => {
   return (
     <section>
       <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4 dark:text-white">Next Event</h1>
+        <h1 className="text-4xl font-bold mb-4 dark:text-white">{t('Countdown.title')}</h1>
         {nextEvent ? (
           <div className="flex flex-col items-center">
             <div>
-              <span className="font-bold dark:text-white">Location: </span>
-              <span className='dark:text-slate-300'>{nextEvent.lieu}</span>
+              <span className="font-bold dark:text-white">{t('Countdown.location')}</span>
+              <span className='dark:text-slate-300'>{lg === "en" ? nextEvent.lieu_en : nextEvent.lieu_fr }</span>
               {/*todo rajouter l'addresse et le mettre en lien blank= */}
             </div>
             <div>
-              <span className="font-bold dark:text-white">Event: </span>
-              <span className='dark:text-slate-300'>{nextEvent.event}</span>
+              <span className="font-bold dark:text-white">{t('Countdown.event')}</span>
+              <span className='dark:text-slate-300'>{lg === "en" ? nextEvent.event_en : nextEvent.event_fr }</span>
             </div>
             <div>
               {isNow ? (
                 <div>
                   {/* revoir comment bien disposer les infos 
                   dark:text-white */}
-                  <p>C'est maintenant</p>
+                  <p>{t('Countdown.now')}</p>
                   <div className='dark:text-white'>
                     retrouver moi 
-                    {nextEvent.event}, {nextEvent.lieu}, {nextEvent.live_result}, {nextEvent.live_video},
+                    {lg === "en" ? nextEvent.event_en : nextEvent.event_fr }, {lg === "en" ? nextEvent.lieu_en : nextEvent.lieu_fr }, {nextEvent.live_result}, {nextEvent.live_video},
                     {nextEvent.bibs} à {nextEvent.start}
                   </div>
                 
@@ -150,7 +174,7 @@ const Countdown = () => {
           </div>
         ) : (
           <div className='dark:text-white'>
-            <p>Pas d'autre événement pour le moment, mais ça va vite revenir</p>
+            <p>{t('Countdown.noevent')}</p>
           </div>
         )}
       </div>
