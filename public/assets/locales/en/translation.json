@@ -14,16 +14,24 @@
         "extra" : "Extras"
     },
     "Home" : {
+        "welcome" : "Welcome, I am",
+        "Terence" : "Terence",
+        "introduction" : "todo "
 
     },
     "About" : {
         
     },
     "Sport" : {
+        "videotext" : "Athlete | Engineer",
+        "title" : "Welcome in my second life !"
+
         
     },
     "School" : {
-        "title" : "Work Experience :"
+        "title" : "Work Experience :",
+        "introduction" :   "Since I started out in the professional world, I've had a lot of luck and opportunities to develop along a path that I love: IT. I have always been welcomed and surrounded by open-minded and passionate people."
+
         
     },
     "Project" : {
@@ -33,7 +41,9 @@
         "in_touch" : "Get in Touch",
         "name" : "Name",
         "email" : "Email",
-        "message" : "Your Message"
+        "message" : "Your Message",
+        "socialmedia" : "You can follow all my adventure throught my social media : "
+
     },
     "CTA" : {
         "CTA1" : "Have a project in mind ? ",

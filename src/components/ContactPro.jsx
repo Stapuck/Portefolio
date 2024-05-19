@@ -2,7 +2,7 @@ import React from 'react'
 
 const ContactPro = () => {
   return (
-    <section>
+    <section className='dark:text-white'>
         <div>
             ContactPro
         </div>

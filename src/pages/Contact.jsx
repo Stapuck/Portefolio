@@ -75,28 +75,21 @@ const Contact = () => {
 
 
 {/* mettre dans un componnent pour ne pas surcharger la page en plus du form  */}
-      <div>
-        <label htmlFor="Sponsor">Sponsor</label>
-        <input  className="w-6 h-6" type="radio"  name= "sponsor" value= "sponsor" onChange={handleType} checked={type === 'sponsor'}/>
-
-        <label htmlFor="Entreprise">Entreprise</label>
-        <input  className="w-6 h-6" type="radio"  name= "entreprise" value= "entreprise" onChange={handleType} checked={type === 'entreprise'}/>
-      
-        {/* {type === 'sponsor'? <sportContact/>  : <entreprise_Contact/>}  */}
-        {type === 'sponsor'? <ContactSport/>  : <ContactPro/>} 
-        
-        
+      <div className='flex justify-around mb-4 '>
+        <div className='flex space-x-1 border-2 rounded-md border-black-500 px-3 py-1 dark:border-slate-400'>
+          <label className='mx-2 dark:text-slate-200' htmlFor="Sponsor">Sponsor</label>
+          <input  className="w-6 h-6 " type="radio"  name= "sponsor" value= "sponsor" onChange={handleType} checked={type === 'sponsor'}/>
+        </div>
+        <div className='flex space-x-1 border-2 rounded-md border-black-500 px-3 py-1  dark:border-slate-400'>
+          <label className='mx-2 dark:text-slate-200' htmlFor="Entreprise">Entreprise</label>
+          <input  className="w-6 h-6" type="radio"  name= "entreprise" value= "entreprise" onChange={handleType} checked={type === 'entreprise'}/>
+        </div>
       </div>
 
 
-      
-
-     
-{/* metter footer ?  */}
-     
+      {type === 'sponsor'? <ContactSport/>  : <ContactPro/>} 
 
 
-      {/* <div className='fex-1 min-w-[50%] flex flex-col'> */}
       <div className='fex-1 min-w-[50%] flex flex-col'>
         <h1 className='head-text dark:text-slate-200'>
           {t('Contact.in_touch')}

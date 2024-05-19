@@ -26,6 +26,12 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import safran from "./company/safran.png";
+import hermes from "./company/hermes.png";
+import octopeek from "./company/octopeek.png";
+import kazzle from "./company/kazzle.png";
+import scaleway from "./company/scaleway.png";
+import grandmont from "./company/grandmont.png";
 
 import carrent from "./others/carrent.png";
 import jobit from "./others/jobit.png";
@@ -47,6 +53,12 @@ export {
   shopify,
   starbucks,
   tesla,
+  safran,
+  octopeek,
+  hermes,
+  kazzle,
+  scaleway,
+  grandmont,
 
   css,
   docker,
@@ -81,7 +93,4 @@ export {
   cvfr_pict,
   cven_pict,
   pressbook_pict,
-  
-
-
 };

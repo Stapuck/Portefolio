@@ -20,7 +20,7 @@ const { t } = useTranslation();
         </h3>      
         <div className='mt-5 flex flex-col gap-3 text-slate-500 dark:text-slate-300'>
           <p>
-            Donec blandit aliquam eros sed varius. Etiam blandit tellus ut turpis tempor ultricies. Ut consequat leo aliquet erat elementum ullamcorper.
+            {t('School.introduction')}
           </p>
         </div>  
 

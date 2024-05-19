@@ -1,3 +1,4 @@
+import { t } from 'i18next'
 import React from 'react'
 
 const SocialMContact = () => {
@@ -25,9 +26,9 @@ const SocialMContact = () => {
         },
     ]
   return (
-    <div className='m-3 mt-5'>
+    <div className='m-2 mt-5'>
+        <h2 className='mb-5 dark:text-slate-300'>{t('Contact.socialmedia')}</h2>
         <div className='dark:text-white flex flex-col justify-around text-lg  md:text-4xl md:flex-row '>
-        {/* <div className='dark:text-white flex flex-col justify-around text-lg  md:text-4xl md:flex-row '> */}
             {social.map((so, index) => (
                 <div>
                     <div key={index} className=' hidden text-black font-semibold text-sm absolute mt-24 bg-slate-600 px-3 rounded-2xl group-hover:block'>

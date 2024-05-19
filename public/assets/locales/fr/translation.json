@@ -15,30 +15,37 @@
         "extra" : "Bonus"
     },
     "Home" : {
+        "welcome" : "Bienvenue, je suis",
+        "Terence" : "Terence",
+        "introduction" : "to do"
 
     },
     "About" : {
         
     },
     "Sport" : {
+        "videotext" : "Athlète | Ingénieur",
+        "title" : "Bienvenue dans ma seconde vie !"
+
         
     },
     "School" : {
-        "title" : "Expérience Professionnelle :"
+        "title" : "Expérience Professionnelle :", 
+        "introduction" : "Depuis mes débuts dans le monde professionnel, j'ai eu beaucoup de chance et d'opportunité d'évoluer sur un chemin que j'aime : l'informatique. J'ai toujours était accueillit et entouré par des personnes ouvertes et passionnées."
         
     },
     "Project" : {
         
     },
     "Contact" : {
-        "in_touch" : "Entrez en contact",
+        "in_touch" : "Entrez en contact :",
         "name" : "Nom",
         "email" : "Email",
-        "message" : "Votre Message"
+        "message" : "Votre Message",
+        "socialmedia" : "Retrouvez également toutes mes aventures sur mes différents réseaux :"
     },
     "CTA" : {
         "CTA1" : "Un projet en tête ?  ",
         "CTA2" : "Allons construire quelquechose ensemble"
-
     }
 }

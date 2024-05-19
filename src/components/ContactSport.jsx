@@ -4,7 +4,7 @@ import Gallery from './Gallery'
 
 const ContactSport = () => {
   return (
-    <section>
+    <section className='dark:text-white'>
         
         <div>ContactSport</div>
 

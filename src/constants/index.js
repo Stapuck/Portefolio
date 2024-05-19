@@ -1,4 +1,15 @@
-import {  meta, shopify, starbucks, tesla } from "../assets";
+import {
+    meta,
+    shopify,
+    starbucks,
+    tesla, 
+    safran, 
+    octopeek, 
+    hermes, 
+    kazzle, 
+    scaleway, 
+    grandmont
+} from "../assets";
 
 import { css,
     docker,
@@ -40,6 +51,20 @@ import {
     pressbook_pict,
 
 } from '../assets'
+
+
+// enlever les sources qui ne sont pas utiliser (même les sup du dossier asset)
+
+
+// renommer le fichier index en index-fr.js et bien faire le changement partout. 
+
+// School 
+
+
+
+//Sport 
+
+
 
 
 
@@ -128,137 +153,98 @@ export const skills = [
 ];
 
 
-export const experiences = [
+export const experiences_fr = [
     {
         title: "Alternance IHM",
-        company_name: "Safran",
-        icon: tesla,
+        company_name: "Safran Hélicoptère Engines",
+        icon: safran,
         iconBg: "#fbc3bc",
         date: "Octobre 2023 - Aujourd'hui",
         points: [
-            "developpeur web sur application interne.",
-            "gestion outillage et calculateur.",
-            "reprendre les intitulés.",
-            // "Developing and maintaining web applications using React.js and other related technologies.",
-            // "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            // "Implementing responsive design and ensuring cross-browser compatibility.",
-            // "Participating in code reviews and providing constructive feedback to other developers.",
+            "Développeur Angular sur application interne.",
+            "Gestion Outillage et Interaction avec Calculateur.",
+            "Création d'IHM.",
         ],
     },
     {
         title: "Stage de 2e année",
         company_name: "Octopeek part of Mazars",
-        icon: tesla,
+        icon: octopeek,
         iconBg: "#fbc3bc",
         date: "Avril 2023 - Julliet 2023",
         points: [
-            "data analyse sur l'explicabilité de la performance sportive",
-            "recuperation et traitement de donnée",
-            // "Developing and maintaining web applications using React.js and other related technologies.",
-            // "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            // "Implementing responsive design and ensuring cross-browser compatibility.",
-            // "Participating in code reviews and providing constructive feedback to other developers.",
+            "Création d'un projet d'avenir.",
+            "Récupération et Traitement de donnée via python, Talend, PowerBI.",
+            "Data analyse sur l'explicabilité de la performance sportive (natation et canoë-kayak).",
+            "Liaison entre Sportif de haut niveau et expert du domaine de l'IA. "
         ],
     },
     {
         title: "Prestation de service",
         company_name: "Hermès",
-        icon: tesla,
+        icon: hermes,
         iconBg: "#fbc3bc",
         date: "Avril 2023 - Julliet 2023",
         points: [
-            "developpeur web sur application interne",
-            "migration d'une app d'un serveur ????   vers PHPsymfony",
-            // "Developing and maintaining web applications using React.js and other related technologies.",
-            // "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            // "Implementing responsive design and ensuring cross-browser compatibility.",
-            // "Participating in code reviews and providing constructive feedback to other developers.",
+            "Développeur web sur application interne.",
+            "Migration d'une app d'un serveur AS400 vers PHPsymfony.",
+            "Implementation de service et du responsif.",
+            "Participation au revue de code et apport d'un nouveau point de vue sur le projet.",
         ],
     },
     {
-    // pas sur de le mettre
         title: "Coaching Canoe-kayak",
-        company_name: "",
-        icon: starbucks,
-        iconBg: "#accbe1", //#accbe1
+        company_name: "FreeLance",
+        icon: kazzle,
+        iconBg: "#accbe1",
         date: "Mars 2023 - Avril 2023",
         points: [
-            "Coach pour 1 mois de l'équipe national jeune du canada",
-            "tester de nouvelle chose / nouvelle expérience, developper ses capacité d'analyse",
-            "être dans le partage de savoir et evolution constante",
-            // "Developing and maintaining web applications using React.js and other related technologies.",
-            // "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            // "Implementing responsive design and ensuring cross-browser compatibility.",
-            // "Participating in code reviews and providing constructive feedback to other developers.",
+            "1 mois de Coaching de l'équipe national jeune du Canada.",
+            "Nouvelle expérience, developpement de mes capacités d'analyse et de pédagogie.",
+            "Partage de savoir et remise en question pour une évolution constante.",
         ],
     },
 
     {
         title: "Création d'une micro entreprise / Status Auto-entrepreneur",
         company_name: "Kazzle",
-        icon: tesla,
+        icon: kazzle,
         iconBg: "#fbc3bc",
         date: "Février 2023",
         points: [
-            "pour les projets perso",
-            "pour pouvoir travailler et engranger des connaissances via des projets inovants.",
-            "?? ",
-            // "Developing and maintaining web applications using React.js and other related technologies.",
-            // "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            // "Implementing responsive design and ensuring cross-browser compatibility.",
-            // "Participating in code reviews and providing constructive feedback to other developers.",
+            "Pour certain de mes projets personels.",
+            "Pour pouvoir faire de la prestation de service (faire un peu d'argent).",
+            "Pour pouvoir travailler et engranger des connaissances via des projets inovants.",
         ],
     },
-    // {
-    //     title: "Creation et direction d'une Association",
-    //     company_name: "DODO Mauritius Team",
-    //     icon: shopify,
-    //     iconBg: "#b7e4c7",
-    //     date: "2019",
-    //     points: [
-    //         "Association dont le but est le developpement du canoë-kayak en afrique.",
-    //         "Ralenti par le covid et activité parallèle à mes occupation",
-    //         // "Developing and maintaining web applications using React.js and other related technologies.",
-    //         // "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-    //         // "Implementing responsive design and ensuring cross-browser compatibility.",
-    //         // "Participating in code reviews and providing constructive feedback to other developers.",
-    //     ],
-    // },
     {
         title: "Années Lycée ",
         company_name: "Lycée Grandmont",
-        icon: meta,
+        icon: grandmont,
         iconBg: "#a2d2ff",
-        date: "Septembre 2017 - Juillet 2020",
+        date: "Septembre 2017 - Juin 2020",
         points: [
-            "Bac S mention assez bien",
-            "revoir",
-            "revoir",
-            // "Developing and maintaining web applications using React.js and other related technologies.",
-            // "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            // "Implementing responsive design and ensuring cross-browser compatibility.",
-            // "Participating in code reviews and providing constructive feedback to other developers.",
+            "3 ans en classe sportive avec emploie du temps aménagé.",
+            "Début du double curcus professionnel-sportif.",
+            "Bac S spécialité SVT reçu avec mention assez bien.",
         ],
     },
     {
         title: "Stage de 3e",
         company_name: "Scaleway",
-        icon: meta,
+        icon: scaleway,
         iconBg: "#a2d2ff",
         date: "Novembre 2016 - Décembre 2016",
         points: [
             "Stage d'observation sur Paris, premiers pas dans le monde de l'entreprise dans un secteur qui me passione, l'informatique.",
-            "J'ai eu la chance de toucher à tout, du developpeur au siege social au technicien de baies en datacenter.",
-            "J'ai donc pu y apprendre les premiers connaissances sur le fonctionnement de certains points informatique.",
-            // "Developing and maintaining web applications using React.js and other related technologies.",
-            // "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            // "Implementing responsive design and ensuring cross-browser compatibility.",
-            // "Participating in code reviews and providing constructive feedback to other developers.",
+            "J'ai eu la chance de toucher à tout, du developpeur au technicien de baies en datacenter en passant par le marketing.",
+            "J'ai donc pu y apprendre les premiers connaissances sur le fonctionnement de certains points informatiques.",
         ],
     }
 // last one 
 ];
 
+//projects_fr
 export const projects = [
     // add project state : in progress, done, thinking or elaboration
     {
@@ -317,34 +303,22 @@ export const projects = [
     },
 ];
 
-export const theme_options = [
-    {
-      icon:"sunny", 
-      text:'light'
-    },
-    {
-      icon:"moon", 
-      text:'dark'
-    }
-];
 
 
-export const sport = [
+export const sport_fr = [
 
     // TODO : 
-    // mettre logo du pays ou à eu lieu la course 
-    // rajouter propriété lieu
-    // poids des image à revoir
-    // voir pour l'extension react des flags !!
+    // drapeau du pays en icon
 
      // today
      {
-        title: "Championnat du monde Sénior & Olympique qualification",
+        title: "Championnat du monde Sénior &  Qualification Olympique. ",
         company_name: "Londres",
         icon: starbucks, //drappeau
         iconBg: "#accbe1",
         date: "Septembre 2023",
         points: [
+            "mettre le résultat avec le presbook.",
             "pas qualifié",
             "prochaine étape la réunion ",
             // "Implementing responsive design and ensuring cross-browser compatibility.",
@@ -456,222 +430,8 @@ export const sport = [
     },
 ];
 
-//revoir si on l'enleve ( je pense que la vidéo empeche le chargement de la timeline sport )
-export const sporten = [
 
-    // TODO : 
-    // mettre logo du pays ou à eu lieu la course 
-    // rajouter propriété lieu
-    // poids des image à revoir
-    // voir pour l'extension react des flags !!
 
-     // today
-     {
-        title: "WorldChampionship & Olympic qualification ",
-        company_name: "Londres",
-        icon: starbucks,
-        iconBg: "#accbe1",
-        date: "Septembre 2023",
-        points: [
-            "pas qualifié",
-            "prochaine étape la réunion ",
-            // "Implementing responsive design and ensuring cross-browser compatibility.",
-            // "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Championnat du monde U23 ",
-        company_name: "Ivrea",
-        icon: starbucks,
-        iconBg: "#accbe1",
-        date: "Juillet 2022",
-        points: [
-            "15 place ( à revoir ) demi final  ",
-            "",
-            // "Implementing responsive design and ensuring cross-browser compatibility.",
-            // "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Championnat du monde U23 ",
-        company_name: "Tacen",
-        icon: starbucks,
-        iconBg: "#accbe1",
-        date: "Juillet 2021",
-        points: [
-            "14 place ( à revoir ) demi final  ",
-            "",
-            // "Implementing responsive design and ensuring cross-browser compatibility.",
-            // "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    // covid
-    {
-        title: "Olympique test event ",
-        company_name: "Tokyo",
-        icon: starbucks,
-        iconBg: "#accbe1",
-        date: "Novembre 2019",
-        points: [
-            "pas qualifié pour les jeux mais occasion en or pour faire cette repetition générale  ",
-            "",
-            // "Implementing responsive design and ensuring cross-browser compatibility.",
-            // "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Olympique qualification ",
-        company_name: "Seu d'urgel",
-        icon: starbucks,
-        iconBg: "#accbe1",
-        date: "Septembre - Octobre 2019",
-        points: [
-            "pas qualifié ",
-            "",
-            // "Implementing responsive design and ensuring cross-browser compatibility.",
-            // "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Jeux Olympique de la jeunesse",
-        company_name: "Buenos Aires ",
-        icon: starbucks,
-        iconBg: "#accbe1",
-        date: "Septembre - Octobre 2018",
-        points: [
-            "medail d'or en Slalom",
-            "victoire avec 5 sec d'avance ",
-            // "Implementing responsive design and ensuring cross-browser compatibility.",
-            // "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Championnat d'Afrique u18 ",
-        company_name: "Alger",
-        icon: tesla,
-        iconBg: "#fbc3bc",
-        date: "Juillet 2018",
-        points: [
-            "double medail or en slalom et bronze en course en ligne ",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "1er Compétition international ",
-        company_name: "Championnat du monde Junior Bratislava",
-        icon: shopify,
-        iconBg: "#b7e4c7",
-        date: "Juillet 2017",
-        points: [
-            "sur classé de 2 ans  15 et j'étais contre des 17 ans",
-           
-        ],
-    },
-    {
-        title: "Début dans le kayak ",
-        company_name: "Val d'indre Canoe-Kayak, Veigné ",
-        icon: meta,
-        iconBg: "#a2d2ff",
-        date: "Mars 2009",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-];
-// sup compétition
-export const competitions = [
-    {
-        title: "Test 1",
-        type: "championnat du monde",
-        // startdate: "March 2020",
-        date: "05-01-2024",
-        place: "FRA",
-        done: true, 
-        result: "3"
-
-    },
-    {
-        title: "Test 2",
-        type: "coupe du monde",
-        // startdate: "March 2021",
-        date: "07-01-2024",
-        place: "FRA",
-        done: true, 
-        result: "12"
-
-    },
-    {
-        title: "Test 2",
-        type: "coupe du monde",
-        // startdate: "March 2021",
-        date: "16-01-2024",
-        place: "FRA",
-        done: false, 
-        result: "Prochainnement"
-
-    },
-]
-
-export const languages = [
-    {
-      code: 'fr',
-      name: 'Français',
-      country_code: 'fr',
-      dir: 'ltr'
-    },
-    {
-      code: 'en',
-      name: 'English',
-      country_code: 'gb',
-      dir: 'ltr'
-    },
-    // {
-    //   code: 'ar',
-    //   name: 'Arabic',
-    //   country_code: 'sa',
-    //   dir: 'rtl'
-    // }
-];
-
-export const quickview = [
-// lg to show the doc depending of the language
-// 1 is fr, 2 is en and 3 is both
-
-    {
-        title: "Curriculum vitae EN",
-        pdf: CV_EN,
-        image: cven_pict, 
-        bgcolor: "bg-blue-100",
-        darkbgcolor : "bg-red-600",
-        lg: "en",
-
-    },
-    {
-        title: "Curriculum vitae FR",
-        pdf: CV_FR,
-        image: cvfr_pict, 
-        bgcolor: "bg-blue-300/85",
-        darkbgcolor : "bg-blue-400/75",
-        lg: "fr",
-
-    },
-    {
-        title: "PressBook",
-        pdf: PressBook,
-        image: pressbook_pict, 
-        bgcolor: "bg-orange-400",
-        darkbgcolor : "bg-red-600",
-        lg: "all",
-
-    },
-   
-    
-];
 
 
 
@@ -712,4 +472,69 @@ export const next_date = [
         "bibs" : "18",
         "start" : "12h15"
     }
+];
+
+
+
+// gestion du site
+export const languages = [
+    {
+      code: 'fr',
+      name: 'Français',
+      country_code: 'fr',
+      dir: 'ltr'
+    },
+    {
+      code: 'en',
+      name: 'English',
+      country_code: 'gb',
+      dir: 'ltr'
+    },
+    // {
+    //   code: 'ar',
+    //   name: 'Arabic',
+    //   country_code: 'sa',
+    //   dir: 'rtl'
+    // }
+];
+
+export const theme_options = [
+    {
+      icon:"sunny", 
+      text:'light'
+    },
+    {
+      icon:"moon", 
+      text:'dark'
+    }
+];
+
+export const quickview = [
+    {
+        title: "Curriculum vitae EN",
+        pdf: CV_EN,
+        image: cven_pict, 
+        bgcolor: "bg-blue-100",
+        darkbgcolor : "bg-red-600",
+        lg: "en",
+
+    },
+    {
+        title: "Curriculum vitae FR",
+        pdf: CV_FR,
+        image: cvfr_pict, 
+        bgcolor: "bg-blue-300/85",
+        darkbgcolor : "bg-blue-400/75",
+        lg: "fr",
+
+    },
+    {
+        title: "PressBook",
+        pdf: PressBook,
+        image: pressbook_pict, 
+        bgcolor: "bg-orange-400",
+        darkbgcolor : "bg-red-600",
+        lg: "all",
+
+    },
 ];

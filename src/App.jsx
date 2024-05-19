@@ -4,10 +4,10 @@ import { Home, About, Projects, Extras, Contact, Sport, School} from './pages'
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-// import ThemeMode from './components/ThemeMode';
+import ThemeMode from './components/ThemeMode';
 import NotFound from './components/NotFound';
 import BacktoTopBtn from './components/BacktoTopBtn';
-// import LanguagesBtn from './components/LanguagesBtn';
+import LanguagesBtn from './components/LanguagesBtn';
 
 
 
@@ -20,10 +20,10 @@ const App = () => {
        {/*TODO: savoir pourquoi le changement de sens que sur home  */}
             
             {/* change bg color  */}
-      {/* <div className='fixed z-40 top-20 right-20 rounded-2xl dark:bg-slate-700 bg-slate-300 flex flex-col justify-center items-center border-2 border-slate-700 dark:border-slate-300'>
+      <div className='fixed z-40 top-20 right-20 rounded-2xl dark:bg-slate-700 bg-slate-300 flex flex-col justify-center items-center border-2 border-slate-700 dark:border-slate-300'>
         <ThemeMode className=''/> 
         <LanguagesBtn className=''/>
-      </div>  */}
+      </div> 
 
       {/* pas mal comme ça pour thmode et lgbtn mais incohérence quand on passe sur certaine page // à revoir */}
      

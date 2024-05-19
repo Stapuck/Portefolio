@@ -1,44 +1,36 @@
 import React from 'react'
-
-
-
-import {sport, experiences} from '../constants' //, sporten
-import {sporten, experiencesen} from '../constants/index-en.js' //sporten,
-
-
+import {sport_fr, experiences_fr} from '../constants' 
+import {sport_en, experiences_en} from '../constants/index-en.js' 
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
-const Timeline = ({type}) => {
 
+const Timeline = ({type}) => {
   const lgSite = document.documentElement.lang;
-  
-  // Vérifiez si type est bien défini et correspond à une valeur attendue
   if (type !== "sport" && type !== "experiences") {
     return <div>Invalid type</div>;
   }
 
   let data;
   if (type === 'sport' && lgSite === 'en') {
-    data = sporten;
+    data = sport_en;
   } else if (type === 'experiences' && lgSite === 'en') {
-    data = experiencesen;
+    data = experiences_en;
   } else if (type === 'sport' && lgSite === 'fr') {
-    data = sport;
+    data = sport_fr;
   } else {
-    data = experiences;
+    data = experiences_fr;
   }
 
 
   return (
-
   <div className="mt-12 flex ">
     <VerticalTimeline >
       {data.map((sp)=> (
         <VerticalTimelineElement
         key={sp.company_name}
         date={sp.date}
-        className='mx-2 dark: text-white '
+        className='mx-2  text-slate-600 dark:text-slate-100 '
         icon=
         {
           <div className='flex justify-center items-center w-full h-full '>

@@ -33,8 +33,6 @@ const Footer = () => {
           <div>{ t('test_value', {number_of_days_building})}</div>
           <div>{ t('test_value2', {number_of_days_release})}</div>          
         </section>
-
-
        
     </footer>
 
