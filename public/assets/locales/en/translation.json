@@ -36,16 +36,18 @@
         "noevent" : "No event in coming, come back later to see the next events.", 
         "now" : "Event in Progress !!", 
         "?" : "follow me  : // todo : trouver bon texte. ", 
+        "livevideotxt" : "video link",
+        "liveresulttxt" : "live result",
 
 
-        "days" : "Jours",
-        "day" : "Jour",
-        "hours" : "Heures",
-        "hour" : "Heure",
+        "days" : "Days",
+        "day" : "Day",
+        "hours" : "Hours",
+        "hour" : "Hour",
         "minutes" : "Minutes",
         "minute" : "Minute",
-        "seconds" : "Secondes",
-        "second" : "Seconde"
+        "seconds" : "Seconds",
+        "second" : "Second"
         
 
 

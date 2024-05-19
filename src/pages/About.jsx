@@ -27,6 +27,8 @@ const About = () => {
 
 {/*  todo revoir pour aligné ça correctement ! */}
 
+{/*  faire un systeme d'onglet sinon ? et pour le contact page aussi ?  */}
+
           <div>
             <Link
             to="/sport"
@@ -62,12 +64,12 @@ const About = () => {
       <div className='py-1 my-6'>
         <div className="my-2">
           <AccordionSchool title={t('About.accordion1q')}>
-            {t('About.accordion1r')}
+            {t('About.accordion1a')}
           </AccordionSchool>
         </div>
         <div className="my-2">
           <AccordionSchool title={t('About.accordion2q')}>
-            {t('About.accordion2r')}
+            {t('About.accordion2a')}
           </AccordionSchool>
         </div>
         <div className="my-2">

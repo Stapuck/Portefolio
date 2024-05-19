@@ -136,8 +136,8 @@ const Sport = () => {
           <button className='text-4xl'>
             <ion-icon name="information-circle-outline"></ion-icon>
           </button>
-          <div className='hidden fixed bottom-12 left-[91%] text-slate-200 group-hover:block'> 
-            <span>by </span> <a target='_blank' href="https://www.instagram.com/romain.bruneau/"> Romain Bruneau </a>
+          <div className='hidden fixed bottom-12 left-[92%] text-slate-200 group-hover:block'> 
+            <span>by </span> <a target='_blank' href="https://www.instagram.com/romain.bruneau/"> R.B </a>
           </div>
         </div>
       } 

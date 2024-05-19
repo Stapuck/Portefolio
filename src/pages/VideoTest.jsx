@@ -57,7 +57,6 @@ const VideoTest = () => {
             <div className='overlay'></div>
             {/* <video src={videoBg} autoPlay loop muted/> */}
             <video id="videoBG" src={videoBg2} autoPlay loop muted/>
-            {/* todo texte transparent  */}
             <div className="content "> {/*flex justify-center sm:flex-row flex-col */}
                 <h1 className='text-7xl font-bold'><span className='blue-gradient_text font-semibold drop-shadow '> Terence</span> SARAMANDIF</h1>
                 <p className='text-3xl font-semibold'>Athlete | Engineer </p>

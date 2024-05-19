@@ -64,7 +64,8 @@ import {
 // enlever les sources qui ne sont pas utiliser (même les sup du dossier asset)
 
 
-// renommer le fichier index en index-fr.js et bien faire le changement partout. 
+// renommer le fichier index en index-fr.js et bien faire le changement partout.  jjuste timeline et project, 
+// c'est le global qui a besoin d'être plus importer partout. 
 
 export const experiences_fr = [
     {
@@ -454,11 +455,11 @@ export const next_date = [
     { 
         "lieu_fr": "Seu d'Urgell, Espagne",
         "lieu_en": "Seu d'Urgell, Spain",
-        "date": "May 21, 2024 21:54" ,
+        "date": "May 20, 2024 21:54" ,
         "event_en" : "WC",
         "event_fr" : "Coupe du monde",
-        "live_result" : "link",
-        "live_video" : "link",
+        "live_result" : "link1",
+        "live_video" : "link2",
         "bibs" : "18",
         "start" : "12h15"
     },

@@ -9,6 +9,7 @@ import i18next from 'i18next'
 const LanguagesBtn = () => {
   // TODO: faire un beau bouton ou on ne vois que la langue selectionné
   // ou juste modifier la langue selectionné pour voir le changement 
+  // utilisé usestate pour changement de l'état dans la fonciton changelanguage pour la réinjecter dans le disable. 
  
 
   
@@ -25,7 +26,7 @@ const LanguagesBtn = () => {
           className='dark:text-white hover:text-black'
           key={country_code} 
           onClick={() => changeLanguage(code)}
-        // disabled={code === currentLanguageCode}
+          // disabled={code === currentLanguageCode}
         // disabled={code === name}
         // hidden={code !== currentLanguageCode}  // === ou  !== bete d'idée à revoir 
         >  

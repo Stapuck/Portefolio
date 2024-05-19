@@ -36,6 +36,8 @@
         "noevent" : "Pas d'autre événement pour le moment, revenez plus tard.", 
         "now" : "La compétition est en cours !!", 
         "?" : "retourvez moi : // todo : trouver bon texte. ", 
+        "livevideotxt" : "Lien vidéo",
+        "liveresulttxt" : "Lien Résultat",
 
 
         "days" : "Jours",

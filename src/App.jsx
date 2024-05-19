@@ -16,7 +16,7 @@ const App = () => {
   return (
     <main className='bg-slate-300 dark:bg-black-500 h-full'> 
       
-       {/*TODO: decider si acces sur tous le site ou juste sur home  */}
+       
        {/*TODO: savoir pourquoi le changement de sens que sur home  */}
             
             {/* change bg color  */}

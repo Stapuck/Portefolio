@@ -71,4 +71,4 @@ const Navbar = () => {
 export default Navbar
 
 
-        {/* TODO: faire méga menu Material tailwind ?  */}
+        {/* TODO: faire méga menu Material tailwind ? pour le responsif  */}

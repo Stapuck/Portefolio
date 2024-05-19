@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 
 
 
-// TODO:revoir l'emplacement du bouton et voir si plusieur page ou juste Home ? 
+
 
 
 const ThemeMode = () => {
