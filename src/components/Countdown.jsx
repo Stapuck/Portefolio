@@ -1,6 +1,6 @@
 import React from 'react'
 import {useEffect, useState} from 'react'
-import { next_date } from '../constants/index';
+import { next_date } from '../constants/index-global';
 import { useTranslation } from "react-i18next";
 
 

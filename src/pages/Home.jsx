@@ -4,7 +4,7 @@ import ThemeMode from '../components/ThemeMode';
 import LanguagesBtn from '../components/LanguagesBtn';
 
 import cookies from 'js-cookie';
-import { languages } from '../constants';
+import { languages } from '../constants/index-global';
 import { useTranslation } from "react-i18next";
 
 import QuickView from '../components/QuickView';

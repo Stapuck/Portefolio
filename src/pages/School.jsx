@@ -4,7 +4,7 @@ import CTA from '../components/CTA';
 
 import Timeline from '../components/Timeline';
 import { useTranslation } from "react-i18next";
-import { skills} from '../constants'
+import { skills} from '../constants/index-global'
 import { useEffect } from "react"
 
 

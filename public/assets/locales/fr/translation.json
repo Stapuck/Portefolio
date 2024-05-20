@@ -22,6 +22,10 @@
     },
     "About" : {
         "double" : "Un Double Projet",
+        "athlete" : "vie sportive",
+        "professionnal" : "vie professionnelle",
+        "1" : "",
+        "2" : "",
         "accordion1q" : "test1",
         "accordion2q" : "test2",
         "accordion3q" : "test3",
@@ -30,7 +34,7 @@
         "accordion3a" : "test3"
     },
     "Countdown" :{
-        "title" : "Prochaine Compétition : ",
+        "title" : "Prochain évènement:",
         "location" : "Lieu : ", 
         "event" : "Évènement : ", 
         "noevent" : "Pas d'autre événement pour le moment, revenez plus tard.", 
@@ -38,8 +42,6 @@
         "?" : "retourvez moi : // todo : trouver bon texte. ", 
         "livevideotxt" : "Lien vidéo",
         "liveresulttxt" : "Lien Résultat",
-
-
         "days" : "Jours",
         "day" : "Jour",
         "hours" : "Heures",

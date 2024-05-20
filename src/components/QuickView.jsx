@@ -1,7 +1,7 @@
 import React from 'react'
 import { useEffect, useState } from 'react';
 
-import { quickview } from '../constants'
+import { quickview } from '../constants/index-global'
 
 const QuickView = () => {
   const lgSite = document.documentElement.lang;

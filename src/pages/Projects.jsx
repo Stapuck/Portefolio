@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react'
-import {projects} from '../constants/index'
-import {projectsen} from '../constants/index-en'
+import {projects_fr} from '../constants/index-fr'
+import {projects_en} from '../constants/index-en'
 import { Link } from 'react-router-dom'
 import CTA from '../components/CTA'
+import { useTranslation } from "react-i18next";
 
 const Projects = () => {
-
   const lgSite = document.documentElement.lang;
-
+  const { t } = useTranslation();
 
   useEffect(() => {
     document.title = 'Projects'
@@ -16,9 +16,9 @@ const Projects = () => {
   // ici ? 
   let data;
   if (lgSite === 'fr') {
-    data = projects;
+    data = projects_fr;
   } else {
-    data = projectsen;
+    data = projects_en;
   }
 
 
@@ -45,7 +45,6 @@ const Projects = () => {
                 />
               </div> 
             </div>
-              {/* todo : enlever shadow  ?? */}
             <div className='mt-5 flex flex-col'>
               <h4 className='text-2xl font-poppins font-semibold dark:text-slate-200'>{project.name}</h4>
               <p className='mt-2 text-slate-600 dark:text-slate-300'>{project.description}</p>

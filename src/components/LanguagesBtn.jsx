@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { languages } from '../constants'
+import { languages } from '../constants/index-global'
 
 
 import i18next from 'i18next'

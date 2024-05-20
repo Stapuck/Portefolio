@@ -1,5 +1,5 @@
 import React from 'react'
-import {sport_fr, experiences_fr} from '../constants' 
+import {sport_fr, experiences_fr} from '../constants/index-fr.js' 
 import {sport_en, experiences_en} from '../constants/index-en.js' 
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';

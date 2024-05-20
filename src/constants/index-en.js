@@ -132,8 +132,8 @@ export const experiences_en = [
 // last one 
 ];
 
-//projects_en
-export const projectsen = [
+//à faire 
+export const projects_en = [
     // add project state : in progress, done, thinking or elaboration
     {
         iconUrl: tailwind, //pricewise

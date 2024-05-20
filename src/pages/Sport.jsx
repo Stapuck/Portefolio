@@ -1,10 +1,12 @@
-import React from 'react'
-import Timeline from '../components/Timeline'
+import React from 'react';
+import Timeline from '../components/Timeline';
+import { Link } from 'react-router-dom';
 
 
-import videoBg2 from '../assets/video/20240203_Reunion.mp4'
 
-import { useEffect, useState, useRef } from "react"
+import videoBg2 from '../assets/video/20240203_Reunion.mp4';
+
+import { useEffect, useState, useRef } from "react";
 import { useTranslation } from "react-i18next";
 
 
@@ -48,7 +50,7 @@ const Sport = () => {
 
     const scrolldown = () => {
       window.scrollTo({
-          top : 1220, 
+          top : 1220,  // todo revoir, pour scroll à la fin de la video 
           behavior: 'smooth'
       })
     }
@@ -92,6 +94,8 @@ const Sport = () => {
       <div className='max-container'>
         <div className='flex flex-col items-center gap-10'>
           <h1 className='text-5xl font-bold dark:text-white'>{t('Sport.title')}</h1> 
+
+          <Link to="/">test</Link>
           <p className='text-xl font-semibold dark:text-slate-300'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dolor dolor, convallis sit amet elit ut, lobortis pharetra nisl. Aliquam commodo, eros eu convallis placerat, neque diam varius nunc, at luctus lorem libero vitae nibh. Donec blandit aliquam eros sed varius. Etiam blandit tellus ut turpis tempor ultricies. Ut consequat leo aliquet erat elementum ullamcorper.</p>
           <Timeline type="sport"/>
           {/* ici */}

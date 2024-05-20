@@ -17,9 +17,7 @@ const App = () => {
     <main className='bg-slate-300 dark:bg-black-500 h-full'> 
       
        
-       {/*TODO: savoir pourquoi le changement de sens que sur home  */}
             
-            {/* change bg color  */}
       <div className='fixed z-40 top-20 right-20 rounded-2xl dark:bg-slate-700 bg-slate-300 flex flex-col justify-center items-center border-2 border-slate-700 dark:border-slate-300'>
         <ThemeMode className=''/> 
         <LanguagesBtn className=''/>
@@ -28,16 +26,17 @@ const App = () => {
       {/* pas mal comme ça pour thmode et lgbtn mais incohérence quand on passe sur certaine page // à revoir */}
      
     
-
+{/*  todo : revoir pour le navbar en cas de vidéo  */}
       <Router>        
-        <Navbar/>
+        
+        <Navbar isVisible={!window.location.pathname.includes('/sport')}/>
         <Routes>
          <Route path='/' element={<Home/>}/>
-         <Route path='/about' element={<About/>}/>  {/*  transformer en school   */}
+         <Route path='/about' element={<About/>}/>  
          <Route path='/sport' element={<Sport/>}/>  
          <Route path='/school' element={<School/>}/>  
-         <Route path='/projects' element={<Projects/>}/> {/* util ?  */}
-         <Route path='/extras' element={<Extras/>}/> {/* pas besoin  */}
+         <Route path='/projects' element={<Projects/>}/> 
+         <Route path='/extras' element={<Extras/>}/> {/* todo : à enlever, pas besoin  */}
          <Route path='/contact' element={<Contact/>}/>
          <Route path='/*' element={<NotFound/>}/>
         </Routes>

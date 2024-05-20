@@ -19,33 +19,30 @@ const About = () => {
       <div className='mb-36'>
         <Countdown></Countdown>
       </div>
+
+      {/*  todo revoir pour aligné ça correctement ! */}
+
+      {/*  faire un systeme d'onglet sinon ? et pour le contact page aussi ?  */}
+
       <h1 className='head-text flex justify-center underline mb-10 dark:text-white'>{t('About.double')}</h1>
-      <div className="flex my-5 h-96">
-        <div className="w-1/2 border-r-4 border-black-500 dark:border-slate-400 flex justify-center ">
-          <h2 className='underline dark:text-slate-100/85'>Sportif</h2>
 
-
-{/*  todo revoir pour aligné ça correctement ! */}
-
-{/*  faire un systeme d'onglet sinon ? et pour le contact page aussi ?  */}
-
-          <div>
-            <Link
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+        <div className="border-r-0 md:border-r-2 border-b-2 md:border-b-0 border-gray-300 md:pr-4 pb-4 md:pb-0">
+          <h2 className="text-xl font-bold mb-2 dark:text-slate-100">{t('About.athlete')}</h2>
+          <p className="text-sm dark:text-slate-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet mauris velit.</p>
+          <Link
             to="/sport"
             rel='noopener noreferrer'
             className='font-semibold text-blue-800 dark:text-blue-500 flex flex-row'
           >
             see all 
-            <div className='ml-2 text-xl' ><ion-icon name="arrow-forward-outline"></ion-icon></div>
+            <div className='ml-2 text-xl'><ion-icon name="arrow-forward-outline"></ion-icon></div>
           </Link>
-          </div>
-
-          
-
         </div>
-        <div className="w-1/2 flex justify-center ">
-          <h2 className='underline dark:text-slate-100/85'>Professionnel </h2>
 
+        <div className="md:border-b-0 border-b-2 border-gray-300 pb-4">
+          <h2 className="text-xl font-bold mb-2 dark:text-slate-100">{t('About.professionnal')}</h2>
+          <p className="text-sm dark:text-slate-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet mauris velit.</p>
           <Link
             to="/school"
             rel='noopener noreferrer'
@@ -56,6 +53,8 @@ const About = () => {
           </Link>
         </div>
       </div>
+
+
 
 
 {/* revoir pour ce p  */}

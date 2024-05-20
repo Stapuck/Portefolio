@@ -1,5 +1,5 @@
 import React from 'react'
-import { theme_options,  } from '../constants'
+import { theme_options } from '../constants/index-global'
 import { useEffect, useState } from 'react';
 
 
