@@ -5,6 +5,7 @@ import {
     kazzle, 
     scaleway, 
     grandmont,
+    cesi,
     france,
     anglais,
     pologne,
@@ -96,6 +97,19 @@ export const experiences_fr = [
             "Pour certain de mes projets personels.",
             "Pour pouvoir faire de la prestation de service (faire un peu d'argent).",
             "Pour pouvoir travailler et engranger des connaissances via des projets inovants.",
+        ],
+    },
+    {
+        title: "Début de la formation ingénieur au CESI",
+        company_name: "CESI",
+        icon: cesi,
+        iconBg: "#fbc3bc",
+        date: "Septembre 2021 - aujourd'hui",
+        points: [
+            "Projet d'étude visé depuis le collège",
+            "Spécialité informatique",
+            "Cursus en 5 ans avec 2 ans de classe préparatoire",
+            "Pédagogie active, PBL et méthode de travaille que l'on retrouve en entreprise",
         ],
     },
     {

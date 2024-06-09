@@ -5,6 +5,7 @@ import {
     kazzle, 
     scaleway, 
     grandmont,
+    cesi,
 
 
     france,
@@ -103,6 +104,19 @@ export const experiences_en = [
             "For some of my personal projects.",
             "To be able to provide services (make a bit of money).",
             "To be able to work and learn through innovative projects.",
+        ],
+    },
+    {
+        title: "Beginning of my engineering cursus at CESI",
+        company_name: "CESI",
+        icon: cesi,
+        iconBg: "#fbc3bc",
+        date: "September 2021 - Today",
+        points: [
+            "1 part of my double project",
+            "IT engineering and CS speciality",
+            "a 5 years degree with 2 years of preparatory class",
+            "Active pedagogy, PBL and work methods found in companies",
         ],
     },
     {

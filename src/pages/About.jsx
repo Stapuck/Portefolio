@@ -2,10 +2,8 @@ import React, { useEffect } from 'react'
 import CTA from '../components/CTA';
 import { Link } from 'react-router-dom'
 import { useTranslation } from "react-i18next";
-
 import AccordionSchool from '../components/AccordionSchool';
 import Countdown from '../components/Countdown';
-
 
 const About = () => {
   const { t } = useTranslation();
@@ -57,7 +55,8 @@ const About = () => {
 
 
 
-{/* revoir pour ce p  */}
+
+{/* todo revoir pour ce p  */}
       <p className='dark:text-white'>le sport a fait et fait partie intégrante de mon éducation, m'a permit d'apprendre des valeurs et de comprendre le monde d'une façon différente</p>
       
       <div className='py-1 my-6'>
@@ -76,7 +75,15 @@ const About = () => {
             {t('About.accordion3a')}
           </AccordionSchool>
         </div>
+        <div className="my-2">
+          <AccordionSchool title={t('About.accordion4q')}>
+            {t('About.accordion4a')}
+          </AccordionSchool>
+        </div>
       </div>
+
+
+
       <hr className='dark:border-slate-100 border-slate-700 mt-5'/>
        <CTA/>
     </section>

@@ -1,5 +1,5 @@
 import {Route, BrowserRouter as Router, Routes} from 'react-router-dom'
-import { Home, About, Projects, Extras, Contact, Sport, School} from './pages'
+import { Home, About, Projects, Contact, Sport, School, Politique_Confidentialite} from './pages'
 
 
 import Navbar from './components/Navbar';
@@ -8,6 +8,7 @@ import ThemeMode from './components/ThemeMode';
 import NotFound from './components/NotFound';
 import BacktoTopBtn from './components/BacktoTopBtn';
 import LanguagesBtn from './components/LanguagesBtn';
+import { NavbarSimple } from './components/Navbar2';
 
 
 
@@ -29,15 +30,18 @@ const App = () => {
 {/*  todo : revoir pour le navbar en cas de vidéo  */}
       <Router>        
         
-        <Navbar isVisible={!window.location.pathname.includes('/sport')}/>
+        {/* <Navbar isVisible={!window.location.pathname.includes('/sport')}/> */}
+        <Navbar/>
+        {/* <NavbarSimple/> */}
         <Routes>
          <Route path='/' element={<Home/>}/>
          <Route path='/about' element={<About/>}/>  
          <Route path='/sport' element={<Sport/>}/>  
          <Route path='/school' element={<School/>}/>  
          <Route path='/projects' element={<Projects/>}/> 
-         <Route path='/extras' element={<Extras/>}/> {/* todo : à enlever, pas besoin  */}
          <Route path='/contact' element={<Contact/>}/>
+         <Route path='/politique-confidentialite' element={<Politique_Confidentialite/>}/>
+
          <Route path='/*' element={<NotFound/>}/>
         </Routes>
       </Router>

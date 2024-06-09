@@ -34,7 +34,6 @@ const Navbar = ({isVisible}) => {
             <Link to='/school'><li className='my-4 py-4 border-b border-slate-800 dark:hover:bg-slate-800 hover:bg-slate-500 hover:rounded-xl text-black dark:text-white' onClick={handleClick}>School</li></Link>
             <Link to='/sport'><li className='my-4 py-4 border-b border-slate-800 dark:hover:bg-slate-800 hover:bg-slate-500 hover:rounded-xl text-black dark:text-white' onClick={handleClick}>Sport</li></Link>
             <Link to='/projects'><li className='my-4 py-4 border-b border-slate-800 dark:hover:bg-slate-800 hover:bg-slate-500 hover:rounded-xl text-black dark:text-white' onClick={handleClick}>Projects</li></Link>
-            <Link to='/extras'><li className='my-4 py-4 border-b border-slate-800 dark:hover:bg-slate-800 hover:bg-slate-500 hover:rounded-xl text-black dark:text-white' onClick={handleClick}>Bonus</li></Link>
             <Link to='/contact'><li className='my-4 py-4 border-b border-slate-800 dark:hover:bg-slate-800 hover:bg-slate-500 hover:rounded-xl text-black dark:text-white' onClick={handleClick}>Contact</li></Link>
         </ul>
         </div>
@@ -47,6 +46,7 @@ const Navbar = ({isVisible}) => {
 
 // todo revoir pour le isvisble et la gestion de la navbar une fois que ça marche juste la mettre en fixed au coordonnée précise de en dessous de la vidéo. 
   return (
+    // <header >
     <header className={` ${isVisible === false ? 'hidden fixed ' : ' fixed header'}`}>
     {/* //  <header className={`hidden`}>
     //<header className={`hidden fixed header ${isVisible }`}> */}
@@ -66,16 +66,14 @@ const Navbar = ({isVisible}) => {
             <NavLink to='/projects' className={({isActive})=> isActive ? 'text-blue-500 dark:text-blue-400' : 'text-black border-b-2 border-transparent hover:border-black transition-all ease-in dark:text-slate-200 dark:hover:border-slate-200'}>
                 {t('Navlink.project')}
             </NavLink>
-            <NavLink to='/extras' className={({isActive})=> isActive ? 'text-blue-500 dark:text-blue-400' : 'text-black border-b-2 border-transparent hover:border-black transition-all ease-in dark:text-slate-200 dark:hover:border-slate-200'}>
-                {t('Navlink.extra')}
-            </NavLink>
+            
             <NavLink to='/contact' className={({isActive})=> isActive ? 'text-blue-500 dark:text-blue-400' : 'text-black border-b-2 border-transparent hover:border-black transition-all ease-in dark:text-slate-200 dark:hover:border-slate-200'}>
                 {t('Navlink.contact')}
             </NavLink>
             
 
             
-            {isVisible === true ? <div>true</div> : <div>false</div>}
+            {/* {isVisible === true ? <div>true</div> : <div>false</div>} */}
             
         </nav>  
         

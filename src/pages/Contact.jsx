@@ -17,7 +17,7 @@ const Contact = () => {
   // const formRef = useRef(null);
   const [form, setform] = useState({name:'', email:'', message:''});
   const [isLoading, setisLoading] = useState(false);
-  const [type, setType] = useState('sponsor')
+  const [type, setType] = useState('entreprise')
 
   const {alert, showAlert, hideAlert} = useAlert();
 
@@ -87,7 +87,7 @@ const Contact = () => {
       </div>
 
 
-      {type === 'sponsor'? <ContactSport/>  : <ContactPro/>} 
+      {type === 'entreprise'? <ContactPro/> : <ContactSport/>  } 
 
 
       <div className='fex-1 min-w-[50%] flex flex-col'>

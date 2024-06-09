@@ -1,9 +1,9 @@
 import Home from './Home';
 import About from './About';
 import Projects from './Projects';
-import Extras from './Extras';
 import Contact from './Contact';
 import Sport from './Sport';
 import School from './School';
+import Politique_Confidentialite from './Politique_Confidentialite';
 
-export { Home, About, Projects, Extras, Contact, Sport, School};
+export { Home, About, Projects, Contact, Sport, School, Politique_Confidentialite};

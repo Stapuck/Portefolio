@@ -2,7 +2,6 @@ import { t } from 'i18next'
 import React from 'react'
 
 const SocialMContact = () => {
-// todo responsive 
     const social = [
         {
             name : "Instagram",
@@ -27,22 +26,25 @@ const SocialMContact = () => {
     ]
   return (
     <div className='m-2 mt-5'>
-        <h2 className='mb-5 dark:text-slate-300'>{t('Contact.socialmedia')}</h2>
-        <div className='dark:text-white flex flex-col justify-around text-lg  md:text-4xl md:flex-row '>
-            {social.map((so, index) => (
-                <div>
-                    <div key={index} className=' hidden text-black font-semibold text-sm absolute mt-24 bg-slate-600 px-3 rounded-2xl group-hover:block'>
-                        {so.name}
-                    </div>
-                    <div  className="hover:scale-150  group">
-                        <a  href={so.href} target='_blank' >
-                            < ion-icon name={so.icone}></ion-icon>
-                        </a>
-                    </div>
+    <h2 className='mb-5 dark:text-slate-300'>{t('Contact.socialmedia')}</h2>
+    <div className='dark:text-white flex flex-wrap justify-around items-center text-lg sm:text-2xl md:text-4xl'>
+        {social.map((so, index) => (
+            <div key={index} className="flex items-center m-2">
+                <div className='hidden text-black font-semibold text-sm absolute bg-slate-600 px-3 rounded-2xl group-hover:block'>
+                    {so.name}
                 </div>
-            ))}
-        </div>        
-    </div>
+                <div className="hover:scale-125 group">
+                    <a href={so.href} target='_blank'>
+                        <ion-icon name={so.icone}></ion-icon>
+                    </a>
+                </div>
+            </div>
+        ))}
+    </div>        
+</div>
+
+
+
   )
 }
 

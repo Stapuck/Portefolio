@@ -1,24 +1,3 @@
-import {
-    meta,
-    safran, 
-    octopeek, 
-    hermes, 
-    kazzle, 
-    scaleway, 
-    grandmont,
-    france,
-    anglais,
-    pologne,
-    allemagne,
-    slovenie,
-    italie,
-    espagne,
-    argentine,
-    algerie,
-    slovaquie,
-    japon
-} from "../assets";
-
 import { css,
     docker,
     figma,
@@ -67,7 +46,7 @@ export const next_date = [
     { 
         "lieu_fr": "Liptovsky Mikulas, Slovaquie", 
         "lieu_en": "Liptovsky Mikulas, Slovakia", 
-        "date": "May 19, 2024 20:40", 
+        "date": "July 05, 2024 12:00", 
         "event_en" : "WorldChampionship U23",
         "event_fr" : "Championnat du monde U23",
         "live_result" : "link",
@@ -78,7 +57,7 @@ export const next_date = [
     { 
         "lieu_fr": "Ivrea, Italie",
         "lieu_en": "Ivrea, Italy",
-        "date": "May 31, 2024 21:52",
+        "date": "September 11, 2024 12:00",
         "event_en" : "WC",
         "event_fr" : "Coupe du monde",
         "live_result" : "link",
@@ -89,7 +68,7 @@ export const next_date = [
     { 
         "lieu_fr": "Seu d'Urgell, Espagne",
         "lieu_en": "Seu d'Urgell, Spain",
-        "date": "May 20, 2024 21:54" ,
+        "date": "September 19, 2024 12:00" ,
         "event_en" : "WC",
         "event_fr" : "Coupe du monde",
         "live_result" : "link1",
@@ -97,17 +76,17 @@ export const next_date = [
         "bibs" : "18",
         "start" : "12h15"
     },
-    { 
-        "lieu_fr": "Paris, France",
-        "lieu_en": "Paris, France",
-        "date": "May 13, 2024 21:55",
-        "event_en" : "OG" ,
-        "event_fr" : "JO",
-        "live_result" : "link",
-        "live_video" : "link",
-        "bibs" : "18",
-        "start" : "12h15"
-    },
+    // { 
+    //     "lieu_fr": "Paris, France",
+    //     "lieu_en": "Paris, France",
+    //     "date": "May 13, 2024 21:55",
+    //     "event_en" : "OG" ,
+    //     "event_fr" : "JO",
+    //     "live_result" : "link",
+    //     "live_video" : "link",
+    //     "bibs" : "18",
+    //     "start" : "12h15"
+    // },
     { 
         "lieu_fr": "Cesi, Pau", 
         "lieu_en": "Cesi, Pau", 

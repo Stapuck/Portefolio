@@ -26,12 +26,14 @@
         "professionnal" : "vie professionnelle",
         "1" : "",
         "2" : "",
-        "accordion1q" : "test1",
-        "accordion2q" : "test2",
-        "accordion3q" : "test3",
+        "accordion1q" : "Rythme de vie et organisation d'un double projet ? ",
+        "accordion2q" : "Facteur de success ",
+        "accordion3q" : "Santé Mental ",
+        "accordion4q" : "Sport & Opportunité ",
         "accordion1a" : "test1",
         "accordion2a" : "test2",
-        "accordion3a" : "test3"
+        "accordion3a" : "test3",
+        "accordion4a" : "test4"
     },
     "Countdown" :{
         "title" : "Prochain évènement:",

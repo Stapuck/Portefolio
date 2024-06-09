@@ -102,24 +102,24 @@ const Sport = () => {
         </div>
 
         <div>
-        <p>
+        {/* <p>
 
-{/*  todo  */}
+  todo  
         mettre lien comme dans projet pour : 
         - prochaine courses  -{'>'} vers countdown.
         - voir plus d'information -{'>'} google doc pressbook read-only ( et plus tard faire un site web à la place du pressbook).
         - mettre le lien suivant  avec un truc du style for all result : 
       
-      {/* https://www.canoeicf.com/athlete/terence-saramandif/results */}
+      {/* https://www.canoeicf.com/athlete/terence-saramandif/results 
 
         - cette timeline ne comprend pas les Coupe du monde et compétitions plus mineurs ( National, ICF ranking,...)
         ou cette timeline ne comprend que les evenements important ( moment cles, bon résultat lors de ma carriere)
-        </p>
-      </div>
+        </p> */}
+        </div>
 
       </div>
 
-     
+     {/* todo : voir pour un sommaire ?? ou pas  */}
 
 
         

@@ -30,6 +30,7 @@ import octopeek from "./company/octopeek.png";
 import kazzle from "./company/kazzle.png";
 import scaleway from "./company/scaleway.png";
 import grandmont from "./company/grandmont.png";
+import cesi from "./company/cesi.png";
 
 import carrent from "./others/carrent.png";
 import jobit from "./others/jobit.png";
@@ -43,7 +44,7 @@ import PressBook from "./PDF/PressBook.pdf"
 
 import cven_pict from "./others/CV_EN_pict.png"
 import cvfr_pict from "./others/CV_FR_pict.png"
-import pressbook_pict from "./others/pressbook_pict.png"
+import pressbook_pict from "./others/Pressbook_pict.png"
 
 
 import algerie from "./flag/algerie.png"
@@ -68,6 +69,7 @@ export {
   kazzle,
   scaleway,
   grandmont,
+  cesi,
 
   algerie,
   allemagne,

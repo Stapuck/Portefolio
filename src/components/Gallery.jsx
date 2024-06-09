@@ -176,7 +176,7 @@ const Gallery = () => {
   return (
 
     <section>
-
+{/*  todo revoir le label qui devient blanc */}
         <Tabs value={activeTab}>
                 <TabsHeader>
                 {data.map(({ label, value }) => (
